@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="no"/>
@@ -16910,10 +16910,10 @@ Source: http://www.ctscorp.com/components/Datasheets/CTSChipArrayDs.pdf</descrip
 <text x="-200.66" y="127" size="2.54" layer="97">Power Section</text>
 <text x="-198.12" y="-53.34" size="2.54" layer="97">Peripheral Section</text>
 <text x="266.7" y="-48.26" size="2.54" layer="97">FPGA Section</text>
-<text x="243.84" y="109.22" size="1.778" layer="98">IS62WV51216</text>
-<text x="243.84" y="111.76" size="1.778" layer="98">IS61WV25616</text>
-<text x="243.84" y="114.3" size="1.778" layer="98">CY7C1041D</text>
-<text x="220.98" y="66.04" size="1.778" layer="97">RESET</text>
+<text x="274.32" y="109.22" size="1.778" layer="98">IS62WV51216</text>
+<text x="274.32" y="111.76" size="1.778" layer="98">IS61WV25616</text>
+<text x="274.32" y="114.3" size="1.778" layer="98">CY7C1041D</text>
+<text x="228.6" y="60.96" size="1.778" layer="97">RESET</text>
 <text x="-35.56" y="220.98" size="1.778" layer="91">QUESTION: Reset switch control FPGA and Arduino? Or just FPGA and Arduino reset under FPGA control...</text>
 <text x="-368.3" y="15.24" size="1.778" layer="91">TODO: If this switch is too big or not practical during routing
 then make it smaller surface mount part or remove it.</text>
@@ -16955,8 +16955,8 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="S6" gate="BNA" x="-193.04" y="233.68"/>
 <instance part="S6" gate="BVCCAUX" x="-162.56" y="231.14"/>
 <instance part="S6" gate="BVCCINT" x="-134.62" y="231.14"/>
-<instance part="GND_PWR6" gate="A" x="240.03" y="30.48"/>
-<instance part="3V3_PWR14" gate="A" x="238.76" y="106.68"/>
+<instance part="GND_PWR6" gate="A" x="270.51" y="30.48"/>
+<instance part="3V3_PWR14" gate="A" x="269.24" y="106.68"/>
 <instance part="GND_PWR1" gate="A" x="35.56" y="81.28" rot="R270"/>
 <instance part="GND_PWR2" gate="A" x="185.42" y="106.68" rot="R90"/>
 <instance part="3V3_PWR1" gate="A" x="198.12" y="132.08"/>
@@ -16968,12 +16968,12 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="3V3_PWR5" gate="A" x="182.88" y="149.86"/>
 <instance part="3V3_PWR6" gate="A" x="71.12" y="165.1"/>
 <instance part="3V3_PWR7" gate="A" x="38.1" y="60.96" rot="R180"/>
-<instance part="R33" gate="A" x="203.2" y="68.58" smashed="yes" rot="R90">
-<attribute name="VALUE" x="206.502" y="64.77" size="1.778" layer="96" rot="R90"/>
+<instance part="R33" gate="A" x="231.14" y="68.58" smashed="yes" rot="R90">
+<attribute name="VALUE" x="234.442" y="64.77" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="3V3_PWR3" gate="A" x="203.2" y="76.2"/>
-<instance part="GND1" gate="A" x="218.44" y="60.96"/>
-<instance part="SW2" gate="G$1" x="213.36" y="66.04" rot="R270"/>
+<instance part="3V3_PWR3" gate="A" x="231.14" y="76.2"/>
+<instance part="GND1" gate="A" x="246.38" y="60.96"/>
+<instance part="SW2" gate="G$1" x="241.3" y="66.04" rot="R270"/>
 <instance part="R37" gate="A" x="-290.83" y="83.82" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-287.528" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -17035,11 +17035,11 @@ then make it smaller surface mount part or remove it.</text>
 <attribute name="VALUE" x="-10.1092" y="138.049" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$2" gate="G$1" x="-243.84" y="73.66"/>
-<instance part="SRAM" gate="SRAM" x="243.84" y="33.02"/>
-<instance part="R8" gate="A" x="195.58" y="72.39" smashed="yes" rot="R90">
-<attribute name="VALUE" x="198.882" y="68.58" size="1.778" layer="96" rot="R90"/>
+<instance part="SRAM" gate="SRAM" x="274.32" y="33.02"/>
+<instance part="R8" gate="A" x="213.36" y="72.39" smashed="yes" rot="R90">
+<attribute name="VALUE" x="216.662" y="68.58" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="3V3_PWR8" gate="A" x="195.58" y="78.74"/>
+<instance part="3V3_PWR8" gate="A" x="213.36" y="78.74"/>
 <instance part="SW1" gate="SW" x="-326.5424" y="27.94" smashed="yes">
 <attribute name="NAME" x="-327.8124" y="34.29" size="1.27" layer="95" ratio="10"/>
 </instance>
@@ -17100,17 +17100,17 @@ then make it smaller surface mount part or remove it.</text>
 </bus>
 <bus name="A[0..20],D[0..15],CS,WE,OE,BE,LED4">
 <segment>
-<wire x1="30.48" y1="55.88" x2="30.48" y2="96.52" width="0.762" layer="92"/>
-<wire x1="60.96" y1="25.4" x2="30.48" y2="55.88" width="0.762" layer="92"/>
-<wire x1="278.13" y1="101.6" x2="278.13" y2="27.94" width="0.762" layer="92"/>
-<wire x1="275.59" y1="25.4" x2="278.13" y2="27.94" width="0.762" layer="92"/>
-<wire x1="232.41" y1="25.4" x2="275.59" y2="25.4" width="0.762" layer="92"/>
-<wire x1="229.87" y1="27.94" x2="229.87" y2="93.98" width="0.762" layer="92"/>
-<wire x1="229.87" y1="27.94" x2="232.41" y2="25.4" width="0.762" layer="92"/>
-<wire x1="227.33" y1="25.4" x2="229.87" y2="27.94" width="0.762" layer="92"/>
-<wire x1="227.33" y1="25.4" x2="190.5" y2="25.4" width="0.762" layer="92"/>
-<wire x1="190.5" y1="25.4" x2="60.96" y2="25.4" width="0.762" layer="92"/>
-<wire x1="190.5" y1="25.4" x2="190.5" y2="83.82" width="0.762" layer="92"/>
+<wire x1="17.78" y1="55.88" x2="17.78" y2="96.52" width="0.762" layer="92"/>
+<wire x1="60.96" y1="25.4" x2="17.78" y2="55.88" width="0.762" layer="92"/>
+<wire x1="308.61" y1="101.6" x2="308.61" y2="27.94" width="0.762" layer="92"/>
+<wire x1="306.07" y1="25.4" x2="308.61" y2="27.94" width="0.762" layer="92"/>
+<wire x1="262.89" y1="25.4" x2="306.07" y2="25.4" width="0.762" layer="92"/>
+<wire x1="260.35" y1="27.94" x2="260.35" y2="93.98" width="0.762" layer="92"/>
+<wire x1="260.35" y1="27.94" x2="262.89" y2="25.4" width="0.762" layer="92"/>
+<wire x1="257.81" y1="25.4" x2="260.35" y2="27.94" width="0.762" layer="92"/>
+<wire x1="257.81" y1="25.4" x2="205.74" y2="25.4" width="0.762" layer="92"/>
+<wire x1="205.74" y1="25.4" x2="60.96" y2="25.4" width="0.762" layer="92"/>
+<wire x1="205.74" y1="25.4" x2="205.74" y2="83.82" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -17197,19 +17197,19 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="V4" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<wire x1="242.57" y1="38.1" x2="241.3" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="38.1" x2="240.03" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="240.03" y1="38.1" x2="240.03" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="240.03" y1="35.56" x2="240.03" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="242.57" y1="35.56" x2="241.3" y2="35.56" width="0.1524" layer="91"/>
-<junction x="240.03" y="35.56"/>
-<junction x="240.03" y="38.1"/>
+<wire x1="273.05" y1="38.1" x2="271.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="38.1" x2="270.51" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="38.1" x2="270.51" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="270.51" y1="35.56" x2="270.51" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="273.05" y1="35.56" x2="271.78" y2="35.56" width="0.1524" layer="91"/>
+<junction x="270.51" y="35.56"/>
+<junction x="270.51" y="38.1"/>
 <pinref part="GND_PWR6" gate="A" pin="GND"/>
 <pinref part="SRAM" gate="SRAM" pin="VSS@1"/>
-<junction x="241.3" y="38.1"/>
+<junction x="271.78" y="38.1"/>
 <pinref part="SRAM" gate="SRAM" pin="VSS@2"/>
-<wire x1="241.3" y1="35.56" x2="240.03" y2="35.56" width="0.1524" layer="91"/>
-<junction x="241.3" y="35.56"/>
+<wire x1="271.78" y1="35.56" x2="270.51" y2="35.56" width="0.1524" layer="91"/>
+<junction x="271.78" y="35.56"/>
 </segment>
 <segment>
 <pinref part="S6" gate="B0" pin="IO_L1P_HSWAPEN_0"/>
@@ -17271,9 +17271,9 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U$2" gate="G$1" pin="JTAG_GND"/>
 </segment>
 <segment>
-<wire x1="218.44" y1="63.5" x2="218.44" y2="66.04" width="0.2032" layer="91"/>
-<junction x="218.44" y="63.5"/>
-<junction x="218.44" y="66.04"/>
+<wire x1="246.38" y1="63.5" x2="246.38" y2="66.04" width="0.2032" layer="91"/>
+<junction x="246.38" y="63.5"/>
+<junction x="246.38" y="66.04"/>
 <pinref part="SW2" gate="G$1" pin="S1"/>
 <pinref part="GND1" gate="A" pin="GND"/>
 <pinref part="SW2" gate="G$1" pin="S"/>
@@ -17409,11 +17409,11 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="FLASH" gate="G$1" pin="HOLD"/>
 </segment>
 <segment>
-<wire x1="241.3" y1="99.06" x2="238.76" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="99.06" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="238.76" y1="101.6" x2="238.76" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="101.6" x2="238.76" y2="101.6" width="0.1524" layer="91"/>
-<junction x="238.76" y="101.6"/>
+<wire x1="271.78" y1="99.06" x2="269.24" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="99.06" x2="269.24" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="101.6" x2="269.24" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="101.6" x2="269.24" y2="101.6" width="0.1524" layer="91"/>
+<junction x="269.24" y="101.6"/>
 <pinref part="3V3_PWR14" gate="A" pin="3V3"/>
 <pinref part="SRAM" gate="SRAM" pin="VDD@1"/>
 <pinref part="SRAM" gate="SRAM" pin="VDD@2"/>
@@ -17562,7 +17562,7 @@ then make it smaller surface mount part or remove it.</text>
 <segment>
 <pinref part="R8" gate="A" pin="2"/>
 <pinref part="3V3_PWR8" gate="A" pin="3V3"/>
-<wire x1="195.58" y1="77.47" x2="195.58" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="77.47" x2="213.36" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="3V3_PWR12" gate="A" pin="3V3"/>
@@ -17647,7 +17647,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="FLASH" gate="G$1" pin="CS"/>
 </segment>
 <segment>
-<wire x1="182.88" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
 <label x="182.88" y="68.58" size="1.778" layer="95"/>
 <pinref part="S6" gate="B2" pin="IO_L65N_CSO_B_2"/>
 </segment>
@@ -17709,23 +17709,10 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="A0" class="0">
 <segment>
-<wire x1="229.87" y1="91.44" x2="232.41" y2="93.98" width="0.1524" layer="91"/>
-<label x="234.95" y="93.98" size="1.778" layer="95"/>
+<wire x1="260.35" y1="91.44" x2="262.89" y2="93.98" width="0.1524" layer="91"/>
+<label x="265.43" y="93.98" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A0"/>
-<wire x1="241.3" y1="93.98" x2="232.41" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="81.28" y1="25.4" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
-<label x="81.28" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L52P_3"/>
-</segment>
-</net>
-<net name="A1" class="0">
-<segment>
-<wire x1="229.87" y1="88.9" x2="232.41" y2="91.44" width="0.1524" layer="91"/>
-<label x="234.95" y="91.44" size="1.778" layer="95"/>
-<pinref part="SRAM" gate="SRAM" pin="A1"/>
-<wire x1="241.3" y1="91.44" x2="232.41" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="93.98" x2="262.89" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="25.4" x2="88.9" y2="50.8" width="0.1524" layer="91"/>
@@ -17733,12 +17720,25 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B3" pin="IO_L51N_3"/>
 </segment>
 </net>
+<net name="A1" class="0">
+<segment>
+<wire x1="260.35" y1="88.9" x2="262.89" y2="91.44" width="0.1524" layer="91"/>
+<label x="265.43" y="91.44" size="1.778" layer="95"/>
+<pinref part="SRAM" gate="SRAM" pin="A1"/>
+<wire x1="271.78" y1="91.44" x2="262.89" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="86.36" y1="25.4" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<label x="86.36" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L51P_3"/>
+</segment>
+</net>
 <net name="A2" class="0">
 <segment>
-<wire x1="229.87" y1="86.36" x2="232.41" y2="88.9" width="0.1524" layer="91"/>
-<label x="234.95" y="88.9" size="1.778" layer="95"/>
+<wire x1="260.35" y1="86.36" x2="262.89" y2="88.9" width="0.1524" layer="91"/>
+<label x="265.43" y="88.9" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A2"/>
-<wire x1="241.3" y1="88.9" x2="232.41" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="88.9" x2="262.89" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="25.4" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
@@ -17748,10 +17748,10 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="A3" class="0">
 <segment>
-<wire x1="229.87" y1="83.82" x2="232.41" y2="86.36" width="0.1524" layer="91"/>
-<label x="234.95" y="86.36" size="1.778" layer="95"/>
+<wire x1="260.35" y1="83.82" x2="262.89" y2="86.36" width="0.1524" layer="91"/>
+<label x="265.43" y="86.36" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A3"/>
-<wire x1="241.3" y1="86.36" x2="232.41" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="86.36" x2="262.89" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="25.4" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
@@ -17761,10 +17761,10 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="A4" class="0">
 <segment>
-<wire x1="229.87" y1="81.28" x2="232.41" y2="83.82" width="0.1524" layer="91"/>
-<label x="234.95" y="83.82" size="1.778" layer="95"/>
+<wire x1="260.35" y1="81.28" x2="262.89" y2="83.82" width="0.1524" layer="91"/>
+<label x="265.43" y="83.82" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A4"/>
-<wire x1="241.3" y1="83.82" x2="232.41" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="83.82" x2="262.89" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="25.4" x2="99.06" y2="50.8" width="0.1524" layer="91"/>
@@ -17774,140 +17774,153 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="A5" class="0">
 <segment>
-<wire x1="229.87" y1="78.74" x2="232.41" y2="81.28" width="0.1524" layer="91"/>
-<label x="234.95" y="81.28" size="1.778" layer="95"/>
+<wire x1="260.35" y1="78.74" x2="262.89" y2="81.28" width="0.1524" layer="91"/>
+<label x="265.43" y="81.28" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A5"/>
-<wire x1="241.3" y1="81.28" x2="232.41" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="81.28" x2="262.89" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
-<label x="33.02" y="83.82" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L2N_0"/>
+<wire x1="83.82" y1="25.4" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
+<label x="83.82" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L52N_3"/>
 </segment>
 </net>
 <net name="A6" class="0">
 <segment>
-<wire x1="229.87" y1="76.2" x2="232.41" y2="78.74" width="0.1524" layer="91"/>
-<label x="234.95" y="78.74" size="1.778" layer="95"/>
+<wire x1="260.35" y1="76.2" x2="262.89" y2="78.74" width="0.1524" layer="91"/>
+<label x="265.43" y="78.74" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A6"/>
-<wire x1="241.3" y1="78.74" x2="232.41" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="78.74" x2="262.89" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
-<label x="33.02" y="91.44" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L3P_0"/>
+<wire x1="76.2" y1="25.4" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
+<label x="76.2" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L83P_3"/>
 </segment>
 </net>
 <net name="A7" class="0">
 <segment>
-<wire x1="229.87" y1="73.66" x2="232.41" y2="76.2" width="0.1524" layer="91"/>
-<label x="234.95" y="76.2" size="1.778" layer="95"/>
+<wire x1="260.35" y1="73.66" x2="262.89" y2="76.2" width="0.1524" layer="91"/>
+<label x="265.43" y="76.2" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A7"/>
-<wire x1="241.3" y1="76.2" x2="232.41" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="76.2" x2="262.89" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
-<label x="33.02" y="88.9" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L3N_0"/>
+<wire x1="78.74" y1="25.4" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
+<label x="78.74" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L83N_VREF_3"/>
 </segment>
 </net>
 <net name="A8" class="0">
 <segment>
-<wire x1="229.87" y1="71.12" x2="232.41" y2="73.66" width="0.1524" layer="91"/>
-<label x="234.95" y="73.66" size="1.778" layer="95"/>
+<wire x1="260.35" y1="71.12" x2="262.89" y2="73.66" width="0.1524" layer="91"/>
+<label x="265.43" y="73.66" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A8"/>
-<wire x1="241.3" y1="73.66" x2="232.41" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="73.66" x2="262.89" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
-<label x="33.02" y="96.52" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L4P_0"/>
+<wire x1="30.48" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
+<label x="27.94" y="78.74" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L1N_VREF_0"/>
 </segment>
 </net>
 <net name="A9" class="0">
 <segment>
-<wire x1="229.87" y1="68.58" x2="232.41" y2="71.12" width="0.1524" layer="91"/>
-<label x="234.95" y="71.12" size="1.778" layer="95"/>
+<wire x1="260.35" y1="68.58" x2="262.89" y2="71.12" width="0.1524" layer="91"/>
+<label x="265.43" y="71.12" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A9"/>
-<wire x1="241.3" y1="71.12" x2="232.41" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="71.12" x2="262.89" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
-<label x="33.02" y="93.98" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L4N_0"/>
+<wire x1="17.78" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
+<label x="20.32" y="86.36" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L2P_0"/>
 </segment>
 </net>
 <net name="A10" class="0">
 <segment>
-<wire x1="229.87" y1="66.04" x2="232.41" y2="68.58" width="0.1524" layer="91"/>
-<label x="234.95" y="68.58" size="1.778" layer="95"/>
+<wire x1="260.35" y1="66.04" x2="262.89" y2="68.58" width="0.1524" layer="91"/>
+<label x="265.43" y="68.58" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A10"/>
-<wire x1="241.3" y1="68.58" x2="232.41" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="68.58" x2="262.89" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
-<label x="182.88" y="81.28" size="1.778" layer="95"/>
-<pinref part="S6" gate="B2" pin="IO_L49P_D3_2"/>
-</segment>
-</net>
-<net name="A11" class="0">
-<segment>
-<wire x1="229.87" y1="63.5" x2="232.41" y2="66.04" width="0.1524" layer="91"/>
-<label x="234.95" y="66.04" size="1.778" layer="95"/>
-<pinref part="SRAM" gate="SRAM" pin="A11"/>
-<wire x1="241.3" y1="66.04" x2="232.41" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="190.5" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
-<label x="182.88" y="83.82" size="1.778" layer="95"/>
-<pinref part="S6" gate="B2" pin="IO_L49N_D4_2"/>
-</segment>
-</net>
-<net name="A12" class="0">
-<segment>
-<wire x1="229.87" y1="60.96" x2="232.41" y2="63.5" width="0.1524" layer="91"/>
-<label x="234.95" y="63.5" size="1.778" layer="95"/>
-<pinref part="SRAM" gate="SRAM" pin="A12"/>
-<wire x1="241.3" y1="63.5" x2="232.41" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="190.5" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
-<label x="182.88" y="76.2" size="1.778" layer="95"/>
-<pinref part="S6" gate="B2" pin="IO_L62P_D5_2"/>
-</segment>
-</net>
-<net name="A13" class="0">
-<segment>
-<wire x1="229.87" y1="58.42" x2="232.41" y2="60.96" width="0.1524" layer="91"/>
-<label x="234.95" y="60.96" size="1.778" layer="95"/>
-<pinref part="SRAM" gate="SRAM" pin="A13"/>
-<wire x1="241.3" y1="60.96" x2="232.41" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="190.5" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="78.74" x2="182.88" y2="78.74" width="0.1524" layer="91"/>
 <label x="182.88" y="78.74" size="1.778" layer="95"/>
 <pinref part="S6" gate="B2" pin="IO_L62N_D6_2"/>
 </segment>
 </net>
-<net name="A14" class="0">
+<net name="A11" class="0">
 <segment>
-<wire x1="229.87" y1="55.88" x2="232.41" y2="58.42" width="0.1524" layer="91"/>
-<label x="234.95" y="58.42" size="1.778" layer="95"/>
-<pinref part="SRAM" gate="SRAM" pin="A14"/>
-<wire x1="241.3" y1="58.42" x2="232.41" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="260.35" y1="63.5" x2="262.89" y2="66.04" width="0.1524" layer="91"/>
+<label x="265.43" y="66.04" size="1.778" layer="95"/>
+<pinref part="SRAM" gate="SRAM" pin="A11"/>
+<wire x1="271.78" y1="66.04" x2="262.89" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="71.12" x2="182.88" y2="71.12" width="0.1524" layer="91"/>
 <label x="182.88" y="71.12" size="1.778" layer="95"/>
 <pinref part="S6" gate="B2" pin="IO_L64P_D8_2"/>
 </segment>
 </net>
+<net name="A12" class="0">
+<segment>
+<wire x1="260.35" y1="60.96" x2="262.89" y2="63.5" width="0.1524" layer="91"/>
+<label x="265.43" y="63.5" size="1.778" layer="95"/>
+<pinref part="SRAM" gate="SRAM" pin="A12"/>
+<wire x1="271.78" y1="63.5" x2="262.89" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="205.74" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
+<label x="182.88" y="73.66" size="1.778" layer="95"/>
+<pinref part="S6" gate="B2" pin="IO_L64N_D9_2"/>
+</segment>
+</net>
+<net name="A13" class="0">
+<segment>
+<wire x1="260.35" y1="58.42" x2="262.89" y2="60.96" width="0.1524" layer="91"/>
+<label x="265.43" y="60.96" size="1.778" layer="95"/>
+<pinref part="SRAM" gate="SRAM" pin="A13"/>
+<wire x1="271.78" y1="60.96" x2="262.89" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="137.16" y1="25.4" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
+<label x="137.16" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L1P_3"/>
+</segment>
+</net>
+<net name="A14" class="0">
+<segment>
+<wire x1="260.35" y1="55.88" x2="262.89" y2="58.42" width="0.1524" layer="91"/>
+<label x="265.43" y="58.42" size="1.778" layer="95"/>
+<pinref part="SRAM" gate="SRAM" pin="A14"/>
+<wire x1="271.78" y1="58.42" x2="262.89" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="139.7" y1="50.8" x2="139.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="139.7" y="27.94" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L1N_VREF_3"/>
+</segment>
+</net>
 <net name="A15" class="0">
 <segment>
-<wire x1="229.87" y1="53.34" x2="232.41" y2="55.88" width="0.1524" layer="91"/>
-<label x="234.95" y="55.88" size="1.778" layer="95"/>
+<wire x1="260.35" y1="53.34" x2="262.89" y2="55.88" width="0.1524" layer="91"/>
+<label x="265.43" y="55.88" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A15"/>
-<wire x1="241.3" y1="55.88" x2="232.41" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="55.88" x2="262.89" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="121.92" y1="25.4" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
+<label x="121.92" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L37P_3"/>
+</segment>
+</net>
+<net name="A16" class="0">
+<segment>
+<wire x1="260.35" y1="50.8" x2="262.89" y2="53.34" width="0.1524" layer="91"/>
+<label x="265.43" y="53.34" size="1.778" layer="95"/>
+<pinref part="SRAM" gate="SRAM" pin="A16"/>
+<wire x1="271.78" y1="53.34" x2="262.89" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="129.54" y1="25.4" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
@@ -17915,37 +17928,24 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B3" pin="IO_L36N_3"/>
 </segment>
 </net>
-<net name="A16" class="0">
-<segment>
-<wire x1="229.87" y1="50.8" x2="232.41" y2="53.34" width="0.1524" layer="91"/>
-<label x="234.95" y="53.34" size="1.778" layer="95"/>
-<pinref part="SRAM" gate="SRAM" pin="A16"/>
-<wire x1="241.3" y1="53.34" x2="232.41" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="127" y1="25.4" x2="127" y2="50.8" width="0.1524" layer="91"/>
-<label x="127" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L36P_3"/>
-</segment>
-</net>
 <net name="A17" class="0">
 <segment>
-<wire x1="229.87" y1="48.26" x2="232.41" y2="50.8" width="0.1524" layer="91"/>
-<label x="234.95" y="50.8" size="1.778" layer="95"/>
+<wire x1="260.35" y1="48.26" x2="262.89" y2="50.8" width="0.1524" layer="91"/>
+<label x="265.43" y="50.8" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="A17"/>
-<wire x1="241.3" y1="50.8" x2="232.41" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="50.8" x2="262.89" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="134.62" y1="25.4" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
-<label x="134.62" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L2N_3"/>
+<wire x1="132.08" y1="25.4" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
+<label x="132.08" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L2P_3"/>
 </segment>
 </net>
 <net name="D0" class="0">
 <segment>
-<wire x1="278.13" y1="99.06" x2="275.59" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="101.6" x2="266.7" y2="101.6" width="0.1524" layer="91"/>
-<label x="270.51" y="101.6" size="1.778" layer="95"/>
+<wire x1="308.61" y1="99.06" x2="306.07" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="101.6" x2="297.18" y2="101.6" width="0.1524" layer="91"/>
+<label x="300.99" y="101.6" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D0"/>
 </segment>
 <segment>
@@ -17956,9 +17956,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="D1" class="0">
 <segment>
-<wire x1="278.13" y1="96.52" x2="275.59" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="99.06" x2="266.7" y2="99.06" width="0.1524" layer="91"/>
-<label x="270.51" y="99.06" size="1.778" layer="95"/>
+<wire x1="308.61" y1="96.52" x2="306.07" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="99.06" x2="297.18" y2="99.06" width="0.1524" layer="91"/>
+<label x="300.99" y="99.06" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D1"/>
 </segment>
 <segment>
@@ -17969,9 +17969,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="D2" class="0">
 <segment>
-<wire x1="278.13" y1="93.98" x2="275.59" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="96.52" x2="266.7" y2="96.52" width="0.1524" layer="91"/>
-<label x="270.51" y="96.52" size="1.778" layer="95"/>
+<wire x1="308.61" y1="93.98" x2="306.07" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="96.52" x2="297.18" y2="96.52" width="0.1524" layer="91"/>
+<label x="300.99" y="96.52" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D2"/>
 </segment>
 <segment>
@@ -17982,9 +17982,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="D3" class="0">
 <segment>
-<wire x1="278.13" y1="91.44" x2="275.59" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="93.98" x2="266.7" y2="93.98" width="0.1524" layer="91"/>
-<label x="270.51" y="93.98" size="1.778" layer="95"/>
+<wire x1="308.61" y1="91.44" x2="306.07" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="93.98" x2="297.18" y2="93.98" width="0.1524" layer="91"/>
+<label x="300.99" y="93.98" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D3"/>
 </segment>
 <segment>
@@ -17995,143 +17995,143 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="D4" class="0">
 <segment>
-<wire x1="278.13" y1="88.9" x2="275.59" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="91.44" x2="266.7" y2="91.44" width="0.1524" layer="91"/>
-<label x="270.51" y="91.44" size="1.778" layer="95"/>
+<wire x1="308.61" y1="88.9" x2="306.07" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="91.44" x2="297.18" y2="91.44" width="0.1524" layer="91"/>
+<label x="300.99" y="91.44" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D4"/>
 </segment>
 <segment>
-<wire x1="83.82" y1="25.4" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
-<label x="83.82" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L52N_3"/>
+<wire x1="114.3" y1="25.4" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
+<label x="114.3" y="27.94" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L42N_GCLK24_3"/>
 </segment>
 </net>
 <net name="D5" class="0">
 <segment>
-<wire x1="278.13" y1="86.36" x2="275.59" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="88.9" x2="266.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="270.51" y="88.9" size="1.778" layer="95"/>
+<wire x1="308.61" y1="86.36" x2="306.07" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="88.9" x2="297.18" y2="88.9" width="0.1524" layer="91"/>
+<label x="300.99" y="88.9" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D5"/>
 </segment>
 <segment>
-<wire x1="76.2" y1="25.4" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<label x="76.2" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L83P_3"/>
+<wire x1="111.76" y1="25.4" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
+<label x="111.76" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L42P_GCLK25_TRDY2_3"/>
 </segment>
 </net>
 <net name="D6" class="0">
 <segment>
-<wire x1="278.13" y1="83.82" x2="275.59" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="86.36" x2="266.7" y2="86.36" width="0.1524" layer="91"/>
-<label x="270.51" y="86.36" size="1.778" layer="95"/>
+<wire x1="308.61" y1="83.82" x2="306.07" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="86.36" x2="297.18" y2="86.36" width="0.1524" layer="91"/>
+<label x="300.99" y="86.36" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D6"/>
 </segment>
 <segment>
-<wire x1="78.74" y1="25.4" x2="78.74" y2="50.8" width="0.1524" layer="91"/>
-<label x="78.74" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L83N_VREF_3"/>
+<wire x1="119.38" y1="25.4" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<label x="119.38" y="27.94" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L41N_GCLK26_3"/>
 </segment>
 </net>
 <net name="D7" class="0">
 <segment>
-<wire x1="278.13" y1="81.28" x2="275.59" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="83.82" x2="266.7" y2="83.82" width="0.1524" layer="91"/>
-<label x="270.51" y="83.82" size="1.778" layer="95"/>
+<wire x1="308.61" y1="81.28" x2="306.07" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="83.82" x2="297.18" y2="83.82" width="0.1524" layer="91"/>
+<label x="300.99" y="83.82" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="D7"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="78.74" x2="38.1" y2="78.74" width="0.1524" layer="91"/>
-<label x="27.94" y="78.74" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L1N_VREF_0"/>
+<wire x1="116.84" y1="25.4" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<label x="116.84" y="27.94" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L41P_GCLK27_3"/>
 </segment>
 </net>
 <net name="D8" class="0">
 <segment>
-<wire x1="278.13" y1="78.74" x2="275.59" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="81.28" x2="267.97" y2="81.28" width="0.1524" layer="91"/>
-<label x="270.51" y="81.28" size="1.778" layer="95"/>
+<wire x1="308.61" y1="78.74" x2="306.07" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="81.28" x2="298.45" y2="81.28" width="0.1524" layer="91"/>
+<label x="300.99" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D9" class="0">
 <segment>
-<wire x1="278.13" y1="76.2" x2="275.59" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="78.74" x2="267.97" y2="78.74" width="0.1524" layer="91"/>
-<label x="270.51" y="78.74" size="1.778" layer="95"/>
+<wire x1="308.61" y1="76.2" x2="306.07" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="78.74" x2="298.45" y2="78.74" width="0.1524" layer="91"/>
+<label x="300.99" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D10" class="0">
 <segment>
-<wire x1="278.13" y1="73.66" x2="275.59" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="76.2" x2="267.97" y2="76.2" width="0.1524" layer="91"/>
-<label x="270.51" y="76.2" size="1.778" layer="95"/>
+<wire x1="308.61" y1="73.66" x2="306.07" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="76.2" x2="298.45" y2="76.2" width="0.1524" layer="91"/>
+<label x="300.99" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D11" class="0">
 <segment>
-<wire x1="278.13" y1="71.12" x2="275.59" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="73.66" x2="267.97" y2="73.66" width="0.1524" layer="91"/>
-<label x="270.51" y="73.66" size="1.778" layer="95"/>
+<wire x1="308.61" y1="71.12" x2="306.07" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="73.66" x2="298.45" y2="73.66" width="0.1524" layer="91"/>
+<label x="300.99" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D12" class="0">
 <segment>
-<wire x1="278.13" y1="68.58" x2="275.59" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="71.12" x2="267.97" y2="71.12" width="0.1524" layer="91"/>
-<label x="270.51" y="71.12" size="1.778" layer="95"/>
+<wire x1="308.61" y1="68.58" x2="306.07" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="71.12" x2="298.45" y2="71.12" width="0.1524" layer="91"/>
+<label x="300.99" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D13" class="0">
 <segment>
-<wire x1="278.13" y1="66.04" x2="275.59" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="68.58" x2="267.97" y2="68.58" width="0.1524" layer="91"/>
-<label x="270.51" y="68.58" size="1.778" layer="95"/>
+<wire x1="308.61" y1="66.04" x2="306.07" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="68.58" x2="298.45" y2="68.58" width="0.1524" layer="91"/>
+<label x="300.99" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D14" class="0">
 <segment>
-<wire x1="278.13" y1="63.5" x2="275.59" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="66.04" x2="267.97" y2="66.04" width="0.1524" layer="91"/>
-<label x="270.51" y="66.04" size="1.778" layer="95"/>
+<wire x1="308.61" y1="63.5" x2="306.07" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="66.04" x2="298.45" y2="66.04" width="0.1524" layer="91"/>
+<label x="300.99" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D15" class="0">
 <segment>
-<wire x1="278.13" y1="60.96" x2="275.59" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="63.5" x2="267.97" y2="63.5" width="0.1524" layer="91"/>
-<label x="270.51" y="63.5" size="1.778" layer="95"/>
+<wire x1="308.61" y1="60.96" x2="306.07" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="63.5" x2="298.45" y2="63.5" width="0.1524" layer="91"/>
+<label x="300.99" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WE" class="0">
 <segment>
-<wire x1="278.13" y1="45.72" x2="275.59" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="48.26" x2="266.7" y2="48.26" width="0.1524" layer="91"/>
-<label x="270.51" y="48.26" size="1.778" layer="95"/>
+<wire x1="308.61" y1="45.72" x2="306.07" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="48.26" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
+<label x="300.99" y="48.26" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="!WE"/>
 </segment>
 <segment>
-<wire x1="30.48" y1="86.36" x2="38.1" y2="86.36" width="0.1524" layer="91"/>
-<label x="33.02" y="86.36" size="1.778" layer="95"/>
-<pinref part="S6" gate="B0" pin="IO_L2P_0"/>
+<wire x1="81.28" y1="25.4" x2="81.28" y2="50.8" width="0.1524" layer="91"/>
+<label x="81.28" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L52P_3"/>
 </segment>
 </net>
 <net name="OE" class="0">
 <segment>
-<wire x1="278.13" y1="43.18" x2="275.59" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="45.72" x2="266.7" y2="45.72" width="0.1524" layer="91"/>
-<label x="270.51" y="45.72" size="1.778" layer="95"/>
+<wire x1="308.61" y1="43.18" x2="306.07" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="45.72" x2="297.18" y2="45.72" width="0.1524" layer="91"/>
+<label x="300.99" y="45.72" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="!OE"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="25.4" x2="121.92" y2="50.8" width="0.1524" layer="91"/>
-<label x="121.92" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L37P_3"/>
+<wire x1="124.46" y1="25.4" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="124.46" y="27.94" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L37N_3"/>
 </segment>
 </net>
 <net name="CS" class="0">
 <segment>
-<wire x1="278.13" y1="48.26" x2="275.59" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="275.59" y1="50.8" x2="266.7" y2="50.8" width="0.1524" layer="91"/>
-<label x="270.51" y="50.8" size="1.778" layer="95"/>
+<wire x1="308.61" y1="48.26" x2="306.07" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="306.07" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
+<label x="300.99" y="50.8" size="1.778" layer="95"/>
 <pinref part="SRAM" gate="SRAM" pin="!CS"/>
 </segment>
 <segment>
@@ -18142,12 +18142,12 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="RESET" class="0">
 <segment>
-<wire x1="182.88" y1="63.5" x2="203.2" y2="63.5" width="0.2032" layer="91"/>
-<wire x1="203.2" y1="63.5" x2="208.28" y2="63.5" width="0.2032" layer="91"/>
-<wire x1="208.28" y1="63.5" x2="208.28" y2="66.04" width="0.2032" layer="91"/>
-<junction x="208.28" y="66.04"/>
-<junction x="208.28" y="63.5"/>
-<junction x="203.2" y="63.5"/>
+<wire x1="182.88" y1="63.5" x2="231.14" y2="63.5" width="0.2032" layer="91"/>
+<wire x1="231.14" y1="63.5" x2="236.22" y2="63.5" width="0.2032" layer="91"/>
+<wire x1="236.22" y1="63.5" x2="236.22" y2="66.04" width="0.2032" layer="91"/>
+<junction x="236.22" y="66.04"/>
+<junction x="236.22" y="63.5"/>
+<junction x="231.14" y="63.5"/>
 <pinref part="S6" gate="B2" pin="PROGRAM_B_2"/>
 <pinref part="SW2" gate="G$1" pin="P1"/>
 <pinref part="SW2" gate="G$1" pin="P"/>
@@ -18622,11 +18622,11 @@ then make it smaller surface mount part or remove it.</text>
 <segment>
 <label x="182.88" y="66.04" size="1.778" layer="95"/>
 <pinref part="S6" gate="B2" pin="IO_L65P_INIT_B_2"/>
-<wire x1="182.88" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="66.04" x2="212.09" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R8" gate="A" pin="1"/>
-<wire x1="195.58" y1="66.04" x2="199.39" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="67.31" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
-<junction x="195.58" y="66.04"/>
+<wire x1="213.36" y1="66.04" x2="212.09" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="67.31" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
+<junction x="213.36" y="66.04"/>
 </segment>
 </net>
 <net name="MEGA_D13" class="0">
@@ -18839,13 +18839,6 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U5" gate="ARDUINO_MEGA" pin="A0"/>
 </segment>
 </net>
-<net name="BD3_MPSSE_TMS" class="0">
-<segment>
-<wire x1="124.46" y1="25.4" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
-<label x="124.46" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L37N_3"/>
-</segment>
-</net>
 <net name="5V0" class="0">
 <segment>
 <wire x1="-358.14" y1="266.7" x2="-340.36" y2="266.7" width="0.2032" layer="91"/>
@@ -18984,82 +18977,40 @@ then make it smaller surface mount part or remove it.</text>
 <net name="A18" class="0">
 <segment>
 <pinref part="SRAM" gate="SRAM" pin="A18/NC"/>
-<wire x1="229.87" y1="45.974" x2="232.156" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="232.156" y1="48.26" x2="241.3" y2="48.26" width="0.1524" layer="91"/>
-<label x="234.95" y="48.26" size="1.778" layer="95"/>
+<wire x1="260.35" y1="45.974" x2="262.636" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="262.636" y1="48.26" x2="271.78" y2="48.26" width="0.1524" layer="91"/>
+<label x="265.43" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="73.66" x2="182.88" y2="73.66" width="0.1524" layer="91"/>
-<label x="182.88" y="73.66" size="1.778" layer="95"/>
-<pinref part="S6" gate="B2" pin="IO_L64N_D9_2"/>
+<wire x1="134.62" y1="25.4" x2="134.62" y2="50.8" width="0.1524" layer="91"/>
+<label x="134.62" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L2N_3"/>
 </segment>
 </net>
 <net name="A19" class="0">
 <segment>
 <pinref part="SRAM" gate="SRAM" pin="A19/NC"/>
-<wire x1="229.87" y1="43.18" x2="232.41" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="232.41" y1="45.72" x2="241.3" y2="45.72" width="0.1524" layer="91"/>
-<label x="234.95" y="45.72" size="1.778" layer="95"/>
+<wire x1="260.35" y1="43.18" x2="262.89" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="262.89" y1="45.72" x2="271.78" y2="45.72" width="0.1524" layer="91"/>
+<label x="265.43" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="137.16" y1="25.4" x2="137.16" y2="50.8" width="0.1524" layer="91"/>
-<label x="137.16" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L1P_3"/>
-</segment>
-</net>
-<net name="ARDUINO_RESET" class="0">
-<segment>
-<wire x1="139.7" y1="25.4" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
-<label x="139.7" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L1N_VREF_3"/>
-</segment>
-</net>
-<net name="BD1_MPSSE_TDI" class="0">
-<segment>
-<wire x1="116.84" y1="25.4" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
-<label x="116.84" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L41P_GCLK27_3"/>
-</segment>
-</net>
-<net name="BD2_MPSSE_TDO" class="0">
-<segment>
-<wire x1="119.38" y1="25.4" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
-<label x="119.38" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L41N_GCLK26_3"/>
-</segment>
-</net>
-<net name="BD0_MPSSE_TCK" class="0">
-<segment>
-<wire x1="114.3" y1="25.4" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
-<label x="114.3" y="27.94" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L42N_GCLK24_3"/>
+<wire x1="205.74" y1="76.2" x2="182.88" y2="76.2" width="0.1524" layer="91"/>
+<label x="182.88" y="76.2" size="1.778" layer="95"/>
+<pinref part="S6" gate="B2" pin="IO_L62P_D5_2"/>
 </segment>
 </net>
 <net name="A20" class="0">
 <segment>
-<wire x1="132.08" y1="25.4" x2="132.08" y2="50.8" width="0.1524" layer="91"/>
-<label x="132.08" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L2P_3"/>
-</segment>
-<segment>
 <pinref part="SRAM" gate="SRAM" pin="A20/NC"/>
-<wire x1="229.87" y1="39.37" x2="233.68" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="43.18" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
-<label x="234.8992" y="43.2562" size="1.778" layer="95"/>
+<wire x1="260.35" y1="39.37" x2="264.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="43.18" x2="271.78" y2="43.18" width="0.1524" layer="91"/>
+<label x="265.3792" y="43.2562" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="AD4-DTR" class="0">
 <segment>
-<wire x1="111.76" y1="25.4" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="111.76" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L42P_GCLK25_TRDY2_3"/>
-</segment>
-</net>
-<net name="BD4-DTR" class="0">
-<segment>
-<wire x1="86.36" y1="25.4" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="86.36" y="38.1" size="1.778" layer="95" rot="R90"/>
-<pinref part="S6" gate="B3" pin="IO_L51P_3"/>
+<wire x1="127" y1="25.4" x2="127" y2="50.8" width="0.1524" layer="91"/>
+<label x="127" y="38.1" size="1.778" layer="95" rot="R90"/>
+<pinref part="S6" gate="B3" pin="IO_L36P_3"/>
 </segment>
 </net>
 <net name="SW0" class="0">
@@ -19074,6 +19025,55 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="-320.1924" y1="27.94" x2="-314.96" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-320.1924" y="27.94"/>
 <label x="-314.96" y="27.94" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="AD4-DTR" class="0">
+<segment>
+<wire x1="205.74" y1="83.82" x2="182.88" y2="83.82" width="0.1524" layer="91"/>
+<label x="182.88" y="83.82" size="1.778" layer="95"/>
+<pinref part="S6" gate="B2" pin="IO_L49N_D4_2"/>
+</segment>
+</net>
+<net name="BD0_MPSSE_TCK" class="0">
+<segment>
+<wire x1="205.74" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
+<label x="182.88" y="81.28" size="1.778" layer="95"/>
+<pinref part="S6" gate="B2" pin="IO_L49P_D3_2"/>
+</segment>
+</net>
+<net name="BD3_MPSSE_TMS" class="0">
+<segment>
+<wire x1="17.78" y1="96.52" x2="38.1" y2="96.52" width="0.1524" layer="91"/>
+<label x="20.32" y="96.52" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L4P_0"/>
+</segment>
+</net>
+<net name="BD4-DTR" class="0">
+<segment>
+<wire x1="17.78" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<label x="20.32" y="93.98" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L4N_0"/>
+</segment>
+</net>
+<net name="BD1_MPSSE_TDI" class="0">
+<segment>
+<wire x1="17.78" y1="91.44" x2="38.1" y2="91.44" width="0.1524" layer="91"/>
+<label x="20.32" y="91.44" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L3P_0"/>
+</segment>
+</net>
+<net name="ARD_RESET" class="0">
+<segment>
+<wire x1="17.78" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<label x="20.32" y="88.9" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L3N_0"/>
+</segment>
+</net>
+<net name="BD2_MPSSE_TDO" class="0">
+<segment>
+<wire x1="30.48" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="33.02" y="83.82" size="1.778" layer="95"/>
+<pinref part="S6" gate="B0" pin="IO_L2N_0"/>
 </segment>
 </net>
 </nets>
@@ -20586,7 +20586,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U1" gate="G$1" pin="(INT6/AIN0)PE6"/>
 </segment>
 </net>
-<net name="ARDUINO_RESET" class="0">
+<net name="ARD_RESET" class="0">
 <segment>
 <wire x1="-7.62" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="-43.18" y1="121.92" x2="-43.18" y2="119.38" width="0.1524" layer="91"/>
