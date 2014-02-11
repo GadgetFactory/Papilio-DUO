@@ -6042,6 +6042,40 @@ Source: www.kingbright.com</description>
 <rectangle x1="-0.3048" y1="0.9652" x2="0.3048" y2="1.5748" layer="51"/>
 <rectangle x1="-0.3048" y1="-1.5748" x2="0.3048" y2="-0.9652" layer="51"/>
 </package>
+<package name="JP2">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-3.81" y1="-1.016" x2="-3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="-1.27" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.556" y1="1.27" x2="3.81" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="1.016" x2="3.81" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.27" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="-1.016" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.27" x2="-1.27" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="1.016" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.27" x2="-3.556" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.27" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.81" y1="-1.016" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-1.27" x2="-1.016" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.27" x2="-3.556" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0" drill="0.9144" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.9144" shape="long" rot="R90"/>
+<text x="-3.556" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-2.667" size="0.9906" layer="21" ratio="12">1</text>
+<text x="0" y="-2.667" size="0.9906" layer="21" ratio="12">2</text>
+<text x="2.54" y="-2.667" size="0.9906" layer="21" ratio="12">3</text>
+<text x="-3.556" y="-4.318" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.8448" y1="-0.3048" x2="-2.2352" y2="0.3048" layer="51"/>
+<rectangle x1="-0.3048" y1="-0.3048" x2="0.3048" y2="0.3048" layer="51"/>
+<rectangle x1="2.2352" y1="-0.3048" x2="2.8448" y2="0.3048" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JP2E">
@@ -6058,6 +6092,23 @@ Source: www.kingbright.com</description>
 <pin name="1" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="2" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
+<symbol name="JP3E">
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="1.27" width="0.4064" layer="94"/>
+<wire x1="-3.175" y1="0" x2="3.175" y2="0" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0" x2="3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="3.175" y1="0.635" x2="-3.175" y2="0.635" width="0.4064" layer="94"/>
+<wire x1="-3.175" y1="0.635" x2="-3.175" y2="0" width="0.4064" layer="94"/>
+<text x="-3.81" y="0" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="2" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="2.54" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="JP1E" prefix="JP" uservalue="yes">
@@ -6070,6 +6121,24 @@ Source: www.kingbright.com</description>
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JP2E" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="JP3E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JP2">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -7109,12 +7178,6 @@ Source: www.kingbright.com</description>
 <packages>
 </packages>
 <symbols>
-<symbol name="5V">
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="3.3V">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
@@ -7134,18 +7197,6 @@ Source: www.kingbright.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V">
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="3.3V" prefix="P+">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
@@ -16473,9 +16524,6 @@ Source: RS Component / Phycomp</description>
 <part name="OSC" library="MondoCPLDCore-XC95_Rev1.5" deviceset="OSC1" device=""/>
 <part name="C27" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
 <part name="FRAME2" library="Bogdan_Commons" deviceset="FRAME-A4L-LOC" device=""/>
-<part name="R5" library="GadgetFactory" deviceset="R" device="0805" value="1K8"/>
-<part name="PWR" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="V4" library="supply2" deviceset="GND" device=""/>
 <part name="FRAME4" library="Bogdan_Commons" deviceset="FRAME-A4L-LOC" device=""/>
 <part name="FLASH" library="GadgetFactory" deviceset="FLASH-SPI-25XX" device="SMD1"/>
 <part name="S6" library="xilinx_devices" deviceset="6SLX9TQG144" device=""/>
@@ -16554,7 +16602,6 @@ Source: RS Component / Phycomp</description>
 <part name="IC1" library="DP-EagleLibrary" deviceset="FT2232H" device="" value="FT2232H"/>
 <part name="FRAME3" library="frames" deviceset="LETTER_L" device=""/>
 <part name="L4" library="dp_devices" deviceset="FERRITE_BEAD" device="603"/>
-<part name="U$10" library="SparkFun" deviceset="5V" device=""/>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U$11" library="SparkFun" deviceset="1.8V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -16672,6 +16719,7 @@ Source: RS Component / Phycomp</description>
 <part name="R49" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
 <part name="3V3_PWR13" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="U3" library="Bogdan_Commons" deviceset="DIGITAL-EEPROM-MICROWIRE-6P" device="_SOT23" value="93C46B"/>
+<part name="PWRSELECT" library="jumper" deviceset="JP2E" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16736,11 +16784,6 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="OSC" gate="G$1" x="-337.82" y="76.2"/>
 <instance part="C27" gate="A" x="-142.24" y="167.64" rot="R270"/>
 <instance part="FRAME2" gate="A" x="-375.92" y="-66.04"/>
-<instance part="R5" gate="A" x="-320.04" y="228.6"/>
-<instance part="PWR" gate="G$1" x="-327.66" y="228.6" rot="R270"/>
-<instance part="V4" gate="GND" x="-335.28" y="228.6" smashed="yes" rot="R270">
-<attribute name="VALUE" x="-337.185" y="226.695" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="FRAME4" gate="A" x="-375.92" y="114.3"/>
 <instance part="FLASH" gate="G$1" x="-325.12" y="-38.1"/>
 <instance part="S6" gate="B0" x="43.18" y="106.68" rot="R180"/>
@@ -16748,18 +16791,18 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="S6" gate="B2" x="177.8" y="101.6"/>
 <instance part="S6" gate="B3" x="111.76" y="55.88" rot="R270"/>
 <instance part="S6" gate="BGND" x="-226.06" y="236.22"/>
-<instance part="S6" gate="BNA" x="-193.04" y="233.68"/>
-<instance part="S6" gate="BVCCAUX" x="-162.56" y="231.14"/>
-<instance part="S6" gate="BVCCINT" x="-134.62" y="231.14"/>
+<instance part="S6" gate="BNA" x="144.78" y="-7.62"/>
+<instance part="S6" gate="BVCCAUX" x="-177.8" y="231.14"/>
+<instance part="S6" gate="BVCCINT" x="-149.86" y="231.14"/>
 <instance part="GND_PWR6" gate="A" x="270.51" y="30.48"/>
 <instance part="3V3_PWR14" gate="A" x="269.24" y="106.68"/>
 <instance part="GND_PWR1" gate="A" x="35.56" y="81.28" rot="R270"/>
 <instance part="GND_PWR2" gate="A" x="185.42" y="106.68" rot="R90"/>
 <instance part="3V3_PWR1" gate="A" x="198.12" y="132.08"/>
-<instance part="GND_PWR3" gate="A" x="-185.42" y="238.76" rot="R90"/>
+<instance part="GND_PWR3" gate="A" x="152.4" y="-2.54" rot="R90"/>
 <instance part="GND_PWR4" gate="A" x="-220.98" y="208.28"/>
-<instance part="3V3_PWR2" gate="A" x="-157.48" y="246.38"/>
-<instance part="1V2_PWR1" gate="A" x="-129.54" y="246.38"/>
+<instance part="3V3_PWR2" gate="A" x="-172.72" y="246.38"/>
+<instance part="1V2_PWR1" gate="A" x="-144.78" y="246.38"/>
 <instance part="3V3_PWR4" gate="A" x="154.94" y="53.34"/>
 <instance part="3V3_PWR5" gate="A" x="182.88" y="149.86"/>
 <instance part="3V3_PWR6" gate="A" x="71.12" y="165.1"/>
@@ -16989,10 +17032,6 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="C27" gate="A" pin="2"/>
 </segment>
 <segment>
-<pinref part="PWR" gate="G$1" pin="C"/>
-<pinref part="V4" gate="GND" pin="GND"/>
-</segment>
-<segment>
 <wire x1="273.05" y1="38.1" x2="271.78" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="38.1" x2="270.51" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="270.51" y1="38.1" x2="270.51" y2="35.56" width="0.1524" layer="91"/>
@@ -17125,8 +17164,8 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="AD0-JTAG_TCK" class="0">
 <segment>
-<wire x1="-187.96" y1="236.22" x2="-180.34" y2="236.22" width="0.2032" layer="91"/>
-<label x="-185.42" y="236.22" size="1.778" layer="95"/>
+<wire x1="149.86" y1="-5.08" x2="157.48" y2="-5.08" width="0.2032" layer="91"/>
+<label x="152.4" y="-5.08" size="1.778" layer="95"/>
 <pinref part="S6" gate="BNA" pin="TCK"/>
 </segment>
 <segment>
@@ -17137,8 +17176,8 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="AD2-JTAG_TDO" class="0">
 <segment>
-<wire x1="-187.96" y1="231.14" x2="-180.34" y2="231.14" width="0.2032" layer="91"/>
-<label x="-185.42" y="231.14" size="1.778" layer="95"/>
+<wire x1="149.86" y1="-10.16" x2="157.48" y2="-10.16" width="0.2032" layer="91"/>
+<label x="152.4" y="-10.16" size="1.778" layer="95"/>
 <pinref part="S6" gate="BNA" pin="TDO"/>
 </segment>
 <segment>
@@ -17149,8 +17188,8 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="AD1-JTAG_TDI" class="0">
 <segment>
-<wire x1="-187.96" y1="233.68" x2="-180.34" y2="233.68" width="0.2032" layer="91"/>
-<label x="-185.42" y="233.68" size="1.778" layer="95"/>
+<wire x1="149.86" y1="-7.62" x2="157.48" y2="-7.62" width="0.2032" layer="91"/>
+<label x="152.4" y="-7.62" size="1.778" layer="95"/>
 <pinref part="S6" gate="BNA" pin="TDI"/>
 </segment>
 <segment>
@@ -17161,8 +17200,8 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="AD3-JTAG_TMS" class="0">
 <segment>
-<wire x1="-187.96" y1="228.6" x2="-180.34" y2="228.6" width="0.2032" layer="91"/>
-<label x="-185.42" y="228.6" size="1.778" layer="95"/>
+<wire x1="149.86" y1="-12.7" x2="157.48" y2="-12.7" width="0.2032" layer="91"/>
+<label x="152.4" y="-12.7" size="1.778" layer="95"/>
 <pinref part="S6" gate="BNA" pin="TMS"/>
 </segment>
 <segment>
@@ -17237,16 +17276,16 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="3V3_PWR1" gate="A" pin="3V3"/>
 </segment>
 <segment>
-<wire x1="-157.48" y1="226.06" x2="-157.48" y2="228.6" width="0.2032" layer="91"/>
-<wire x1="-157.48" y1="228.6" x2="-157.48" y2="231.14" width="0.2032" layer="91"/>
-<wire x1="-157.48" y1="231.14" x2="-157.48" y2="233.68" width="0.2032" layer="91"/>
-<wire x1="-157.48" y1="233.68" x2="-157.48" y2="236.22" width="0.2032" layer="91"/>
-<wire x1="-157.48" y1="236.22" x2="-157.48" y2="243.84" width="0.2032" layer="91"/>
-<junction x="-157.48" y="236.22"/>
-<junction x="-157.48" y="233.68"/>
-<junction x="-157.48" y="231.14"/>
-<junction x="-157.48" y="228.6"/>
-<junction x="-157.48" y="226.06"/>
+<wire x1="-172.72" y1="226.06" x2="-172.72" y2="228.6" width="0.2032" layer="91"/>
+<wire x1="-172.72" y1="228.6" x2="-172.72" y2="231.14" width="0.2032" layer="91"/>
+<wire x1="-172.72" y1="231.14" x2="-172.72" y2="233.68" width="0.2032" layer="91"/>
+<wire x1="-172.72" y1="233.68" x2="-172.72" y2="236.22" width="0.2032" layer="91"/>
+<wire x1="-172.72" y1="236.22" x2="-172.72" y2="243.84" width="0.2032" layer="91"/>
+<junction x="-172.72" y="236.22"/>
+<junction x="-172.72" y="233.68"/>
+<junction x="-172.72" y="231.14"/>
+<junction x="-172.72" y="228.6"/>
+<junction x="-172.72" y="226.06"/>
 <pinref part="S6" gate="BVCCAUX" pin="VCCAUX@4"/>
 <pinref part="3V3_PWR2" gate="A" pin="3V3"/>
 <pinref part="S6" gate="BVCCAUX" pin="VCCAUX@0"/>
@@ -17461,7 +17500,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B2" pin="IO_L3P_D0_DIN_MISO_MISO1_2"/>
 </segment>
 </net>
-<net name="1V2" class="0">
+<net name="1V2" class="1">
 <segment>
 <wire x1="-220.98" y1="172.72" x2="-220.98" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="C21" gate="A" pin="1"/>
@@ -17479,28 +17518,22 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="C26" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="-129.54" y1="226.06" x2="-129.54" y2="228.6" width="0.2032" layer="91"/>
-<wire x1="-129.54" y1="228.6" x2="-129.54" y2="231.14" width="0.2032" layer="91"/>
-<wire x1="-129.54" y1="231.14" x2="-129.54" y2="233.68" width="0.2032" layer="91"/>
-<wire x1="-129.54" y1="233.68" x2="-129.54" y2="236.22" width="0.2032" layer="91"/>
-<wire x1="-129.54" y1="236.22" x2="-129.54" y2="243.84" width="0.2032" layer="91"/>
-<junction x="-129.54" y="226.06"/>
-<junction x="-129.54" y="228.6"/>
-<junction x="-129.54" y="231.14"/>
-<junction x="-129.54" y="233.68"/>
-<junction x="-129.54" y="236.22"/>
+<wire x1="-144.78" y1="226.06" x2="-144.78" y2="228.6" width="0.2032" layer="91"/>
+<wire x1="-144.78" y1="228.6" x2="-144.78" y2="231.14" width="0.2032" layer="91"/>
+<wire x1="-144.78" y1="231.14" x2="-144.78" y2="233.68" width="0.2032" layer="91"/>
+<wire x1="-144.78" y1="233.68" x2="-144.78" y2="236.22" width="0.2032" layer="91"/>
+<wire x1="-144.78" y1="236.22" x2="-144.78" y2="243.84" width="0.2032" layer="91"/>
+<junction x="-144.78" y="226.06"/>
+<junction x="-144.78" y="228.6"/>
+<junction x="-144.78" y="231.14"/>
+<junction x="-144.78" y="233.68"/>
+<junction x="-144.78" y="236.22"/>
 <pinref part="S6" gate="BVCCINT" pin="VCCINT@4"/>
 <pinref part="1V2_PWR1" gate="A" pin="1V2"/>
 <pinref part="S6" gate="BVCCINT" pin="VCCINT@3"/>
 <pinref part="S6" gate="BVCCINT" pin="VCCINT@2"/>
 <pinref part="S6" gate="BVCCINT" pin="VCCINT@1"/>
 <pinref part="S6" gate="BVCCINT" pin="VCCINT@0"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R5" gate="A" pin="1"/>
-<pinref part="PWR" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="A0" class="0">
@@ -18656,11 +18689,6 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U5" gate="ARDUINO_MEGA" pin="5V@0"/>
 <wire x1="-50.8" y1="88.9" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<wire x1="-314.96" y1="228.6" x2="-309.88" y2="228.6" width="0.2032" layer="91"/>
-<label x="-312.42" y="228.6" size="1.778" layer="95"/>
-<pinref part="R5" gate="A" pin="2"/>
-</segment>
 </net>
 <net name="ATMEGA_D2/SDA" class="0">
 <segment>
@@ -18983,7 +19011,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="3V3_PWR28" gate="A" pin="3V3"/>
 </segment>
 </net>
-<net name="1V2" class="0">
+<net name="1V2" class="1">
 <segment>
 <wire x1="236.22" y1="495.3" x2="238.76" y2="495.3" width="0.4064" layer="91"/>
 <wire x1="238.76" y1="495.3" x2="238.76" y2="490.22" width="0.1524" layer="91"/>
@@ -18997,7 +19025,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="1V2_PWR2" gate="A" pin="1V2"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="5V0" class="0">
 <segment>
 <wire x1="198.12" y1="502.92" x2="193.04" y2="502.92" width="0.4064" layer="91"/>
 <wire x1="193.04" y1="502.92" x2="193.04" y2="508" width="0.1524" layer="91"/>
@@ -19085,7 +19113,6 @@ then make it smaller surface mount part or remove it.</text>
 <attribute name="NAME" x="57.404" y="175.514" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="170.18" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$10" gate="G$1" x="33.02" y="144.78"/>
 <instance part="P+1" gate="G$1" x="68.58" y="144.78"/>
 <instance part="U$11" gate="G$1" x="93.98" y="137.16"/>
 <instance part="GND17" gate="1" x="93.98" y="127"/>
@@ -19142,6 +19169,7 @@ then make it smaller surface mount part or remove it.</text>
 </instance>
 <instance part="CONN1" gate="USB" x="12.7" y="142.24"/>
 <instance part="U3" gate="1" x="45.72" y="73.66" rot="MR0"/>
+<instance part="PWRSELECT" gate="1" x="20.32" y="170.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19151,7 +19179,7 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="106.68" y1="124.46" x2="35.56" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="124.46" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="142.24" x2="35.56" y2="142.24" width="0.1524" layer="91"/>
-<label x="20.32" y="142.24" size="1.778" layer="91"/>
+<label x="22.86" y="142.24" size="1.778" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DM"/>
 <pinref part="CONN1" gate="USB" pin="D-"/>
 </segment>
@@ -19161,7 +19189,7 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="17.78" y1="139.7" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="121.92" x2="33.02" y2="139.7" width="0.1524" layer="91"/>
-<label x="20.32" y="139.7" size="1.778" layer="91"/>
+<label x="22.86" y="139.7" size="1.778" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="DP"/>
 <pinref part="CONN1" gate="USB" pin="D+"/>
 </segment>
@@ -19266,15 +19294,6 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="17.78" y1="149.86" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="CONN1" gate="USB" pin="GND"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="5V" class="0">
-<segment>
-<wire x1="17.78" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
-<junction x="33.02" y="144.78"/>
-<pinref part="U$10" gate="G$1" pin="5V"/>
-<pinref part="CONN1" gate="USB" pin="VUSB"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -19749,6 +19768,31 @@ then make it smaller surface mount part or remove it.</text>
 <segment>
 <pinref part="TX1" gate="G$1" pin="C"/>
 <pinref part="R41" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="VI" class="0">
+<segment>
+<wire x1="22.86" y1="172.72" x2="25.4" y2="172.72" width="0.2032" layer="91"/>
+<label x="22.86" y="172.72" size="1.778" layer="95"/>
+<pinref part="PWRSELECT" gate="1" pin="3"/>
+</segment>
+</net>
+<net name="VBUS_A" class="0">
+<segment>
+<wire x1="33.02" y1="154.94" x2="33.02" y2="144.78" width="0.2032" layer="91"/>
+<wire x1="33.02" y1="165.1" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="167.64" x2="33.02" y2="167.64" width="0.2032" layer="91"/>
+<wire x1="33.02" y1="167.64" x2="33.02" y2="165.1" width="0.2032" layer="91"/>
+<pinref part="PWRSELECT" gate="1" pin="1"/>
+<pinref part="CONN1" gate="USB" pin="VUSB"/>
+<wire x1="17.78" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="5V0" class="0">
+<segment>
+<wire x1="22.86" y1="170.18" x2="25.4" y2="170.18" width="0.2032" layer="91"/>
+<label x="22.86" y="170.18" size="1.778" layer="95"/>
+<pinref part="PWRSELECT" gate="1" pin="2"/>
 </segment>
 </net>
 </nets>
@@ -20642,7 +20686,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="T1" gate="G$1" pin="S"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="5V0" class="0">
 <segment>
 <wire x1="111.76" y1="48.26" x2="40.64" y2="48.26" width="0.2032" layer="91"/>
 <label x="40.64" y="48.26" size="1.778" layer="95"/>
