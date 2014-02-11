@@ -18939,6 +18939,7 @@ then make it smaller surface mount part or remove it.</text>
 <attribute name="VALUE" x="179.705" y="434.975" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="PWRIN" gate="A" x="193.04" y="444.5" rot="R270"/>
+<instance part="PWRSELECT" gate="1" x="162.56" y="472.44" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19049,12 +19050,22 @@ then make it smaller surface mount part or remove it.</text>
 <label x="213.36" y="457.2" size="1.778" layer="95" rot="R90"/>
 <pinref part="R32" gate="A" pin="2"/>
 </segment>
-</net>
-<net name="VI" class="0">
+<segment>
+<wire x1="165.1" y1="472.44" x2="167.64" y2="472.44" width="0.2032" layer="91"/>
+<label x="165.1" y="472.44" size="1.778" layer="95"/>
+<pinref part="PWRSELECT" gate="1" pin="2"/>
+</segment>
 <segment>
 <wire x1="170.18" y1="444.5" x2="190.5" y2="444.5" width="0.2032" layer="91"/>
 <label x="172.72" y="444.5" size="1.778" layer="95"/>
 <pinref part="PWRIN" gate="A" pin="1"/>
+</segment>
+</net>
+<net name="VI" class="0">
+<segment>
+<wire x1="165.1" y1="474.98" x2="167.64" y2="474.98" width="0.2032" layer="91"/>
+<label x="165.1" y="474.98" size="1.778" layer="95"/>
+<pinref part="PWRSELECT" gate="1" pin="3"/>
 </segment>
 </net>
 <net name="SW_3V3" class="0">
@@ -19097,6 +19108,12 @@ then make it smaller surface mount part or remove it.</text>
 <segment>
 <pinref part="R32" gate="A" pin="1"/>
 <pinref part="PWR1" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="5V_FT2232" class="0">
+<segment>
+<wire x1="165.1" y1="469.9" x2="175.26" y2="469.9" width="0.2032" layer="91"/>
+<pinref part="PWRSELECT" gate="1" pin="1"/>
 </segment>
 </net>
 </nets>
@@ -19169,7 +19186,6 @@ then make it smaller surface mount part or remove it.</text>
 </instance>
 <instance part="CONN1" gate="USB" x="12.7" y="142.24"/>
 <instance part="U3" gate="1" x="45.72" y="73.66" rot="MR0"/>
-<instance part="PWRSELECT" gate="1" x="20.32" y="170.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -19770,29 +19786,11 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="R41" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="VI" class="0">
+<net name="5V_FT2232" class="0">
 <segment>
-<wire x1="22.86" y1="172.72" x2="25.4" y2="172.72" width="0.2032" layer="91"/>
-<label x="22.86" y="172.72" size="1.778" layer="95"/>
-<pinref part="PWRSELECT" gate="1" pin="3"/>
-</segment>
-</net>
-<net name="VBUS_A" class="0">
-<segment>
-<wire x1="33.02" y1="154.94" x2="33.02" y2="144.78" width="0.2032" layer="91"/>
-<wire x1="33.02" y1="165.1" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="167.64" x2="33.02" y2="167.64" width="0.2032" layer="91"/>
-<wire x1="33.02" y1="167.64" x2="33.02" y2="165.1" width="0.2032" layer="91"/>
-<pinref part="PWRSELECT" gate="1" pin="1"/>
 <pinref part="CONN1" gate="USB" pin="VUSB"/>
 <wire x1="17.78" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="5V0" class="0">
-<segment>
-<wire x1="22.86" y1="170.18" x2="25.4" y2="170.18" width="0.2032" layer="91"/>
-<label x="22.86" y="170.18" size="1.778" layer="95"/>
-<pinref part="PWRSELECT" gate="1" pin="2"/>
+<label x="22.86" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -20164,13 +20162,10 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U1" gate="G$1" pin="UGND"/>
 </segment>
 </net>
-<net name="XUSB" class="3">
+<net name="5V_ARDUINO" class="3">
 <segment>
-<wire x1="-81.28" y1="0" x2="-81.28" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="10.16" x2="-66.04" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="0" x2="-81.28" y2="0" width="0.1524" layer="91"/>
-<label x="-91.44" y="0" size="1.778" layer="95" rot="MR0"/>
-<label x="-78.74" y="10.16" size="1.778" layer="95"/>
+<label x="-81.28" y="0" size="1.778" layer="95" rot="MR0"/>
 <pinref part="J1" gate="G$1" pin="VBUS"/>
 </segment>
 </net>

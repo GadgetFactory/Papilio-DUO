@@ -10,19 +10,19 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="5" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="12" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="25" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -6019,7 +6019,9 @@ design rules under a new name.</description>
 <wire x1="34.29" y1="6.858" x2="34.29" y2="16.002" width="0.2032" layer="3"/>
 <wire x1="34.29" y1="16.002" x2="14.224" y2="36.068" width="0.2032" layer="3"/>
 <wire x1="14.224" y1="36.068" x2="14.224" y2="36.576" width="0.2032" layer="3"/>
+<contactref element="PWRIN" pad="1"/>
 <wire x1="92.964" y1="53.594" x2="99.06" y2="49.53" width="0" layer="19" extent="16-16"/>
+<wire x1="15.494" y1="40.386" x2="17.51" y2="43.561" width="0" layer="19" extent="1-1"/>
 <wire x1="68.3748" y1="4.64" x2="91.44" y2="20.32" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="MEGA_D0">
@@ -6041,9 +6043,7 @@ design rules under a new name.</description>
 <wire x1="67.056" y1="52.794" x2="67.348" y2="53.086" width="0.2032" layer="1"/>
 </signal>
 <signal name="VI">
-<contactref element="PWRIN" pad="1"/>
 <contactref element="PWRSELECT" pad="3"/>
-<wire x1="15.494" y1="40.386" x2="15.748" y2="40.386" width="0.8128" layer="16"/>
 <wire x1="15.748" y1="40.386" x2="16.764" y2="39.37" width="0.8128" layer="16"/>
 <wire x1="16.764" y1="39.37" x2="16.764" y2="36.576" width="0.8128" layer="16"/>
 </signal>
@@ -6663,7 +6663,7 @@ design rules under a new name.</description>
 <wire x1="75.946" y1="31.3586" x2="81.561" y2="31.758" width="0" layer="19" extent="16-16"/>
 <wire x1="73.787" y1="32.258" x2="75.946" y2="31.3586" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="XUSB" class="3">
+<signal name="5V_ARDUINO" class="3">
 <contactref element="J1" pad="P1"/>
 </signal>
 <signal name="ATMEGA_D2/SDA">
@@ -7076,12 +7076,12 @@ design rules under a new name.</description>
 <contactref element="R47" pad="2"/>
 <wire x1="81.561" y1="34.758" x2="93.18" y2="35.306" width="0" layer="19" extent="16-16"/>
 </signal>
-<signal name="VBUS_A">
-<contactref element="PWRSELECT" pad="1"/>
+<signal name="5V_FT2232">
 <contactref element="CONN1" pad="VUSB"/>
 <wire x1="8.188" y1="33.985" x2="10.109" y2="33.985" width="0.6096" layer="1"/>
 <wire x1="10.109" y1="33.985" x2="11.684" y2="35.56" width="0.6096" layer="1"/>
-<wire x1="11.684" y1="35.56" x2="11.684" y2="36.576" width="0.6096" layer="1"/>
+<contactref element="PWRSELECT" pad="1"/>
+<wire x1="11.684" y1="35.56" x2="11.684" y2="36.576" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
