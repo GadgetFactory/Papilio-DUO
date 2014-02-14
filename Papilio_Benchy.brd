@@ -9,8 +9,8 @@
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="6" fill="1" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="11" fill="1" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="5" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -85,42 +85,10 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="prix" color="7" fill="1" visible="no" active="yes"/>
-<layer number="132" name="test" color="12" fill="1" visible="no" active="yes"/>
-<layer number="133" name="Ports" color="1" fill="1" visible="no" active="yes"/>
-<layer number="134" name="Port2" color="11" fill="1" visible="no" active="yes"/>
-<layer number="135" name="Port3" color="13" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
-<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
-<layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
-<layer number="202" name="202bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="215" name="215bmp" color="16" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="17" fill="1" visible="no" active="yes"/>
-<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="yes"/>
-<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="yes"/>
-<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="yes"/>
-<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="yes"/>
-<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="yes"/>
-<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="yes"/>
-<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="yes"/>
-<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="yes"/>
-<layer number="231" name="Eagle3D_PG1" color="14" fill="1" visible="no" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="14" fill="2" visible="no" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="14" fill="4" visible="no" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -133,40 +101,6 @@
 <wire x1="101.6" y1="55.88" x2="101.6" y2="0" width="0.254" layer="20"/>
 <wire x1="101.6" y1="0" x2="0" y2="0" width="0.254" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="55.88" width="0.254" layer="20"/>
-<wire x1="60.96" y1="24.13" x2="60.96" y2="3.81" width="0.254" layer="132"/>
-<wire x1="60.96" y1="3.81" x2="63.5" y2="3.81" width="0.254" layer="132"/>
-<wire x1="63.5" y1="3.81" x2="63.5" y2="14.605" width="0.254" layer="132"/>
-<wire x1="63.5" y1="14.605" x2="63.5" y2="24.13" width="0.254" layer="132"/>
-<wire x1="63.5" y1="24.13" x2="60.96" y2="24.13" width="0.254" layer="132"/>
-<wire x1="5.08" y1="44.45" x2="5.08" y2="24.13" width="0.254" layer="132"/>
-<wire x1="5.08" y1="24.13" x2="7.62" y2="24.13" width="0.254" layer="132"/>
-<wire x1="7.62" y1="24.13" x2="7.62" y2="44.45" width="0.254" layer="132"/>
-<wire x1="7.62" y1="44.45" x2="5.08" y2="44.45" width="0.254" layer="132"/>
-<wire x1="60.96" y1="24.13" x2="60.96" y2="44.45" width="0.254" layer="133"/>
-<wire x1="60.96" y1="44.45" x2="63.5" y2="44.45" width="0.254" layer="133"/>
-<wire x1="63.5" y1="44.45" x2="63.5" y2="24.13" width="0.254" layer="133"/>
-<wire x1="63.5" y1="24.13" x2="60.96" y2="24.13" width="0.254" layer="133"/>
-<wire x1="68.58" y1="34.925" x2="63.627" y2="34.925" width="0.254" layer="133"/>
-<wire x1="5.08" y1="24.13" x2="5.08" y2="3.81" width="0.254" layer="133"/>
-<wire x1="5.08" y1="3.81" x2="7.62" y2="3.81" width="0.254" layer="133"/>
-<wire x1="7.62" y1="3.81" x2="7.62" y2="24.13" width="0.254" layer="133"/>
-<wire x1="7.62" y1="24.13" x2="5.08" y2="24.13" width="0.254" layer="133"/>
-<wire x1="-1.016" y1="13.589" x2="4.953" y2="13.589" width="0.254" layer="133"/>
-<wire x1="-0.508" y1="34.036" x2="4.953" y2="34.036" width="0.254" layer="132"/>
-<wire x1="68.58" y1="14.605" x2="63.5" y2="14.605" width="0.254" layer="132"/>
-<wire x1="58.42" y1="44.45" x2="58.42" y2="35.052" width="0.254" layer="134"/>
-<wire x1="58.42" y1="35.052" x2="58.42" y2="24.13" width="0.254" layer="134"/>
-<wire x1="58.42" y1="24.13" x2="60.96" y2="24.13" width="0.254" layer="134"/>
-<wire x1="60.96" y1="24.13" x2="60.96" y2="44.45" width="0.254" layer="134"/>
-<wire x1="60.96" y1="44.45" x2="58.42" y2="44.45" width="0.254" layer="134"/>
-<wire x1="50.292" y1="35.179" x2="58.293" y2="35.179" width="0.254" layer="134"/>
-<wire x1="58.293" y1="35.179" x2="58.42" y2="35.052" width="0.254" layer="134"/>
-<wire x1="58.42" y1="24.13" x2="58.42" y2="13.589" width="0.254" layer="135"/>
-<wire x1="58.42" y1="13.589" x2="58.42" y2="3.81" width="0.254" layer="135"/>
-<wire x1="58.42" y1="3.81" x2="60.96" y2="3.81" width="0.254" layer="135"/>
-<wire x1="60.96" y1="3.81" x2="60.96" y2="24.13" width="0.254" layer="135"/>
-<wire x1="60.96" y1="24.13" x2="58.42" y2="24.13" width="0.254" layer="135"/>
-<wire x1="50.292" y1="13.589" x2="58.42" y2="13.589" width="0.254" layer="135"/>
 <wire x1="82.296" y1="29.21" x2="82.296" y2="25.654" width="0.127" layer="21"/>
 <wire x1="82.296" y1="25.654" x2="83.312" y2="25.654" width="0.127" layer="21"/>
 <wire x1="83.312" y1="25.654" x2="83.312" y2="22.098" width="0.127" layer="21"/>
@@ -206,12 +140,6 @@
 <text x="71.882" y="3.1242" size="1.016" layer="21" font="vector" ratio="15">Copyright 2009-2012</text>
 <text x="72.136" y="1.6002" size="1.016" layer="21" font="vector" ratio="15">Gadget Factory, LLC</text>
 <text x="60.579" y="27.686" size="0.6096" layer="21" font="vector" ratio="16">8/4/2011</text>
-<text x="68.834" y="13.843" size="1.778" layer="132" font="vector" ratio="15">PORTA</text>
-<text x="68.961" y="34.163" size="1.778" layer="133" font="vector" ratio="15">PORTB</text>
-<text x="41.91" y="34.29" size="1.778" layer="134" font="vector" ratio="15">PORTC</text>
-<text x="41.91" y="12.7" size="1.778" layer="135" font="vector" ratio="15">PORTD</text>
-<text x="-8.89" y="33.02" size="1.778" layer="132" font="vector" ratio="15">PORTE</text>
-<text x="-8.89" y="12.7" size="1.778" layer="133" font="vector" ratio="15">PORTF</text>
 <text x="27.178" y="14.732" size="1.016" layer="25" font="vector" ratio="15">Reset</text>
 <text x="83.82" y="33.528" size="1.016" layer="21" font="vector" ratio="15" rot="R90">W3</text>
 <text x="83.82" y="26.67" size="1.016" layer="21" font="vector" ratio="15" rot="R90">W4</text>
@@ -4007,7 +3935,9 @@ design rules under a new name.</description>
 <element name="R6" library="GadgetFactory_6.0" package="0805" value="22R" x="7.62" y="40.132" rot="R270"/>
 <element name="SRAM" library="GadgetFactory" package="TSOP44-II" value="ISSI_SRAM_8BIT" x="36.83" y="26.67" rot="R180"/>
 <element name="R8" library="GadgetFactory" package="0603" value="4.7K" x="54.356" y="9.652"/>
-<element name="J4" library="saanlima" package="FCI-HDMI-TYPE-A-RECEPT" value="HDMI-TYPE-A-RECEPTICALFCI10029449" x="83.566" y="7.744" rot="MR270"/>
+<element name="J4" library="saanlima" package="FCI-HDMI-TYPE-A-RECEPT" value="HDMI-TYPE-A-RECEPTICALFCI10029449" x="83.566" y="7.744" smashed="yes" rot="MR270">
+<attribute name="NAME" x="74.156" y="8.994" size="1.27" layer="26" rot="MR270"/>
+</element>
 <element name="R10" library="saanlima" package="0402" value="10K" x="74.0982" y="7.3832" rot="MR0"/>
 <element name="R42" library="saanlima" package="0402" value="1K" x="70.232" y="11.058" rot="MR0"/>
 <element name="R43" library="saanlima" package="0402" value="1K" x="70.232" y="9.958" rot="MR0"/>
