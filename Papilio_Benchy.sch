@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="no"/>
@@ -15358,7 +15358,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B1" pin="IO_L41N_GCLK8_1"/>
 </segment>
 </net>
-<net name="MEGA_D28" class="0">
+<net name="MEGA_D28/A5" class="0">
 <segment>
 <wire x1="10.16" y1="58.42" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
 <label x="-5.08" y="58.42" size="1.778" layer="95"/>
@@ -15368,6 +15368,11 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="119.38" y1="180.34" x2="119.38" y2="162.56" width="0.1524" layer="91"/>
 <label x="119.38" y="165.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="S6" gate="B1" pin="IO_L42P_GCLK7_1"/>
+</segment>
+<segment>
+<wire x1="-68.58" y1="124.46" x2="-45.72" y2="124.46" width="0.1524" layer="91"/>
+<label x="-63.5" y="124.46" size="1.778" layer="95"/>
+<pinref part="U5" gate="ARDUINO_MEGA" pin="A5"/>
 </segment>
 </net>
 <net name="MEGA_D29" class="0">
@@ -15382,7 +15387,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B1" pin="IO_L42N_GCLK6_TRDY1_1"/>
 </segment>
 </net>
-<net name="MEGA_D30" class="0">
+<net name="MEGA_D30/A4" class="0">
 <segment>
 <wire x1="10.16" y1="53.34" x2="-20.32" y2="53.34" width="0.1524" layer="91"/>
 <label x="-5.08" y="53.34" size="1.778" layer="95"/>
@@ -15392,6 +15397,11 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="124.46" y1="180.34" x2="124.46" y2="162.56" width="0.1524" layer="91"/>
 <label x="124.46" y="165.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="S6" gate="B1" pin="IO_L43P_GCLK5_1"/>
+</segment>
+<segment>
+<wire x1="-68.58" y1="127" x2="-45.72" y2="127" width="0.1524" layer="91"/>
+<label x="-63.5" y="127" size="1.778" layer="95"/>
+<pinref part="U5" gate="ARDUINO_MEGA" pin="A4"/>
 </segment>
 </net>
 <net name="MEGA_D31" class="0">
@@ -15406,7 +15416,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B1" pin="IO_L43N_GCLK4_1"/>
 </segment>
 </net>
-<net name="MEGA_D32" class="0">
+<net name="MEGA_D32/A3" class="0">
 <segment>
 <wire x1="10.16" y1="48.26" x2="-20.32" y2="48.26" width="0.1524" layer="91"/>
 <label x="-5.08" y="48.26" size="1.778" layer="95"/>
@@ -15416,6 +15426,11 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="129.54" y1="180.34" x2="129.54" y2="162.56" width="0.1524" layer="91"/>
 <label x="129.54" y="165.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="S6" gate="B1" pin="IO_L45P_1"/>
+</segment>
+<segment>
+<wire x1="-68.58" y1="129.54" x2="-45.72" y2="129.54" width="0.1524" layer="91"/>
+<label x="-63.5" y="129.54" size="1.778" layer="95"/>
+<pinref part="U5" gate="ARDUINO_MEGA" pin="A3"/>
 </segment>
 </net>
 <net name="MEGA_D33" class="0">
@@ -15430,7 +15445,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S6" gate="B1" pin="IO_L45N_1"/>
 </segment>
 </net>
-<net name="MEGA_D34" class="0">
+<net name="MEGA_D34/A2" class="0">
 <segment>
 <wire x1="10.16" y1="43.18" x2="-20.32" y2="43.18" width="0.1524" layer="91"/>
 <label x="-5.08" y="43.18" size="1.778" layer="95"/>
@@ -15440,6 +15455,11 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="134.62" y1="180.34" x2="134.62" y2="162.56" width="0.1524" layer="91"/>
 <label x="134.62" y="165.1" size="1.778" layer="95" rot="R90"/>
 <pinref part="S6" gate="B1" pin="IO_L46P_1"/>
+</segment>
+<segment>
+<wire x1="-68.58" y1="132.08" x2="-45.72" y2="132.08" width="0.1524" layer="91"/>
+<label x="-63.5" y="132.08" size="1.778" layer="95"/>
+<pinref part="U5" gate="ARDUINO_MEGA" pin="A2"/>
 </segment>
 </net>
 <net name="MEGA_D35" class="0">
@@ -15840,34 +15860,6 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="20.32" y1="134.62" x2="38.1" y2="134.62" width="0.1524" layer="91"/>
 <label x="22.86" y="134.62" size="1.778" layer="95"/>
 <pinref part="S6" gate="B0" pin="IO_L65N_SCP2_0"/>
-</segment>
-</net>
-<net name="ATMEGA_A5" class="0">
-<segment>
-<wire x1="-68.58" y1="124.46" x2="-45.72" y2="124.46" width="0.1524" layer="91"/>
-<label x="-63.5" y="124.46" size="1.778" layer="95"/>
-<pinref part="U5" gate="ARDUINO_MEGA" pin="A5"/>
-</segment>
-</net>
-<net name="ATMEGA_A4" class="0">
-<segment>
-<wire x1="-68.58" y1="127" x2="-45.72" y2="127" width="0.1524" layer="91"/>
-<label x="-63.5" y="127" size="1.778" layer="95"/>
-<pinref part="U5" gate="ARDUINO_MEGA" pin="A4"/>
-</segment>
-</net>
-<net name="ATMEGA_A3" class="0">
-<segment>
-<wire x1="-68.58" y1="129.54" x2="-45.72" y2="129.54" width="0.1524" layer="91"/>
-<label x="-63.5" y="129.54" size="1.778" layer="95"/>
-<pinref part="U5" gate="ARDUINO_MEGA" pin="A3"/>
-</segment>
-</net>
-<net name="ATMEGA_A2" class="0">
-<segment>
-<wire x1="-68.58" y1="132.08" x2="-45.72" y2="132.08" width="0.1524" layer="91"/>
-<label x="-63.5" y="132.08" size="1.778" layer="95"/>
-<pinref part="U5" gate="ARDUINO_MEGA" pin="A2"/>
 </segment>
 </net>
 <net name="ATMEGA_A1" class="0">
@@ -17029,7 +17021,6 @@ then make it smaller surface mount part or remove it.</text>
 <description>Arduino</description>
 <plain>
 <text x="-99.06" y="15.24" size="3.81" layer="94" ratio="10" rot="MR0">USB</text>
-<text x="-13.97" y="156.21" size="1.778" layer="91">TODO: Reset Line... Protect FPGA if 5V.</text>
 </plain>
 <instances>
 <instance part="C6" gate="G$1" x="-66.04" y="88.9" rot="R180"/>
@@ -17422,7 +17413,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U1" gate="G$1" pin="(XCK1/#CTS)PD5"/>
 </segment>
 </net>
-<net name="ATMEGA_A2" class="0">
+<net name="MEGA_D34/A2" class="0">
 <segment>
 <wire x1="53.34" y1="55.88" x2="71.12" y2="55.88" width="0.1524" layer="91"/>
 <label x="63.5" y="55.88" size="1.778" layer="95"/>
@@ -17443,21 +17434,21 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="U1" gate="G$1" pin="(ADC0)PF0"/>
 </segment>
 </net>
-<net name="ATMEGA_A3" class="0">
+<net name="MEGA_D32/A3" class="0">
 <segment>
 <wire x1="53.34" y1="58.42" x2="71.12" y2="58.42" width="0.1524" layer="91"/>
 <label x="63.5" y="58.42" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(ADC5/TMS)PF5"/>
 </segment>
 </net>
-<net name="ATMEGA_A4" class="0">
+<net name="MEGA_D30/A4" class="0">
 <segment>
 <wire x1="53.34" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 <label x="63.5" y="60.96" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="(ADC6/TDO)PF6"/>
 </segment>
 </net>
-<net name="ATMEGA_A5" class="0">
+<net name="MEGA_D28/A5" class="0">
 <segment>
 <wire x1="53.34" y1="63.5" x2="71.12" y2="63.5" width="0.1524" layer="91"/>
 <label x="63.5" y="63.5" size="1.778" layer="95"/>
@@ -17617,32 +17608,18 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="J4" gate="G$1" pin="DATA1-"/>
 </segment>
 </net>
-<net name="MEGA_D51" class="0">
+<net name="MEGA_D49" class="0">
 <segment>
 <wire x1="190.5" y1="137.16" x2="40.64" y2="137.16" width="0.2032" layer="91"/>
 <label x="40.64" y="137.16" size="1.778" layer="95"/>
 <pinref part="J4" gate="G$1" pin="DATA0+"/>
 </segment>
 </net>
-<net name="MEGA_D52" class="0">
+<net name="MEGA_D50" class="0">
 <segment>
 <wire x1="190.5" y1="127" x2="40.64" y2="127" width="0.2032" layer="91"/>
 <label x="40.64" y="127" size="1.778" layer="95"/>
 <pinref part="J4" gate="G$1" pin="DATA0-"/>
-</segment>
-</net>
-<net name="MEGA_D49" class="0">
-<segment>
-<wire x1="190.5" y1="121.92" x2="40.64" y2="121.92" width="0.2032" layer="91"/>
-<label x="40.64" y="121.92" size="1.778" layer="95"/>
-<pinref part="J4" gate="G$1" pin="CLOCK+"/>
-</segment>
-</net>
-<net name="MEGA_D50" class="0">
-<segment>
-<wire x1="190.5" y1="111.76" x2="40.64" y2="111.76" width="0.2032" layer="91"/>
-<label x="40.64" y="111.76" size="1.778" layer="95"/>
-<pinref part="J4" gate="G$1" pin="CLOCK-"/>
 </segment>
 </net>
 <net name="MEGA_D53" class="0">
@@ -17850,6 +17827,20 @@ then make it smaller surface mount part or remove it.</text>
 <label x="152.4" y="50.8" size="1.778" layer="95"/>
 <pinref part="T1" gate="G$1" pin="D"/>
 <pinref part="R46" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="MEGA_D51" class="0">
+<segment>
+<wire x1="190.5" y1="121.92" x2="40.64" y2="121.92" width="0.2032" layer="91"/>
+<label x="40.64" y="121.92" size="1.778" layer="95"/>
+<pinref part="J4" gate="G$1" pin="CLOCK+"/>
+</segment>
+</net>
+<net name="MEGA_D52" class="0">
+<segment>
+<wire x1="190.5" y1="111.76" x2="40.64" y2="111.76" width="0.2032" layer="91"/>
+<label x="40.64" y="111.76" size="1.778" layer="95"/>
+<pinref part="J4" gate="G$1" pin="CLOCK-"/>
 </segment>
 </net>
 </nets>
