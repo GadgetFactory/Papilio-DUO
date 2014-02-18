@@ -15068,7 +15068,7 @@ then make it smaller surface mount part or remove it.</text>
 <label x="300.99" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="WE" class="0">
+<net name="!WE" class="0">
 <segment>
 <wire x1="308.61" y1="45.72" x2="306.07" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="306.07" y1="48.26" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
@@ -15081,7 +15081,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S1" gate="B3" pin="IO_L52P_3"/>
 </segment>
 </net>
-<net name="OE" class="0">
+<net name="!OE" class="0">
 <segment>
 <wire x1="308.61" y1="43.18" x2="306.07" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="306.07" y1="45.72" x2="297.18" y2="45.72" width="0.1524" layer="91"/>
@@ -15094,7 +15094,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S1" gate="B3" pin="IO_L37N_3"/>
 </segment>
 </net>
-<net name="CS" class="0">
+<net name="!CS" class="0">
 <segment>
 <wire x1="308.61" y1="48.26" x2="306.07" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="306.07" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
@@ -15957,7 +15957,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S1" gate="B3" pin="IO_L36P_3"/>
 </segment>
 </net>
-<net name="SW0" class="0">
+<net name="SW1" class="0">
 <segment>
 <pinref part="S1" gate="B1" pin="IO_L1N_VREF_1"/>
 <wire x1="86.36" y1="162.56" x2="86.36" y2="180.34" width="0.1524" layer="91"/>
@@ -17052,6 +17052,11 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="C105" gate="G$1" pin="2"/>
 <pinref part="U$40" gate="G$1" pin="COM"/>
 <pinref part="C101" gate="G$1" pin="2"/>
+<wire x1="-7.62" y1="124.46" x2="-38.1" y2="124.46" width="0.1524" layer="91"/>
+<label x="-35.56" y="124.46" size="1.778" layer="95"/>
+<pinref part="U101" gate="G$1" pin="GND3"/>
+<wire x1="-38.1" y1="124.46" x2="-38.1" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="129.54" x2="-40.64" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-104.14" y1="116.84" x2="-99.06" y2="116.84" width="0.1524" layer="91"/>
@@ -17261,20 +17266,6 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="AVRUSB" gate="G$1" pin="ID"/>
 </segment>
 </net>
-<net name="AGND" class="0">
-<segment>
-<wire x1="-7.62" y1="124.46" x2="-38.1" y2="124.46" width="0.1524" layer="91"/>
-<label x="-35.56" y="124.46" size="1.778" layer="95"/>
-<pinref part="U101" gate="G$1" pin="GND3"/>
-</segment>
-</net>
-<net name="ATMEGA_RXLED" class="0">
-<segment>
-<wire x1="53.34" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
-<label x="63.5" y="109.22" size="1.778" layer="95"/>
-<pinref part="U101" gate="G$1" pin="(SS/PCINT0)PB0"/>
-</segment>
-</net>
 <net name="ATMEGA_IO13*" class="0">
 <segment>
 <wire x1="-5.08" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
@@ -17316,13 +17307,6 @@ then make it smaller surface mount part or remove it.</text>
 <label x="-40.64" y="83.82" size="1.778" layer="95"/>
 <pinref part="C103" gate="G$1" pin="1"/>
 <pinref part="U101" gate="G$1" pin="UCAP"/>
-</segment>
-</net>
-<net name="ATMEGA_TXLED" class="0">
-<segment>
-<wire x1="71.12" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
-<label x="63.5" y="81.28" size="1.778" layer="95"/>
-<pinref part="U101" gate="G$1" pin="(XCK1/#CTS)PD5"/>
 </segment>
 </net>
 <net name="MEGA_D34/A2" class="0">
