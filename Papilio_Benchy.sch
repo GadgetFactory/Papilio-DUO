@@ -15984,7 +15984,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S1" gate="B2" pin="IO_L49N_D4_2"/>
 </segment>
 </net>
-<net name="BD0_MPSSE_TCK" class="0">
+<net name="BD0_TXD/MPSSE_TCK" class="0">
 <segment>
 <wire x1="205.74" y1="81.28" x2="182.88" y2="81.28" width="0.1524" layer="91"/>
 <label x="182.88" y="81.28" size="1.778" layer="95"/>
@@ -16005,7 +16005,7 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="S1" gate="B0" pin="IO_L4N_0"/>
 </segment>
 </net>
-<net name="BD1_MPSSE_TDI" class="0">
+<net name="BD1_RXD/MPSSE_TDI" class="0">
 <segment>
 <wire x1="30.48" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
 <label x="15.24" y="83.82" size="1.778" layer="95"/>
@@ -16735,14 +16735,14 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="IC1" gate="G$1" pin="BDBUS2/RTS#/TDO/DI"/>
 </segment>
 </net>
-<net name="BD1_MPSSE_TDI" class="0">
+<net name="BD1_RXD/MPSSE_TDI" class="0">
 <segment>
 <wire x1="185.42" y1="96.52" x2="195.58" y2="96.52" width="0.1524" layer="91"/>
 <label x="187.96" y="96.52" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="BDBUS1/RXD/TDI/DO"/>
 </segment>
 </net>
-<net name="BD0_MPSSE_TCK" class="0">
+<net name="BD0_TXD/MPSSE_TCK" class="0">
 <segment>
 <wire x1="185.42" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91"/>
 <label x="187.96" y="99.06" size="1.778" layer="95"/>
