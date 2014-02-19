@@ -17233,9 +17233,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="ATMEGA_IO12" class="0">
 <segment>
-<pinref part="U101" gate="G$1" pin="(SCLK/PCINT1)PB1"/>
-<wire x1="53.34" y1="111.76" x2="71.12" y2="111.76" width="0.1524" layer="91"/>
-<label x="63.5" y="111.76" size="1.778" layer="95"/>
+<pinref part="U101" gate="G$1" pin="(PD0/MISO/PCINT3)PB3"/>
+<wire x1="53.34" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
+<label x="63.5" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ATMEGA_D1/TX" class="0">
@@ -17274,9 +17274,9 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="R7" gate="A" pin="2"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
-<label x="63.5" y="93.98" size="1.778" layer="95"/>
-<pinref part="U101" gate="G$1" pin="(INT6/AIN0)PE6"/>
+<pinref part="U101" gate="G$1" pin="(SCLK/PCINT1)PB1"/>
+<wire x1="53.34" y1="111.76" x2="71.12" y2="111.76" width="0.1524" layer="91"/>
+<label x="63.5" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AVCC" class="0">
@@ -17360,9 +17360,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="ATMEGA_IO10*" class="0">
 <segment>
-<pinref part="U101" gate="G$1" pin="(PD0/MISO/PCINT3)PB3"/>
-<wire x1="53.34" y1="116.84" x2="71.12" y2="116.84" width="0.1524" layer="91"/>
-<label x="63.5" y="116.84" size="1.778" layer="95"/>
+<pinref part="U101" gate="G$1" pin="(SS/PCINT0)PB0"/>
+<wire x1="53.34" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<label x="63.5" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ATMEGA_IO9*" class="0">
@@ -17441,6 +17441,13 @@ then make it smaller surface mount part or remove it.</text>
 <wire x1="71.12" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
 <label x="63.5" y="101.6" size="1.778" layer="95"/>
 <pinref part="U101" gate="G$1" pin="(ICP3/CLK0/OC4A)PC7"/>
+</segment>
+</net>
+<net name="NC" class="0">
+<segment>
+<wire x1="73.66" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
+<label x="63.5" y="93.98" size="1.778" layer="95"/>
+<pinref part="U101" gate="G$1" pin="(INT6/AIN0)PE6"/>
 </segment>
 </net>
 </nets>
