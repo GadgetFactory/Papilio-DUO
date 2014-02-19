@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="1" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="yes"/>
@@ -45,7 +45,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
@@ -197,8 +197,8 @@
 <hole x="2.54" y="53.34" drill="3.2"/>
 <circle x="99.06" y="2.54" radius="1.905" width="0.127" layer="45"/>
 <hole x="99.06" y="2.54" drill="3.2"/>
-<dimension x1="2.54" y1="-1.27" x2="99.06" y2="-1.27" x3="50.8" y3="-3.81" textsize="1.778" layer="51" dtype="horizontal" unit="inch"/>
-<dimension x1="-2.54" y1="2.54" x2="-6.35" y2="53.34" x3="-5.08" y3="27.94" textsize="1.778" layer="51" dtype="vertical" unit="inch"/>
+<dimension x1="2.54" y1="-1.27" x2="99.06" y2="-1.27" x3="50.8" y3="-3.81" textsize="1.778" layer="51" dtype="horizontal" unit="inch" visible="yes"/>
+<dimension x1="-2.54" y1="2.54" x2="-6.35" y2="53.34" x3="-5.08" y3="27.94" textsize="1.778" layer="51" dtype="vertical" unit="inch" visible="yes"/>
 <wire x1="71.954" y1="8.85" x2="71.954" y2="8.05" width="0.12" layer="26"/>
 <wire x1="74.154" y1="8.85" x2="74.154" y2="8.05" width="0.12" layer="26"/>
 <wire x1="71.954" y1="8.85" x2="74.154" y2="8.85" width="0.12" layer="26"/>
@@ -239,6 +239,8 @@
 <text x="9.525" y="33.782" size="0.889" layer="25" ratio="14" rot="R270">FPGA USB</text>
 <text x="14.224" y="33.528" size="0.8128" layer="25" ratio="14" rot="R180">FPGA</text>
 <text x="13.843" y="42.418" size="0.8128" layer="25" ratio="14" rot="R180">AVR</text>
+<dimension x1="-11.43" y1="0" x2="-11.43" y2="55.88" x3="-10.16" y3="27.94" textsize="1.778" textratio="14" layer="51" unit="inch" visible="yes"/>
+<dimension x1="0" y1="-7.62" x2="101.6" y2="-7.62" x3="50.8" y3="-10.16" textsize="1.778" textratio="14" layer="51" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="MondoCPLDCore-XC95_Rev1.5">
