@@ -5715,11 +5715,11 @@ Source: www.kingbright.com</description>
 <text x="49.4157" y="55.118" size="1.016" layer="25" ratio="15" rot="R180">5</text>
 <text x="46.8757" y="52.197" size="1.016" layer="25" ratio="15" rot="R270">Analog In</text>
 <text x="3.81" y="17.272" size="1.016" layer="25" ratio="15">GND</text>
-<text x="3.81" y="19.812" size="1.016" layer="25" ratio="15">13</text>
-<text x="3.81" y="22.352" size="1.016" layer="25" ratio="15">12</text>
-<text x="3.81" y="24.892" size="1.016" layer="25" ratio="15">11</text>
-<text x="3.81" y="14.732" size="1.016" layer="25" ratio="15">NC</text>
-<text x="3.81" y="27.432" size="1.016" layer="25" ratio="15">10</text>
+<text x="3.81" y="19.812" size="1.016" layer="25" ratio="15">SCK 13</text>
+<text x="3.81" y="22.352" size="1.016" layer="25" ratio="15">MISO 12</text>
+<text x="3.81" y="24.892" size="1.016" layer="25" ratio="15">MOSI 11</text>
+<text x="3.81" y="14.732" size="1.016" layer="25" ratio="15">AREF</text>
+<text x="3.81" y="27.432" size="1.016" layer="25" ratio="15">SS  10</text>
 <text x="3.81" y="29.972" size="1.016" layer="25" ratio="15">9</text>
 <text x="3.81" y="32.512" size="1.016" layer="25" ratio="15">8</text>
 <text x="3.81" y="36.322" size="1.016" layer="25" ratio="15">7</text>
@@ -5731,14 +5731,14 @@ Source: www.kingbright.com</description>
 <text x="5.715" y="51.562" size="1.016" layer="25" ratio="15">TX</text>
 <text x="5.715" y="54.102" size="1.016" layer="25" ratio="15">RX</text>
 <text x="46.228" y="89.154" size="1.016" layer="25" rot="R90">GND</text>
-<text x="3.81" y="59.055" size="1.27" layer="25">14</text>
-<text x="3.81" y="61.595" size="1.27" layer="25">15</text>
-<text x="3.81" y="64.135" size="1.27" layer="25">16</text>
-<text x="3.81" y="66.675" size="1.27" layer="25">17</text>
-<text x="3.81" y="69.215" size="1.27" layer="25">18</text>
-<text x="3.81" y="71.755" size="1.27" layer="25">19</text>
-<text x="3.81" y="74.295" size="1.27" layer="25">20</text>
-<text x="3.81" y="76.835" size="1.27" layer="25">21</text>
+<text x="3.81" y="59.055" size="1.016" layer="25" ratio="15">14</text>
+<text x="3.81" y="61.595" size="1.016" layer="25" ratio="15">15</text>
+<text x="3.81" y="64.135" size="1.016" layer="25" ratio="15">16</text>
+<text x="3.81" y="66.675" size="1.016" layer="25" ratio="15">17</text>
+<text x="3.81" y="69.215" size="1.016" layer="25" ratio="15">18</text>
+<text x="3.81" y="71.755" size="1.016" layer="25" ratio="15">19</text>
+<text x="3.81" y="74.295" size="1.016" layer="25" ratio="15">20</text>
+<text x="3.81" y="76.835" size="1.016" layer="25" ratio="15">21</text>
 <text x="4.953" y="89.281" size="0.8128" layer="25" rot="R90">22</text>
 <text x="7.493" y="89.281" size="0.8128" layer="25" rot="R90">24</text>
 <text x="10.033" y="89.281" size="0.8128" layer="25" rot="R90">26</text>
@@ -5771,13 +5771,15 @@ Source: www.kingbright.com</description>
 <text x="37.973" y="81.153" size="0.8128" layer="25" rot="R90">48</text>
 <text x="40.513" y="81.153" size="0.8128" layer="25" rot="R90">50</text>
 <text x="43.053" y="81.153" size="0.8128" layer="25" rot="R90">52</text>
-<text x="5.588" y="48.26" size="0.8128" layer="25" rot="R270">5V Tolerant I/O</text>
-<text x="6.223" y="33.655" size="0.8128" layer="25" rot="R270">5V Tolerant I/O</text>
+<text x="12.573" y="42.545" size="0.8128" layer="25" rot="R270">5V Tolerant I/O</text>
 <text x="48.514" y="89.154" size="1.016" layer="25" rot="R90">3.3V</text>
 <text x="3.048" y="89.154" size="1.016" layer="25" rot="R90">GND</text>
 <text x="0.508" y="89.154" size="1.016" layer="25" rot="R90">3.3V</text>
 <hole x="2.54" y="81.28" drill="3.2"/>
 <hole x="50.8" y="6.35" drill="3.2"/>
+<wire x1="11.43" y1="20.32" x2="11.43" y2="54.61" width="0.127" layer="21"/>
+<wire x1="11.43" y1="54.61" x2="8.255" y2="54.61" width="0.127" layer="21"/>
+<wire x1="11.43" y1="20.32" x2="10.16" y2="20.32" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
