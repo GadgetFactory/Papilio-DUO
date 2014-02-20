@@ -181,6 +181,12 @@
 <symbol name="FRAME_A_L">
 <frame x1="0" y1="0" x2="279.4" y2="215.9" columns="6" rows="5" layer="94" border-bottom="no"/>
 </symbol>
+<symbol name="TABL_L">
+<wire x1="0" y1="0" x2="401.32" y2="0" width="0.4064" layer="94"/>
+<wire x1="401.32" y1="0" x2="401.32" y2="266.7" width="0.4064" layer="94"/>
+<wire x1="401.32" y1="266.7" x2="0" y2="266.7" width="0.4064" layer="94"/>
+<wire x1="0" y1="266.7" x2="0" y2="0" width="0.4064" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME_B_L" prefix="FRAME" uservalue="yes">
@@ -217,6 +223,21 @@ LETTER landscape</description>
 <gates>
 <gate name="G$1" symbol="FRAME_A_L" x="0" y="0" addlevel="always"/>
 <gate name="G$2" symbol="DOCFIELD" x="172.72" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TABL_L" prefix="FRAME" uservalue="yes">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+401 x 266 mm, landscape</description>
+<gates>
+<gate name="G$1" symbol="TABL_L" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="299.72" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="">
@@ -13677,7 +13698,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="S1" library="xilinx_devices" deviceset="6SLX9TQG144" device=""/>
 <part name="GND_PWR6" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="3V3_PWR14" library="Bogdan_Commons" deviceset="3V3" device=""/>
-<part name="GND_PWR1" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="GND_PWR2" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="3V3_PWR1" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="GND_PWR3" library="Bogdan_Commons" deviceset="GND" device=""/>
@@ -13855,6 +13875,9 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="R7" library="GadgetFactory_6.0" deviceset="R" device="0603" value="1K"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="3V3_PWR17" library="Bogdan_Commons" deviceset="3V3" device=""/>
+<part name="3V3_PWR18" library="Bogdan_Commons" deviceset="3V3" device=""/>
+<part name="FRAME6" library="frames" deviceset="LETTER_L" device=""/>
+<part name="FRAME7" library="frames" deviceset="TABL_L" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13865,37 +13888,32 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="-129.54" y1="149.86" x2="-129.54" y2="195.58" width="0.2032" layer="97"/>
 <wire x1="-129.54" y1="195.58" x2="-251.46" y2="195.58" width="0.2032" layer="97"/>
 <wire x1="-259.08" y1="99.06" x2="-259.08" y2="53.34" width="0.2032" layer="97"/>
-<wire x1="-259.08" y1="53.34" x2="-132.08" y2="53.34" width="0.2032" layer="97"/>
-<wire x1="-132.08" y1="53.34" x2="-132.08" y2="99.06" width="0.2032" layer="97"/>
-<wire x1="-132.08" y1="99.06" x2="-259.08" y2="99.06" width="0.2032" layer="97"/>
+<wire x1="-259.08" y1="53.34" x2="-205.74" y2="53.34" width="0.2032" layer="97"/>
+<wire x1="-205.74" y1="53.34" x2="-205.74" y2="99.06" width="0.2032" layer="97"/>
+<wire x1="-205.74" y1="99.06" x2="-259.08" y2="99.06" width="0.2032" layer="97"/>
 <text x="-101.6" y="-50.8" size="1.778" layer="91">JTAG Configuration</text>
-<text x="-101.6" y="-53.34" size="1.778" layer="91">HSWAP (H1_10) to ground to pull up all pins during configuration</text>
-<text x="-101.6" y="-55.88" size="1.778" layer="91">M0 (H2_2) is connected to VCCO_2</text>
-<text x="-101.6" y="-58.42" size="1.778" layer="91">M1(H1_39)  is connected to GND</text>
-<text x="-101.6" y="-60.96" size="1.778" layer="91">M2 (H1_38)  is connected to VCCO_2</text>
-<text x="-101.6" y="-63.5" size="1.778" layer="91">PROG_B (C12) asserting PROG_B caused a JTAG reconfiguration</text>
+<text x="-101.6" y="-53.34" size="1.778" layer="91">HSWAP to 3.3V to float all pins during configuration</text>
+<text x="-101.6" y="-55.88" size="1.778" layer="91">M0 is connected to 3.3V</text>
+<text x="-101.6" y="-58.42" size="1.778" layer="91">M1 is connected to GND</text>
+<text x="-101.6" y="-60.96" size="1.778" layer="91">PROG_B asserting PROG_B causes a JTAG reconfiguration</text>
 <text x="20.32" y="-50.8" size="1.778" layer="91">Power Requirements</text>
 <text x="20.32" y="-53.34" size="1.778" layer="91">VCCINT requires 1.2V</text>
-<text x="20.32" y="-55.88" size="1.778" layer="91">VCCAUX requires 2.5V</text>
+<text x="20.32" y="-55.88" size="1.778" layer="91">VCCAUX requires 3.3V</text>
 <text x="-248.92" y="190.5" size="1.778" layer="91">Decoupling Caps</text>
 <text x="-238.76" y="93.98" size="1.778" layer="91">JTAG</text>
-<text x="218.44" y="-35.56" size="2.1844" layer="91">Copyright 2012 Gadget Factory, LLC</text>
-<text x="-101.6" y="-33.02" size="2.1844" layer="91">This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License.</text>
+<text x="218.44" y="-35.56" size="2.1844" layer="91">Copyright 2014 Gadget Factory, LLC</text>
+<text x="-101.6" y="-33.02" size="2.1844" layer="91">This work is licensed under the Creative Commons Attribution-ShareAlike License.</text>
 <text x="-101.6" y="-35.56" size="1.27" layer="91">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
 <text x="218.44" y="-40.64" size="1.778" layer="91">See more details at www.GadgetFactory.net</text>
-<text x="-368.3" y="-58.42" size="1.016" layer="91">This work is licensed under the Creative Commons Non-Commercial Attribution License.</text>
+<text x="-368.3" y="-58.42" size="1.016" layer="91">This work is licensed under the Creative Commons Attribution Share-Alike License.</text>
 <text x="-368.3" y="-60.96" size="1.016" layer="91">To view a copy of this license, visit http://creativecommons.org/ ; or, (b) send a letter to Creative Commons, 171 2nd Street, Suite 300, San Francisco, California, 94105, USA.</text>
-<text x="-287.02" y="119.38" size="1.778" layer="91">RPAR is a reverse current shunt for 3.3V JTAG.</text>
-<text x="-200.66" y="127" size="2.54" layer="97">Power Section</text>
-<text x="-198.12" y="-53.34" size="2.54" layer="97">Peripheral Section</text>
+<text x="-205.74" y="127" size="2.54" layer="97">Power Connections</text>
+<text x="-208.28" y="-55.88" size="2.54" layer="97">Peripheral Section</text>
 <text x="266.7" y="-48.26" size="2.54" layer="97">FPGA Section</text>
 <text x="274.32" y="109.22" size="1.778" layer="98">IS62WV51216</text>
 <text x="274.32" y="111.76" size="1.778" layer="98">IS61WV25616</text>
 <text x="274.32" y="114.3" size="1.778" layer="98">CY7C1041D</text>
 <text x="228.6" y="60.96" size="1.778" layer="97">RESET</text>
-<text x="-35.56" y="220.98" size="1.778" layer="91">QUESTION: Reset switch control FPGA and Arduino? Or just FPGA and Arduino reset under FPGA control...</text>
-<text x="-368.3" y="15.24" size="1.778" layer="91">TODO: If this switch is too big or not practical during routing
-then make it smaller surface mount part or remove it.</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-109.22" y="-66.04"/>
@@ -13920,7 +13938,7 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="C26" gate="A" x="-142.24" y="167.64" rot="R270"/>
 <instance part="FRAME2" gate="A" x="-375.92" y="-66.04"/>
 <instance part="FRAME4" gate="A" x="-375.92" y="114.3"/>
-<instance part="FLASH" gate="G$1" x="-325.12" y="-38.1"/>
+<instance part="FLASH" gate="G$1" x="-190.5" y="17.78"/>
 <instance part="S1" gate="B0" x="43.18" y="106.68" rot="R180"/>
 <instance part="S1" gate="B1" x="111.76" y="157.48" rot="R90"/>
 <instance part="S1" gate="B2" x="177.8" y="101.6"/>
@@ -13931,7 +13949,6 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="S1" gate="BVCCINT" x="-149.86" y="231.14"/>
 <instance part="GND_PWR6" gate="A" x="270.51" y="30.48"/>
 <instance part="3V3_PWR14" gate="A" x="269.24" y="106.68"/>
-<instance part="GND_PWR1" gate="A" x="35.56" y="81.28" rot="R270"/>
 <instance part="GND_PWR2" gate="A" x="185.42" y="106.68" rot="R90"/>
 <instance part="3V3_PWR1" gate="A" x="198.12" y="132.08"/>
 <instance part="GND_PWR3" gate="A" x="152.4" y="-2.54" rot="R90"/>
@@ -14009,14 +14026,15 @@ then make it smaller surface mount part or remove it.</text>
 <attribute name="VALUE" x="216.662" y="68.58" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="3V3_PWR8" gate="A" x="213.36" y="78.74"/>
-<instance part="SW1" gate="SW" x="-326.5424" y="27.94" smashed="yes">
-<attribute name="NAME" x="-327.8124" y="34.29" size="1.27" layer="95" ratio="10"/>
+<instance part="SW1" gate="SW" x="-293.5224" y="2.54" smashed="yes">
+<attribute name="NAME" x="-294.7924" y="8.89" size="1.27" layer="95" ratio="10"/>
 </instance>
-<instance part="GND7" gate="1" x="-314.96" y="22.86"/>
-<instance part="3V3_PWR12" gate="A" x="-314.96" y="33.02"/>
+<instance part="GND7" gate="1" x="-281.94" y="-2.54"/>
+<instance part="3V3_PWR12" gate="A" x="-281.94" y="7.62"/>
 <instance part="3V3_PWR13" gate="A" x="-53.34" y="111.76"/>
-<instance part="GND12" gate="1" x="-358.14" y="25.4" rot="MR0"/>
-<instance part="3V3_PWR17" gate="A" x="-358.14" y="35.56" rot="MR0"/>
+<instance part="GND12" gate="1" x="-325.12" y="0" rot="MR0"/>
+<instance part="3V3_PWR17" gate="A" x="-325.12" y="10.16" rot="MR0"/>
+<instance part="3V3_PWR18" gate="A" x="35.56" y="81.28" rot="R90"/>
 </instances>
 <busses>
 <bus name="GND">
@@ -14154,9 +14172,9 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="OSC" gate="G$1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="-353.06" y1="-43.18" x2="-340.36" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="-340.36" y="-43.18"/>
-<label x="-353.06" y="-43.18" size="1.778" layer="95"/>
+<wire x1="-218.44" y1="12.7" x2="-205.74" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-205.74" y="12.7"/>
+<label x="-218.44" y="12.7" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -14177,10 +14195,6 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="SRAM" gate="SRAM" pin="VSS@2"/>
 <wire x1="271.78" y1="35.56" x2="270.51" y2="35.56" width="0.1524" layer="91"/>
 <junction x="271.78" y="35.56"/>
-</segment>
-<segment>
-<pinref part="S1" gate="B0" pin="IO_L1P_HSWAPEN_0"/>
-<pinref part="GND_PWR1" gate="A" pin="GND"/>
 </segment>
 <segment>
 <pinref part="S1" gate="B2" pin="IO_L13P_M1_2"/>
@@ -14262,10 +14276,10 @@ then make it smaller surface mount part or remove it.</text>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="-314.96" y1="25.4" x2="-320.1924" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-281.94" y1="0" x2="-287.1724" y2="0" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="SW" pin="CH2B"/>
-<wire x1="-320.1924" y1="25.4" x2="-322.58" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-320.1924" y="25.4"/>
+<wire x1="-287.1724" y1="0" x2="-289.56" y2="0" width="0.1524" layer="91"/>
+<junction x="-287.1724" y="0"/>
 </segment>
 <segment>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="GND@6"/>
@@ -14291,9 +14305,9 @@ then make it smaller surface mount part or remove it.</text>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="-358.14" y1="27.94" x2="-352.9076" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="-352.9076" y1="27.94" x2="-350.52" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-352.9076" y="27.94"/>
+<wire x1="-325.12" y1="2.54" x2="-319.8876" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-319.8876" y1="2.54" x2="-317.5" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-319.8876" y="2.54"/>
 </segment>
 </net>
 <net name="AD0-JTAG_TCK" class="0">
@@ -14360,21 +14374,21 @@ then make it smaller surface mount part or remove it.</text>
 <pinref part="C26" gate="A" pin="1"/>
 </segment>
 <segment>
-<wire x1="-299.72" y1="-35.56" x2="-309.88" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-35.56"/>
-<label x="-309.88" y="-35.56" size="1.778" layer="95"/>
+<wire x1="-165.1" y1="20.32" x2="-175.26" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-175.26" y="20.32"/>
+<label x="-175.26" y="20.32" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="VCC"/>
 </segment>
 <segment>
-<wire x1="-340.36" y1="-40.64" x2="-350.52" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-340.36" y="-40.64"/>
-<label x="-353.06" y="-40.64" size="1.778" layer="95"/>
+<wire x1="-205.74" y1="15.24" x2="-215.9" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-205.74" y="15.24"/>
+<label x="-218.44" y="15.24" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="WP"/>
 </segment>
 <segment>
-<wire x1="-299.72" y1="-38.1" x2="-309.88" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-38.1"/>
-<label x="-309.88" y="-38.1" size="1.778" layer="95"/>
+<wire x1="-165.1" y1="17.78" x2="-175.26" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-175.26" y="17.78"/>
+<label x="-175.26" y="17.78" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="HOLD"/>
 </segment>
 <segment>
@@ -14535,10 +14549,10 @@ then make it smaller surface mount part or remove it.</text>
 </segment>
 <segment>
 <pinref part="3V3_PWR12" gate="A" pin="3V3"/>
-<wire x1="-314.96" y1="30.48" x2="-320.1924" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-281.94" y1="5.08" x2="-287.1724" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="SW" pin="CH2A"/>
-<wire x1="-320.1924" y1="30.48" x2="-322.58" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-320.1924" y="30.48"/>
+<wire x1="-287.1724" y1="5.08" x2="-289.56" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-287.1724" y="5.08"/>
 </segment>
 <segment>
 <pinref part="3V3_PWR13" gate="A" pin="3V3"/>
@@ -14557,9 +14571,13 @@ then make it smaller surface mount part or remove it.</text>
 </segment>
 <segment>
 <pinref part="3V3_PWR17" gate="A" pin="3V3"/>
-<wire x1="-358.14" y1="33.02" x2="-352.9076" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="-352.9076" y1="33.02" x2="-350.52" y2="33.02" width="0.1524" layer="91"/>
-<junction x="-352.9076" y="33.02"/>
+<wire x1="-325.12" y1="7.62" x2="-319.8876" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-319.8876" y1="7.62" x2="-317.5" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-319.8876" y="7.62"/>
+</segment>
+<segment>
+<pinref part="S1" gate="B0" pin="IO_L1P_HSWAPEN_0"/>
+<pinref part="3V3_PWR18" gate="A" pin="3V3"/>
 </segment>
 </net>
 <net name="OSC_IN" class="0">
@@ -14590,9 +14608,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="FLASH_SI" class="0">
 <segment>
-<wire x1="-299.72" y1="-43.18" x2="-309.88" y2="-43.18" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-43.18"/>
-<label x="-309.88" y="-43.18" size="1.778" layer="95"/>
+<wire x1="-165.1" y1="12.7" x2="-175.26" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-175.26" y="12.7"/>
+<label x="-175.26" y="12.7" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="MOSI"/>
 </segment>
 <segment>
@@ -14603,9 +14621,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="FLASH_SCK" class="0">
 <segment>
-<wire x1="-299.72" y1="-40.64" x2="-309.88" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-309.88" y="-40.64"/>
-<label x="-309.88" y="-40.64" size="1.778" layer="95"/>
+<wire x1="-165.1" y1="15.24" x2="-175.26" y2="15.24" width="0.1524" layer="91"/>
+<junction x="-175.26" y="15.24"/>
+<label x="-175.26" y="15.24" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="SCK"/>
 </segment>
 <segment>
@@ -14616,9 +14634,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="FLASH_CS" class="0">
 <segment>
-<wire x1="-340.36" y1="-35.56" x2="-350.52" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="-340.36" y="-35.56"/>
-<label x="-353.06" y="-35.56" size="1.778" layer="95"/>
+<wire x1="-205.74" y1="20.32" x2="-215.9" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-205.74" y="20.32"/>
+<label x="-218.44" y="20.32" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="CS"/>
 </segment>
 <segment>
@@ -14629,9 +14647,9 @@ then make it smaller surface mount part or remove it.</text>
 </net>
 <net name="FLASH_SO" class="0">
 <segment>
-<wire x1="-353.06" y1="-38.1" x2="-340.36" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="-340.36" y="-38.1"/>
-<label x="-353.06" y="-38.1" size="1.778" layer="95"/>
+<wire x1="-218.44" y1="17.78" x2="-205.74" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-205.74" y="17.78"/>
+<label x="-218.44" y="17.78" size="1.778" layer="95"/>
 <pinref part="FLASH" gate="G$1" pin="MISO"/>
 </segment>
 <segment>
@@ -15966,17 +15984,17 @@ then make it smaller surface mount part or remove it.</text>
 <label x="86.36" y="165.1" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<wire x1="-322.58" y1="27.94" x2="-320.1924" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-289.56" y1="2.54" x2="-287.1724" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="SW1" gate="SW" pin="COM2"/>
-<wire x1="-320.1924" y1="27.94" x2="-314.96" y2="27.94" width="0.1524" layer="91"/>
-<junction x="-320.1924" y="27.94"/>
-<label x="-314.96" y="27.94" size="1.778" layer="95"/>
+<wire x1="-287.1724" y1="2.54" x2="-281.94" y2="2.54" width="0.1524" layer="91"/>
+<junction x="-287.1724" y="2.54"/>
+<label x="-281.94" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-350.52" y1="30.48" x2="-352.9076" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="-352.9076" y1="30.48" x2="-358.14" y2="30.48" width="0.1524" layer="91"/>
-<junction x="-352.9076" y="30.48"/>
-<label x="-358.14" y="30.48" size="1.778" layer="95" rot="MR0"/>
+<wire x1="-317.5" y1="5.08" x2="-319.8876" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-319.8876" y1="5.08" x2="-325.12" y2="5.08" width="0.1524" layer="91"/>
+<junction x="-319.8876" y="5.08"/>
+<label x="-325.12" y="5.08" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="AD4-DTR" class="0">
@@ -16040,7 +16058,7 @@ then make it smaller surface mount part or remove it.</text>
 <sheet>
 <description>Power</description>
 <plain>
-<text x="218.44" y="381" size="2.54" layer="97">Power Section</text>
+<text x="304.8" y="378.46" size="2.54" layer="97">Power Section</text>
 <text x="165.1" y="375.92" size="2.1844" layer="91">Copyright 2012 Gadget Factory, LLC</text>
 <text x="165.1" y="370.84" size="1.778" layer="91">See more details at www.GadgetFactory.net</text>
 <text x="198.12" y="523.24" size="1.778" layer="98">delays 1V2 start</text>
@@ -16075,6 +16093,8 @@ then make it smaller surface mount part or remove it.</text>
 </instance>
 <instance part="PWRIN" gate="A" x="193.04" y="444.5" rot="R270"/>
 <instance part="PWRSEL" gate="1" x="162.56" y="472.44" rot="R90"/>
+<instance part="FRAME6" gate="G$1" x="121.92" y="350.52"/>
+<instance part="FRAME6" gate="G$2" x="269.24" y="350.52"/>
 </instances>
 <busses>
 </busses>
@@ -16257,6 +16277,7 @@ then make it smaller surface mount part or remove it.</text>
 <sheet>
 <description>FT2232H</description>
 <plain>
+<text x="172.72" y="27.94" size="2.54" layer="97">FT2232H Section</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="142.24" y="93.98"/>
@@ -16935,6 +16956,8 @@ then make it smaller surface mount part or remove it.</text>
 <description>Arduino</description>
 <plain>
 <text x="-99.06" y="15.24" size="3.81" layer="94" ratio="10" rot="MR0">USB</text>
+<text x="111.76" y="-76.2" size="2.54" layer="97">Arduino Section</text>
+<text x="-160.02" y="-96.52" size="2.54" layer="97">This section is derived from the Arduino Leonardo Design and has the same license.</text>
 </plain>
 <instances>
 <instance part="C102" gate="G$1" x="-66.04" y="88.9" rot="R180"/>
@@ -16973,6 +16996,8 @@ then make it smaller surface mount part or remove it.</text>
 <instance part="3V3_PWR16" gate="A" x="-30.48" y="132.08"/>
 <instance part="R110" gate="A" x="-66.04" y="127" rot="R90"/>
 <instance part="R7" gate="A" x="30.48" y="-20.32" rot="R90"/>
+<instance part="FRAME7" gate="G$1" x="-215.9" y="-104.14"/>
+<instance part="FRAME7" gate="G$2" x="83.82" y="-104.14"/>
 </instances>
 <busses>
 </busses>
@@ -17459,6 +17484,7 @@ then make it smaller surface mount part or remove it.</text>
 <plain>
 <text x="182.88" y="27.94" size="5.08" layer="94">Saanlima Electronics</text>
 <text x="7.62" y="2.54" size="3.81" layer="97">Copyright Saanlima Electronics 2012</text>
+<text x="12.7" y="12.7" size="2.54" layer="97">This section is from the Pipistrello design with permission from Magnus.</text>
 </plain>
 <instances>
 <instance part="HDMI" gate="G$1" x="205.74" y="127"/>
@@ -17753,10 +17779,4 @@ then make it smaller surface mount part or remove it.</text>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
