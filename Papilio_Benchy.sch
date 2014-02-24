@@ -5721,10 +5721,10 @@ Source: www.kingbright.com</description>
 <wire x1="3.81" y1="34.29" x2="3.81" y2="13.97" width="0.127" layer="130"/>
 <wire x1="3.81" y1="13.97" x2="1.27" y2="13.97" width="0.127" layer="130"/>
 <wire x1="1.27" y1="13.97" x2="1.27" y2="34.29" width="0.127" layer="130"/>
-<wire x1="49.53" y1="22.86" x2="52.07" y2="22.86" width="0.127" layer="130"/>
-<wire x1="52.07" y1="22.86" x2="52.07" y2="38.1" width="0.127" layer="130"/>
+<wire x1="49.53" y1="20.32" x2="52.07" y2="20.32" width="0.127" layer="130"/>
+<wire x1="52.07" y1="20.32" x2="52.07" y2="38.1" width="0.127" layer="130"/>
 <wire x1="52.07" y1="38.1" x2="49.53" y2="38.1" width="0.127" layer="130"/>
-<wire x1="49.53" y1="38.1" x2="49.53" y2="22.86" width="0.127" layer="130"/>
+<wire x1="49.53" y1="38.1" x2="49.53" y2="20.32" width="0.127" layer="130"/>
 <wire x1="52.07" y1="40.64" x2="49.53" y2="40.64" width="0.127" layer="130"/>
 <wire x1="49.53" y1="40.64" x2="49.53" y2="55.88" width="0.127" layer="130"/>
 <wire x1="49.53" y1="55.88" x2="52.07" y2="55.88" width="0.127" layer="130"/>
@@ -5750,17 +5750,12 @@ Source: www.kingbright.com</description>
 <wire x1="49.53" y1="88.9" x2="46.99" y2="88.9" width="0.127" layer="130"/>
 <wire x1="46.99" y1="88.9" x2="44.45" y2="88.9" width="0.127" layer="130"/>
 <wire x1="46.99" y1="88.9" x2="46.99" y2="83.82" width="0.127" layer="130"/>
-<wire x1="-1.27" y1="88.9" x2="-1.27" y2="83.82" width="0.127" layer="130"/>
-<wire x1="-1.27" y1="88.9" x2="1.27" y2="88.9" width="0.127" layer="130"/>
 <wire x1="1.27" y1="88.9" x2="3.81" y2="88.9" width="0.127" layer="130"/>
-<wire x1="-1.27" y1="83.82" x2="1.27" y2="83.82" width="0.127" layer="130"/>
 <wire x1="1.27" y1="83.82" x2="3.81" y2="83.82" width="0.127" layer="130"/>
 <wire x1="1.27" y1="88.9" x2="1.27" y2="83.82" width="0.127" layer="130"/>
 <pad name="3.3V" x="50.8" y="26.67" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="3V3@1" x="48.26" y="85.09" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="3V3@2" x="48.26" y="87.63" drill="1" diameter="1.4224" rot="R90"/>
-<pad name="3V3@3" x="0" y="85.09" drill="1" diameter="1.4224" rot="R90"/>
-<pad name="3V3@4" x="0" y="87.63" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="5V@0" x="50.8" y="29.21" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="A0" x="50.8" y="41.91" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="A1" x="50.8" y="44.45" drill="1" diameter="1.4224" rot="R90"/>
@@ -5826,8 +5821,8 @@ Source: www.kingbright.com</description>
 <pad name="GND@2" x="2.54" y="17.526" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="GND@3" x="45.72" y="85.09" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="GND@4" x="45.72" y="87.63" drill="1" diameter="1.4224" rot="R90"/>
-<pad name="GND@5" x="2.54" y="85.09" drill="1" diameter="1.4224" rot="R90"/>
-<pad name="GND@6" x="2.54" y="87.63" drill="1" diameter="1.4224" rot="R90"/>
+<pad name="5V@1" x="2.54" y="85.09" drill="1" diameter="1.4224" rot="R90"/>
+<pad name="5V@2" x="2.54" y="87.63" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="RES" x="50.8" y="24.13" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="RX" x="2.54" y="54.61" drill="1" diameter="1.4224" rot="R90"/>
 <pad name="TX" x="2.54" y="52.07" drill="1" diameter="1.4224" rot="R90"/>
@@ -5904,13 +5899,14 @@ Source: www.kingbright.com</description>
 <text x="43.053" y="81.153" size="0.8128" layer="130" rot="R90">52</text>
 <text x="11.938" y="42.545" size="0.8128" layer="130" rot="R270">5V Tolerant I/O</text>
 <text x="48.514" y="89.154" size="1.016" layer="130" rot="R90">3.3V</text>
-<text x="3.048" y="89.154" size="1.016" layer="130" rot="R90">GND</text>
-<text x="0.508" y="89.154" size="1.016" layer="130" rot="R90">3.3V</text>
+<text x="3.048" y="89.154" size="1.016" layer="130" rot="R90">5V</text>
 <hole x="2.54" y="81.28" drill="3.2"/>
 <hole x="50.8" y="6.35" drill="3.2"/>
 <wire x1="13.335" y1="20.32" x2="13.335" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="54.61" x2="8.255" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="20.32" x2="10.795" y2="20.32" width="0.127" layer="130"/>
+<pad name="IOREF" x="50.8" y="21.59" drill="1" diameter="1.4224" rot="R90"/>
+<text x="48.7807" y="22.098" size="1.016" layer="130" ratio="15" rot="R180">IOREF</text>
 </package>
 </packages>
 <symbols>
@@ -5928,8 +5924,6 @@ Source: www.kingbright.com</description>
 <pin name="3.3V" x="-12.7" y="-33.02" visible="pin" length="short"/>
 <pin name="3V3@1" x="-12.7" y="-10.16" length="short" direction="sup"/>
 <pin name="3V3@2" x="-12.7" y="-12.7" length="short" direction="sup"/>
-<pin name="3V3@3" x="-12.7" y="-15.24" length="short" direction="sup"/>
-<pin name="3V3@4" x="-12.7" y="-17.78" length="short" direction="sup"/>
 <pin name="5V@0" x="-12.7" y="-30.48" visible="pin" length="short" direction="pwr"/>
 <pin name="A0" x="-12.7" y="17.78" visible="pin" length="short"/>
 <pin name="A1" x="-12.7" y="15.24" visible="pin" length="short"/>
@@ -5989,14 +5983,15 @@ Source: www.kingbright.com</description>
 <pin name="GND@2" x="-12.7" y="-38.1" visible="pin" length="short" direction="sup"/>
 <pin name="GND@3" x="-12.7" y="-48.26" length="short" direction="sup"/>
 <pin name="GND@4" x="-12.7" y="-50.8" length="short" direction="sup"/>
-<pin name="GND@5" x="-12.7" y="-53.34" length="short" direction="sup"/>
-<pin name="GND@6" x="-12.7" y="-55.88" length="short" direction="sup"/>
 <pin name="RES" x="-12.7" y="-25.4" visible="pin" length="short"/>
 <pin name="RX" x="12.7" y="17.78" visible="pin" length="short" rot="R180"/>
 <pin name="TX" x="12.7" y="15.24" visible="pin" length="short" rot="R180"/>
 <pin name="VIN" x="-12.7" y="-27.94" visible="pin" length="short"/>
 <text x="-9.652" y="21.082" size="1.778" layer="95">&gt;Name</text>
 <text x="-8.89" y="-96.52" size="1.778" layer="96">&gt;Value</text>
+<pin name="5V@1" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="5V@2" x="-12.7" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="IOREF" x="-12.7" y="-22.86" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6016,9 +6011,9 @@ Source: www.kingbright.com</description>
 <connect gate="ARDUINO_MEGA" pin="3.3V" pad="3.3V"/>
 <connect gate="ARDUINO_MEGA" pin="3V3@1" pad="3V3@1"/>
 <connect gate="ARDUINO_MEGA" pin="3V3@2" pad="3V3@2"/>
-<connect gate="ARDUINO_MEGA" pin="3V3@3" pad="3V3@3"/>
-<connect gate="ARDUINO_MEGA" pin="3V3@4" pad="3V3@4"/>
 <connect gate="ARDUINO_MEGA" pin="5V@0" pad="5V@0"/>
+<connect gate="ARDUINO_MEGA" pin="5V@1" pad="5V@1"/>
+<connect gate="ARDUINO_MEGA" pin="5V@2" pad="5V@2"/>
 <connect gate="ARDUINO_MEGA" pin="A0" pad="A0"/>
 <connect gate="ARDUINO_MEGA" pin="A1" pad="A1"/>
 <connect gate="ARDUINO_MEGA" pin="A2" pad="A2"/>
@@ -6077,8 +6072,7 @@ Source: www.kingbright.com</description>
 <connect gate="ARDUINO_MEGA" pin="GND@2" pad="GND@2"/>
 <connect gate="ARDUINO_MEGA" pin="GND@3" pad="GND@3"/>
 <connect gate="ARDUINO_MEGA" pin="GND@4" pad="GND@4"/>
-<connect gate="ARDUINO_MEGA" pin="GND@5" pad="GND@5"/>
-<connect gate="ARDUINO_MEGA" pin="GND@6" pad="GND@6"/>
+<connect gate="ARDUINO_MEGA" pin="IOREF" pad="IOREF"/>
 <connect gate="ARDUINO_MEGA" pin="RES" pad="RES"/>
 <connect gate="ARDUINO_MEGA" pin="RX" pad="RX"/>
 <connect gate="ARDUINO_MEGA" pin="TX" pad="TX"/>
@@ -13988,6 +13982,7 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="3V3_PWR18" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="FRAME6" library="frames" deviceset="LETTER_L" device=""/>
 <part name="FRAME7" library="frames" deviceset="TABL_L" device=""/>
+<part name="5V0_PWR1" library="Bogdan_Commons" deviceset="5V0" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -14141,10 +14136,11 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </instance>
 <instance part="GND7" gate="1" x="-281.94" y="-2.54"/>
 <instance part="3V3_PWR12" gate="A" x="-281.94" y="7.62"/>
-<instance part="3V3_PWR13" gate="A" x="-53.34" y="111.76"/>
+<instance part="3V3_PWR13" gate="A" x="-60.96" y="111.76"/>
 <instance part="GND12" gate="1" x="-325.12" y="0" rot="MR0"/>
 <instance part="3V3_PWR17" gate="A" x="-325.12" y="10.16" rot="MR0"/>
 <instance part="3V3_PWR18" gate="A" x="35.56" y="81.28" rot="R90"/>
+<instance part="5V0_PWR1" gate="A" x="-50.8" y="119.38"/>
 </instances>
 <busses>
 <bus name="GND">
@@ -14392,9 +14388,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <junction x="-287.1724" y="0"/>
 </segment>
 <segment>
-<pinref part="U1" gate="ARDUINO_MEGA" pin="GND@6"/>
-<pinref part="U1" gate="ARDUINO_MEGA" pin="GND@5"/>
-<wire x1="-45.72" y1="63.5" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="81.28" x2="-45.72" y2="78.74" width="0.2032" layer="91"/>
 <wire x1="-45.72" y1="78.74" x2="-45.72" y2="76.2" width="0.2032" layer="91"/>
 <wire x1="-45.72" y1="76.2" x2="-45.72" y2="71.12" width="0.2032" layer="91"/>
@@ -14409,9 +14402,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="GND@0"/>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="GND@4"/>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="GND@3"/>
-<wire x1="-45.72" y1="66.04" x2="-45.72" y2="68.58" width="0.1524" layer="91"/>
-<junction x="-45.72" y="66.04"/>
-<junction x="-45.72" y="63.5"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -14667,17 +14657,13 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <segment>
 <pinref part="3V3_PWR13" gate="A" pin="3V3"/>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="3V3@1"/>
-<wire x1="-53.34" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="3V3@2"/>
 <wire x1="-45.72" y1="109.22" x2="-45.72" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ARDUINO_MEGA" pin="3V3@3"/>
-<wire x1="-45.72" y1="106.68" x2="-45.72" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="U1" gate="ARDUINO_MEGA" pin="3V3@4"/>
-<wire x1="-45.72" y1="104.14" x2="-45.72" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-45.72" y="109.22"/>
+<pinref part="U1" gate="ARDUINO_MEGA" pin="IOREF"/>
+<wire x1="-45.72" y1="106.68" x2="-45.72" y2="96.52" width="0.1524" layer="91"/>
 <junction x="-45.72" y="106.68"/>
-<junction x="-45.72" y="104.14"/>
-<junction x="-45.72" y="101.6"/>
 </segment>
 <segment>
 <pinref part="3V3_PWR17" gate="A" pin="3V3"/>
@@ -15938,6 +15924,14 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pinref part="5V0_PWR5" gate="A" pin="5V0"/>
 <pinref part="U1" gate="ARDUINO_MEGA" pin="5V@0"/>
 <wire x1="-50.8" y1="88.9" x2="-45.72" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U1" gate="ARDUINO_MEGA" pin="5V@1"/>
+<pinref part="5V0_PWR1" gate="A" pin="5V0"/>
+<wire x1="-50.8" y1="116.84" x2="-45.72" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U1" gate="ARDUINO_MEGA" pin="5V@2"/>
+<wire x1="-45.72" y1="114.3" x2="-45.72" y2="116.84" width="0.1524" layer="91"/>
+<junction x="-45.72" y="116.84"/>
 </segment>
 </net>
 <net name="ATMEGA_D2" class="0">
