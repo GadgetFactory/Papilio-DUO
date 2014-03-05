@@ -1,0 +1,9 @@
+3/5/2014 V1.1
+	-Fixed problems for manufacturability (thanks to Mitch at Hackvana)
+		-Fixed clearance problem on FPGA pins 144 and 36
+		-Moved trace between FT2232H pins 10 and 11 to inside of part so it does not look like a solder bridge up on inspection.
+		-Fixed Silkscreen size for the 22-53 numbering
+		-Updated the CC-BY-SA text to indicate license number CC-BY-SA 4.0
+
+3/3/2014 V1.0
+	Initial Release

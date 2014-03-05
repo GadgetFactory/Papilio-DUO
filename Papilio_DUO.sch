@@ -5830,7 +5830,6 @@ Source: www.kingbright.com</description>
 <text x="48.7807" y="32.258" size="1.016" layer="130" ratio="15" rot="R180">GND</text>
 <text x="48.7807" y="34.798" size="1.016" layer="130" ratio="15" rot="R180">GND</text>
 <text x="48.7807" y="29.718" size="1.016" layer="130" ratio="15" rot="R180">5V</text>
-<text x="48.7807" y="25.273" size="1.016" layer="130" ratio="15" rot="R180">RST</text>
 <text x="48.7807" y="37.338" size="1.016" layer="130" ratio="15" rot="R180">NC</text>
 <text x="48.7807" y="27.178" size="1.016" layer="130" ratio="15" rot="R180">3.3V</text>
 <text x="48.7807" y="42.418" size="1.016" layer="130" ratio="15" rot="R180">0</text>
@@ -5854,9 +5853,9 @@ Source: www.kingbright.com</description>
 <text x="4.445" y="43.942" size="1.016" layer="130" ratio="15">4</text>
 <text x="4.445" y="46.482" size="1.016" layer="130" ratio="15">3</text>
 <text x="4.445" y="49.022" size="1.016" layer="130" ratio="15">2</text>
-<text x="5.715" y="51.562" size="1.016" layer="130" ratio="15">TX</text>
-<text x="5.715" y="54.102" size="1.016" layer="130" ratio="15">RX</text>
-<text x="46.228" y="89.154" size="1.016" layer="130" rot="R90">GND</text>
+<text x="4.445" y="51.562" size="1.016" layer="130" ratio="15">TX</text>
+<text x="4.445" y="54.102" size="1.016" layer="130" ratio="15">RX</text>
+<text x="46.228" y="89.154" size="1.016" layer="130" ratio="15" rot="R90">GND</text>
 <text x="4.445" y="59.055" size="1.016" layer="130" ratio="15">14</text>
 <text x="4.445" y="61.595" size="1.016" layer="130" ratio="15">15</text>
 <text x="4.445" y="64.135" size="1.016" layer="130" ratio="15">16</text>
@@ -5865,48 +5864,49 @@ Source: www.kingbright.com</description>
 <text x="4.445" y="71.755" size="1.016" layer="130" ratio="15">19</text>
 <text x="4.445" y="74.295" size="1.016" layer="130" ratio="15">20</text>
 <text x="4.445" y="76.835" size="1.016" layer="130" ratio="15">21</text>
-<text x="4.953" y="89.281" size="0.8128" layer="130" rot="R90">22</text>
-<text x="7.493" y="89.281" size="0.8128" layer="130" rot="R90">24</text>
-<text x="10.033" y="89.281" size="0.8128" layer="130" rot="R90">26</text>
-<text x="12.573" y="89.281" size="0.8128" layer="130" rot="R90">28</text>
-<text x="25.273" y="89.281" size="0.8128" layer="130" rot="R90">38</text>
-<text x="27.813" y="89.281" size="0.8128" layer="130" rot="R90">40</text>
-<text x="30.353" y="89.281" size="0.8128" layer="130" rot="R90">42</text>
-<text x="33.147" y="89.281" size="0.8128" layer="130" rot="R90">44</text>
-<text x="15.875" y="82.169" size="0.8128" layer="130" rot="R90">31</text>
-<text x="18.415" y="82.169" size="0.8128" layer="130" rot="R90">33</text>
-<text x="20.955" y="82.169" size="0.8128" layer="130" rot="R90">35</text>
-<text x="23.495" y="82.169" size="0.8128" layer="130" rot="R90">37</text>
-<text x="36.195" y="82.169" size="0.8128" layer="130" rot="R90">47</text>
-<text x="38.735" y="82.169" size="0.8128" layer="130" rot="R90">49</text>
-<text x="41.275" y="82.169" size="0.8128" layer="130" rot="R90">51</text>
-<text x="43.815" y="82.169" size="0.8128" layer="130" rot="R90">53</text>
-<text x="5.715" y="90.551" size="0.8128" layer="130" rot="R90">23</text>
-<text x="8.255" y="90.551" size="0.8128" layer="130" rot="R90">25</text>
-<text x="10.795" y="90.551" size="0.8128" layer="130" rot="R90">27</text>
-<text x="13.335" y="90.551" size="0.8128" layer="130" rot="R90">29</text>
-<text x="26.035" y="90.551" size="0.8128" layer="130" rot="R90">39</text>
-<text x="28.321" y="90.551" size="0.8128" layer="130" rot="R90">41</text>
-<text x="31.115" y="90.551" size="0.8128" layer="130" rot="R90">43</text>
-<text x="33.655" y="90.551" size="0.8128" layer="130" rot="R90">45</text>
-<text x="15.113" y="81.153" size="0.8128" layer="130" rot="R90">30</text>
-<text x="17.653" y="81.153" size="0.8128" layer="130" rot="R90">32</text>
-<text x="20.193" y="81.153" size="0.8128" layer="130" rot="R90">34</text>
-<text x="22.733" y="81.153" size="0.8128" layer="130" rot="R90">36</text>
-<text x="35.433" y="81.153" size="0.8128" layer="130" rot="R90">46</text>
-<text x="37.973" y="81.153" size="0.8128" layer="130" rot="R90">48</text>
-<text x="40.513" y="81.153" size="0.8128" layer="130" rot="R90">50</text>
-<text x="43.053" y="81.153" size="0.8128" layer="130" rot="R90">52</text>
+<text x="4.953" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">22</text>
+<text x="7.493" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">24</text>
+<text x="10.033" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">26</text>
+<text x="12.573" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">28</text>
+<text x="25.273" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">38</text>
+<text x="27.813" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">40</text>
+<text x="30.353" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">42</text>
+<text x="33.147" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">44</text>
+<text x="15.875" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">31</text>
+<text x="18.415" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">33</text>
+<text x="20.955" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">35</text>
+<text x="23.495" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">37</text>
+<text x="36.195" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">47</text>
+<text x="38.735" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">49</text>
+<text x="41.275" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">51</text>
+<text x="43.815" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">53</text>
+<text x="5.715" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">23</text>
+<text x="8.255" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">25</text>
+<text x="10.795" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">27</text>
+<text x="13.335" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">29</text>
+<text x="26.035" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">39</text>
+<text x="28.321" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">41</text>
+<text x="31.115" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">43</text>
+<text x="33.655" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">45</text>
+<text x="15.113" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">30</text>
+<text x="17.653" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">32</text>
+<text x="20.193" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">34</text>
+<text x="22.733" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">36</text>
+<text x="35.433" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">46</text>
+<text x="37.973" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">48</text>
+<text x="40.513" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">50</text>
+<text x="43.053" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">52</text>
 <text x="11.938" y="42.545" size="0.8128" layer="130" rot="R270">5V Tolerant I/O</text>
-<text x="48.514" y="89.154" size="1.016" layer="130" rot="R90">3.3V</text>
-<text x="3.048" y="89.154" size="1.016" layer="130" rot="R90">5V</text>
+<text x="48.514" y="89.154" size="1.016" layer="130" ratio="15" rot="R90">3.3V</text>
+<text x="3.048" y="89.154" size="1.016" layer="130" ratio="15" rot="R90">5V</text>
 <hole x="2.54" y="81.28" drill="3.2"/>
 <hole x="50.8" y="6.35" drill="3.2"/>
 <wire x1="13.335" y1="20.32" x2="13.335" y2="54.61" width="0.127" layer="130"/>
-<wire x1="13.335" y1="54.61" x2="8.255" y2="54.61" width="0.127" layer="130"/>
+<wire x1="13.335" y1="54.61" x2="6.985" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="20.32" x2="10.795" y2="20.32" width="0.127" layer="130"/>
 <pad name="IOREF" x="50.8" y="21.59" drill="1" diameter="1.4224" rot="R90"/>
 <text x="48.7807" y="22.098" size="1.016" layer="130" ratio="15" rot="R180">IOREF</text>
+<text x="48.7807" y="24.638" size="1.016" layer="130" ratio="15" rot="R180">RST</text>
 </package>
 </packages>
 <symbols>

@@ -6,14 +6,14 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="11" fill="1" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="5" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
@@ -21,14 +21,14 @@
 <layer number="21" name="tPlace" color="25" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="12" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="12" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -36,11 +36,11 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
@@ -169,7 +169,7 @@
 <wire x1="58.547" y1="43.942" x2="58.547" y2="45.974" width="0.127" layer="130"/>
 <text x="38.354" y="13.462" size="0.8" layer="130" font="vector" ratio="14">Papilio Platform</text>
 <text x="38.354" y="11.938" size="0.8" layer="130" font="vector" ratio="14">Papilio Duo</text>
-<text x="38.354" y="8.001" size="0.8" layer="130" font="vector" ratio="14">BPC3012 V1.0</text>
+<text x="38.354" y="8.001" size="0.8" layer="130" font="vector" ratio="14">BPC3012 V1.1</text>
 <text x="38.354" y="10.668" size="0.8" layer="130" font="vector" ratio="14">www.GadgetFactory.net</text>
 <text x="77.47" y="2.8702" size="0.8" layer="130" font="vector" ratio="14">Copyright 2014</text>
 <text x="77.724" y="1.3462" size="0.8" layer="130" font="vector" ratio="14">Gadget Factory, LLC</text>
@@ -9849,7 +9849,7 @@
 <rectangle x1="69.481953125" y1="48.567903125" x2="69.779134375" y2="48.588984375" layer="200" rot="R180"/>
 <text x="7.62" y="-19.05" size="2.54" layer="51" font="vector" ratio="14">Top silkscreen is on layer 130: tSilk</text>
 <text x="7.62" y="-22.86" size="2.54" layer="51" font="vector" ratio="14">Bottom silkscreen is on layer 200</text>
-<text x="81.661" y="5.5372" size="0.8" layer="130" font="vector" ratio="14">CC-BY-SA</text>
+<text x="77.851" y="5.0292" size="0.8" layer="130" font="vector" ratio="14">CC-BY-SA 4.0</text>
 </plain>
 <libraries>
 <library name="MondoCPLDCore-XC95_Rev1.5">
@@ -12231,7 +12231,6 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <text x="48.7807" y="32.258" size="1.016" layer="130" ratio="15" rot="R180">GND</text>
 <text x="48.7807" y="34.798" size="1.016" layer="130" ratio="15" rot="R180">GND</text>
 <text x="48.7807" y="29.718" size="1.016" layer="130" ratio="15" rot="R180">5V</text>
-<text x="48.7807" y="25.273" size="1.016" layer="130" ratio="15" rot="R180">RST</text>
 <text x="48.7807" y="37.338" size="1.016" layer="130" ratio="15" rot="R180">NC</text>
 <text x="48.7807" y="27.178" size="1.016" layer="130" ratio="15" rot="R180">3.3V</text>
 <text x="48.7807" y="42.418" size="1.016" layer="130" ratio="15" rot="R180">0</text>
@@ -12255,9 +12254,9 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <text x="4.445" y="43.942" size="1.016" layer="130" ratio="15">4</text>
 <text x="4.445" y="46.482" size="1.016" layer="130" ratio="15">3</text>
 <text x="4.445" y="49.022" size="1.016" layer="130" ratio="15">2</text>
-<text x="5.715" y="51.562" size="1.016" layer="130" ratio="15">TX</text>
-<text x="5.715" y="54.102" size="1.016" layer="130" ratio="15">RX</text>
-<text x="46.228" y="89.154" size="1.016" layer="130" rot="R90">GND</text>
+<text x="4.445" y="51.562" size="1.016" layer="130" ratio="15">TX</text>
+<text x="4.445" y="54.102" size="1.016" layer="130" ratio="15">RX</text>
+<text x="46.228" y="89.154" size="1.016" layer="130" ratio="15" rot="R90">GND</text>
 <text x="4.445" y="59.055" size="1.016" layer="130" ratio="15">14</text>
 <text x="4.445" y="61.595" size="1.016" layer="130" ratio="15">15</text>
 <text x="4.445" y="64.135" size="1.016" layer="130" ratio="15">16</text>
@@ -12266,48 +12265,49 @@ Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
 <text x="4.445" y="71.755" size="1.016" layer="130" ratio="15">19</text>
 <text x="4.445" y="74.295" size="1.016" layer="130" ratio="15">20</text>
 <text x="4.445" y="76.835" size="1.016" layer="130" ratio="15">21</text>
-<text x="4.953" y="89.281" size="0.8128" layer="130" rot="R90">22</text>
-<text x="7.493" y="89.281" size="0.8128" layer="130" rot="R90">24</text>
-<text x="10.033" y="89.281" size="0.8128" layer="130" rot="R90">26</text>
-<text x="12.573" y="89.281" size="0.8128" layer="130" rot="R90">28</text>
-<text x="25.273" y="89.281" size="0.8128" layer="130" rot="R90">38</text>
-<text x="27.813" y="89.281" size="0.8128" layer="130" rot="R90">40</text>
-<text x="30.353" y="89.281" size="0.8128" layer="130" rot="R90">42</text>
-<text x="33.147" y="89.281" size="0.8128" layer="130" rot="R90">44</text>
-<text x="15.875" y="82.169" size="0.8128" layer="130" rot="R90">31</text>
-<text x="18.415" y="82.169" size="0.8128" layer="130" rot="R90">33</text>
-<text x="20.955" y="82.169" size="0.8128" layer="130" rot="R90">35</text>
-<text x="23.495" y="82.169" size="0.8128" layer="130" rot="R90">37</text>
-<text x="36.195" y="82.169" size="0.8128" layer="130" rot="R90">47</text>
-<text x="38.735" y="82.169" size="0.8128" layer="130" rot="R90">49</text>
-<text x="41.275" y="82.169" size="0.8128" layer="130" rot="R90">51</text>
-<text x="43.815" y="82.169" size="0.8128" layer="130" rot="R90">53</text>
-<text x="5.715" y="90.551" size="0.8128" layer="130" rot="R90">23</text>
-<text x="8.255" y="90.551" size="0.8128" layer="130" rot="R90">25</text>
-<text x="10.795" y="90.551" size="0.8128" layer="130" rot="R90">27</text>
-<text x="13.335" y="90.551" size="0.8128" layer="130" rot="R90">29</text>
-<text x="26.035" y="90.551" size="0.8128" layer="130" rot="R90">39</text>
-<text x="28.321" y="90.551" size="0.8128" layer="130" rot="R90">41</text>
-<text x="31.115" y="90.551" size="0.8128" layer="130" rot="R90">43</text>
-<text x="33.655" y="90.551" size="0.8128" layer="130" rot="R90">45</text>
-<text x="15.113" y="81.153" size="0.8128" layer="130" rot="R90">30</text>
-<text x="17.653" y="81.153" size="0.8128" layer="130" rot="R90">32</text>
-<text x="20.193" y="81.153" size="0.8128" layer="130" rot="R90">34</text>
-<text x="22.733" y="81.153" size="0.8128" layer="130" rot="R90">36</text>
-<text x="35.433" y="81.153" size="0.8128" layer="130" rot="R90">46</text>
-<text x="37.973" y="81.153" size="0.8128" layer="130" rot="R90">48</text>
-<text x="40.513" y="81.153" size="0.8128" layer="130" rot="R90">50</text>
-<text x="43.053" y="81.153" size="0.8128" layer="130" rot="R90">52</text>
+<text x="4.953" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">22</text>
+<text x="7.493" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">24</text>
+<text x="10.033" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">26</text>
+<text x="12.573" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">28</text>
+<text x="25.273" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">38</text>
+<text x="27.813" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">40</text>
+<text x="30.353" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">42</text>
+<text x="33.147" y="89.281" size="0.8128" layer="130" ratio="15" rot="R90">44</text>
+<text x="15.875" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">31</text>
+<text x="18.415" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">33</text>
+<text x="20.955" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">35</text>
+<text x="23.495" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">37</text>
+<text x="36.195" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">47</text>
+<text x="38.735" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">49</text>
+<text x="41.275" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">51</text>
+<text x="43.815" y="82.169" size="0.8128" layer="130" ratio="15" rot="R90">53</text>
+<text x="5.715" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">23</text>
+<text x="8.255" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">25</text>
+<text x="10.795" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">27</text>
+<text x="13.335" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">29</text>
+<text x="26.035" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">39</text>
+<text x="28.321" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">41</text>
+<text x="31.115" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">43</text>
+<text x="33.655" y="90.551" size="0.8128" layer="130" ratio="15" rot="R90">45</text>
+<text x="15.113" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">30</text>
+<text x="17.653" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">32</text>
+<text x="20.193" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">34</text>
+<text x="22.733" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">36</text>
+<text x="35.433" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">46</text>
+<text x="37.973" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">48</text>
+<text x="40.513" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">50</text>
+<text x="43.053" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">52</text>
 <text x="11.938" y="42.545" size="0.8128" layer="130" rot="R270">5V Tolerant I/O</text>
-<text x="48.514" y="89.154" size="1.016" layer="130" rot="R90">3.3V</text>
-<text x="3.048" y="89.154" size="1.016" layer="130" rot="R90">5V</text>
+<text x="48.514" y="89.154" size="1.016" layer="130" ratio="15" rot="R90">3.3V</text>
+<text x="3.048" y="89.154" size="1.016" layer="130" ratio="15" rot="R90">5V</text>
 <hole x="2.54" y="81.28" drill="3.2"/>
 <hole x="50.8" y="6.35" drill="3.2"/>
 <wire x1="13.335" y1="20.32" x2="13.335" y2="54.61" width="0.127" layer="130"/>
-<wire x1="13.335" y1="54.61" x2="8.255" y2="54.61" width="0.127" layer="130"/>
+<wire x1="13.335" y1="54.61" x2="6.985" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="20.32" x2="10.795" y2="20.32" width="0.127" layer="130"/>
 <pad name="IOREF" x="50.8" y="21.59" drill="1" diameter="1.4224" rot="R90"/>
 <text x="48.7807" y="22.098" size="1.016" layer="130" ratio="15" rot="R180">IOREF</text>
+<text x="48.7807" y="24.638" size="1.016" layer="130" ratio="15" rot="R180">RST</text>
 </package>
 </packages>
 </library>
@@ -13710,7 +13710,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="70.742" y="12.8682" size="0.05" layer="27" font="vector" ratio="0" rot="R180"/>
 <attribute name="VALUE" x="70.742" y="11.7182" size="0.05" layer="27" font="vector" ratio="0" rot="R180"/>
 </element>
-<element name="U$9" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="" x="84.582" y="8.89"/>
+<element name="U$9" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="" x="83.566" y="8.636"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -13959,7 +13959,6 @@ design rules under a new name.</description>
 <wire x1="15.49" y1="6.465" x2="15.49" y2="7.87" width="0.254" layer="1"/>
 <wire x1="15.49" y1="7.87" x2="15.494" y2="7.874" width="0.2032" layer="1"/>
 <via x="15.494" y="7.874" extent="1-16" drill="0.381"/>
-<wire x1="9.64" y1="11.315" x2="9.64" y2="10.815" width="0.2032" layer="1"/>
 <wire x1="9.64" y1="9.815" x2="10.45" y2="9.815" width="0.254" layer="1"/>
 <wire x1="9.64" y1="8.815" x2="10.466" y2="8.815" width="0.254" layer="1"/>
 <wire x1="10.466" y1="8.815" x2="10.668" y2="9.017" width="0.254" layer="1"/>
@@ -13971,7 +13970,8 @@ design rules under a new name.</description>
 <wire x1="9.64" y1="8.815" x2="8.815" y2="8.815" width="0.254" layer="1"/>
 <wire x1="8.815" y1="8.815" x2="8.128" y2="8.128" width="0.254" layer="1"/>
 <via x="8.128" y="8.128" extent="1-16" drill="0.381"/>
-<wire x1="9.64" y1="11.315" x2="11.315" y2="11.315" width="0.254" layer="1"/>
+<wire x1="9.64" y1="11.315" x2="10.414" y2="11.315" width="0.254" layer="1"/>
+<wire x1="10.414" y1="11.315" x2="11.315" y2="11.315" width="0.254" layer="1"/>
 <wire x1="11.315" y1="11.315" x2="12.192" y2="12.192" width="0.254" layer="1"/>
 <via x="12.192" y="12.192" extent="1-16" drill="0.381"/>
 <wire x1="4.865" y1="10.414" x2="4.865" y2="11.088" width="0.2032" layer="1"/>
@@ -14175,6 +14175,13 @@ design rules under a new name.</description>
 <wire x1="60.96" y1="8.636" x2="61.722" y2="7.874" width="0.254" layer="1"/>
 <wire x1="62.484" y1="9.106" x2="63.284" y2="9.106" width="0.254" layer="1"/>
 <wire x1="63.284" y1="9.106" x2="64.516" y2="7.874" width="0.254" layer="1"/>
+<wire x1="9.64" y1="10.815" x2="10.414" y2="10.815" width="0.2032" layer="1"/>
+<wire x1="10.414" y1="10.815" x2="10.414" y2="11.315" width="0.2032" layer="1"/>
+<wire x1="2.286" y1="45.72" x2="2.5908" y2="46.863" width="0" layer="19" extent="1-1"/>
+<wire x1="8.188" y1="30.785" x2="7.62" y2="29.845" width="0" layer="19" extent="1-1"/>
+<wire x1="2.5908" y1="44.577" x2="2.286" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="2.5908" y1="42.545" x2="2.286" y2="41.402" width="0" layer="19" extent="1-1"/>
+<wire x1="2.5908" y1="40.259" x2="2.286" y2="41.402" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_IN">
 <contactref element="OSC" pad="3@3"/>
@@ -14550,6 +14557,10 @@ design rules under a new name.</description>
 <wire x1="86.36" y1="16.002" x2="85.8138" y2="16.002" width="0.3048" layer="1"/>
 <wire x1="85.8138" y1="16.002" x2="85.6742" y2="15.8624" width="0.3048" layer="1"/>
 <wire x1="12.192" y1="31.076" x2="13.843" y2="31.076" width="0.254" layer="1"/>
+<wire x1="53.988" y1="37.516" x2="53.988" y2="35.954" width="0.254" layer="1"/>
+<wire x1="53.988" y1="35.954" x2="53.975" y2="35.941" width="0.254" layer="1"/>
+<wire x1="51.638" y1="17.666" x2="53.099" y2="17.666" width="0.254" layer="1"/>
+<wire x1="53.099" y1="17.666" x2="53.213" y2="17.78" width="0.254" layer="1"/>
 </signal>
 <signal name="1V2">
 <contactref element="C13" pad="1"/>
@@ -17017,19 +17028,19 @@ design rules under a new name.</description>
 <approved hash="4,1,a66bbc19bfc0a5b2"/>
 <approved hash="4,1,ee6e6c1c6fc2edb0"/>
 <approved hash="5,1,8420c9e2d989d44a"/>
-<approved hash="4,1,8e9e2cec2c478e35"/>
 <approved hash="4,1,8ed82caa21df83ad"/>
-<approved hash="4,1,8e5e2c2c131fb16d"/>
+<approved hash="4,1,8e9e2cec2c478e35"/>
 <approved hash="4,1,b2a010d2107fb20d"/>
+<approved hash="4,1,8e5e2c2c131fb16d"/>
 <approved hash="5,1,9164f69024b363f2"/>
-<approved hash="4,1,788f83b9ed80e152"/>
-<approved hash="4,1,560e489db72099b1"/>
-<approved hash="4,1,ed8b8aa8b2717cc9"/>
-<approved hash="4,1,2b5f103d3c451720"/>
 <approved hash="4,1,90433da930ca6ac4"/>
 <approved hash="4,1,7b8378c83eb1fdb8"/>
 <approved hash="4,1,abed908fbf779412"/>
 <approved hash="4,1,a55887657ed86ce7"/>
+<approved hash="4,1,788f83b9ed80e152"/>
+<approved hash="4,1,560e489db72099b1"/>
+<approved hash="4,1,ed8b8aa8b2717cc9"/>
+<approved hash="4,1,2b5f103d3c451720"/>
 <approved hash="5,16,9babeba35382dde6"/>
 <approved hash="5,16,942c86c9eb188509"/>
 <approved hash="5,16,3e7c00492f023ba6"/>
