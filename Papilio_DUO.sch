@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="no"/>
@@ -13756,6 +13756,7 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </library>
 </libraries>
 <attributes>
+<attribute name="DATABASE" value="C:/Dropbox/GadgetFactory/GadgetFactory_Engineering/Libraries/GadgetFactory-PARTSDB.txt"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -13778,28 +13779,66 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </classes>
 <parts>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device="" value="FPGA S3E Cocoon"/>
-<part name="C12" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C6" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C33" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C23" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C32" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C7" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C10" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C13" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C25" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C11" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C24" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C21" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C4" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C5" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C22" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
+<part name="C12" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C6" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C33" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C23" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C32" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C7" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C10" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C13" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C25" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C11" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C24" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C21" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C4" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C5" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C22" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="OSC" library="MondoCPLDCore-XC95_Rev1.5" deviceset="OSC1" device=""/>
-<part name="C26" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
+<part name="OSC" library="MondoCPLDCore-XC95_Rev1.5" deviceset="OSC1" device="">
+<attribute name="PARTNO" value="ASV-32.000MHZ-E-T"/>
+</part>
+<part name="C26" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
 <part name="FRAME2" library="Bogdan_Commons" deviceset="FRAME-A4L-LOC" device=""/>
 <part name="FRAME4" library="Bogdan_Commons" deviceset="FRAME-A4L-LOC" device=""/>
-<part name="FLASH" library="GadgetFactory" deviceset="FLASH-SPI-25XX" device="SMD1"/>
-<part name="S1" library="xilinx_devices" deviceset="6SLX9TQG144" device=""/>
+<part name="FLASH" library="GadgetFactory" deviceset="FLASH-SPI-25XX" device="SMD1">
+<attribute name="PARTNO" value="MX25L6445EM2I-10G"/>
+</part>
+<part name="S1" library="xilinx_devices" deviceset="6SLX9TQG144" device="">
+<attribute name="PARTNO" value="XC6SLX9-2TQG144C"/>
+</part>
 <part name="GND_PWR6" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="3V3_PWR14" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="GND_PWR2" library="Bogdan_Commons" deviceset="GND" device=""/>
@@ -13812,179 +13851,387 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="3V3_PWR5" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="3V3_PWR6" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="3V3_PWR7" library="Bogdan_Commons" deviceset="3V3" device=""/>
-<part name="R31" library="GadgetFactory" deviceset="R" device="0805" value="47K"/>
+<part name="R31" library="GadgetFactory" deviceset="R" device="0805" value="47K">
+<attribute name="PARTNO" value="RMCF0805JT47K0"/>
+</part>
 <part name="3V3_PWR3" library="GadgetFactory_all" deviceset="3V3" device=""/>
 <part name="GND1" library="GadgetFactory_all" deviceset="GND" device=""/>
-<part name="SW2" library="adafruit" deviceset="EVQQ2" device=""/>
-<part name="U$2" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT"/>
-<part name="U$8" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT"/>
-<part name="U$5" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT"/>
-<part name="U$3" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT"/>
-<part name="U$4" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT"/>
-<part name="U$6" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT"/>
+<part name="SW2" library="adafruit" deviceset="EVQQ2" device="">
+<attribute name="PARTNO" value="PTS525SM10SMTR LFS"/>
+</part>
+<part name="U$2" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U$8" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U$5" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U$3" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U$4" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U$6" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
 <part name="GND_PWR7" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="3V3_PWR9" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="5V0_PWR4" library="Bogdan_Commons" deviceset="5V0" device=""/>
 <part name="5V0_PWR5" library="Bogdan_Commons" deviceset="5V0" device=""/>
 <part name="GND_PWR8" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="3V3_PWR10" library="Bogdan_Commons" deviceset="3V3" device=""/>
-<part name="U1" library="GadgetFactory_tmp" deviceset="ARDUINO_MEGA_SHIELD" device=""/>
-<part name="R19" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R18" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R17" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R16" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R15" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R14" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R13" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R12" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R11" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R10" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R9" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R8" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R20" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="R21" library="GadgetFactory" deviceset="R" device="0603" value="390"/>
-<part name="U$1" library="GadgetFactory" deviceset="JTAG_XILINX" device=""/>
-<part name="U2" library="Bogdan_Commons" deviceset="LTC3419" device="MS" technology="E"/>
-<part name="L1" library="Bogdan_Commons" deviceset="L" device="_VLS3015" value="3.3uH"/>
-<part name="L2" library="Bogdan_Commons" deviceset="L" device="_VLS3015" value="3.3uH"/>
-<part name="C2" library="Bogdan_Commons" deviceset="C" device="0805" value="22u/6V3"/>
+<part name="U1" library="GadgetFactory_tmp" deviceset="ARDUINO_MEGA_SHIELD" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="R19" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R18" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R17" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R16" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R15" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R14" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R13" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R12" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R11" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R10" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R9" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R8" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R20" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="R21" library="GadgetFactory" deviceset="R" device="0603" value="390">
+<attribute name="PARTNO" value="RMCF0603JT390R"/>
+</part>
+<part name="U$1" library="GadgetFactory" deviceset="JTAG_XILINX" device="">
+<attribute name="BOM" value="EXCLUDE"/>
+</part>
+<part name="U2" library="Bogdan_Commons" deviceset="LTC3419" device="MS" technology="E">
+<attribute name="PARTNO" value="LTC3419EMS#PBF"/>
+</part>
+<part name="L1" library="Bogdan_Commons" deviceset="L" device="_VLS3015" value="3.3uH">
+<attribute name="PARTNO" value="VLS3015T-3R3M1R2"/>
+</part>
+<part name="L2" library="Bogdan_Commons" deviceset="L" device="_VLS3015" value="3.3uH">
+<attribute name="PARTNO" value="VLS3015T-3R3M1R2"/>
+</part>
+<part name="C2" library="Bogdan_Commons" deviceset="C" device="0805" value="22u/6V3">
+<attribute name="PARTNO" value="GRM21BR60J226ME39L"/>
+</part>
 <part name="GND_PWR9" library="Bogdan_Commons" deviceset="GND" device=""/>
-<part name="C3" library="Bogdan_Commons" deviceset="C" device="0805" value="10u/10V"/>
+<part name="C3" library="Bogdan_Commons" deviceset="C" device="0805" value="10u/10V">
+<attribute name="PARTNO" value="C0805C106K9PACTU"/>
+</part>
 <part name="GND_PWR10" library="Bogdan_Commons" deviceset="GND" device=""/>
-<part name="C1" library="Bogdan_Commons" deviceset="C" device="0805" value="22u/6V3"/>
+<part name="C1" library="Bogdan_Commons" deviceset="C" device="0805" value="22u/6V3">
+<attribute name="PARTNO" value="GRM21BR60J226ME39L"/>
+</part>
 <part name="GND_PWR11" library="Bogdan_Commons" deviceset="GND" device=""/>
-<part name="R2" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="6K8 1%"/>
-<part name="R3" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="1K5 1%"/>
-<part name="R5" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="1K5 1%"/>
-<part name="R4" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="1K5 1%"/>
+<part name="R2" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="6K8 1%">
+<attribute name="PARTNO" value="CRCW06036K80FKEA"/>
+</part>
+<part name="R3" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="1K5 1%">
+<attribute name="PARTNO" value="CRCW06031K50FKEA"/>
+</part>
+<part name="R5" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="1K5 1%">
+<attribute name="PARTNO" value="CRCW06031K50FKEA"/>
+</part>
+<part name="R4" library="Bogdan_Commons" deviceset="R-SMALL" device="0603" value="1K5 1%">
+<attribute name="PARTNO" value="CRCW06031K50FKEA"/>
+</part>
 <part name="GND_PWR12" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="GND_PWR13" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="5V0_PWR9" library="Bogdan_Commons" deviceset="5V0" device=""/>
 <part name="3V3_PWR11" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="1V2_PWR2" library="Bogdan_Commons" deviceset="1V2" device=""/>
 <part name="3V3_PWR28" library="Bogdan_Commons" deviceset="3V3" device=""/>
-<part name="R6" library="GadgetFactory" deviceset="R" device="0603" value="1K8"/>
-<part name="PWR" library="led" deviceset="LED" device="CHIP-LED0805" value="Green"/>
+<part name="R6" library="GadgetFactory" deviceset="R" device="0603" value="1K8">
+<attribute name="PARTNO" value="RMCF0603JT1K80"/>
+</part>
+<part name="PWR" library="led" deviceset="LED" device="CHIP-LED0805" value="Green">
+<attribute name="PARTNO" value="LTST-C171EKT"/>
+</part>
 <part name="V3" library="supply2" deviceset="GND" device=""/>
 <part name="V5" library="supply2" deviceset="GND" device=""/>
-<part name="PWRIN" library="jumper" deviceset="JP1E" device=""/>
-<part name="IC1" library="DP-EagleLibrary" deviceset="FT2232H" device="" value="FT2232H"/>
+<part name="PWRIN" library="jumper" deviceset="JP1E" device="">
+<attribute name="PARTNO" value="68000-102HLF"/>
+</part>
+<part name="IC1" library="DP-EagleLibrary" deviceset="FT2232H" device="" value="FT2232H">
+<attribute name="PARTNO" value="FT2232HL-REEL"/>
+</part>
 <part name="FRAME3" library="frames" deviceset="LETTER_L" device=""/>
-<part name="L4" library="dp_devices" deviceset="FERRITE_BEAD" device="603"/>
+<part name="L4" library="dp_devices" deviceset="FERRITE_BEAD" device="603">
+<attribute name="PARTNO" value="MMZ1608R600A"/>
+</part>
 <part name="P+1" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="U$11" library="SparkFun" deviceset="1.8V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="R27" library="dp_devices" deviceset="RESISTOR" device="R603" value="12k 1%"/>
+<part name="R27" library="dp_devices" deviceset="RESISTOR" device="R603" value="12k 1%">
+<attribute name="PARTNO" value="RMCF0603FT12K0"/>
+</part>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="R28" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k"/>
+<part name="R28" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k">
+<attribute name="PARTNO" value="RMCF0603JT10K0"/>
+</part>
 <part name="P+3" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="C19" library="dp_devices" deviceset="CAP_POL" device="SMC_A" value="3.3uF"/>
+<part name="C19" library="dp_devices" deviceset="CAP_POL" device="SMC_A" value="3.3uF">
+<attribute name="PARTNO" value="T491A335K016AT7280"/>
+</part>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
-<part name="R25" library="dp_devices" deviceset="RESISTOR" device="R603" value="2.2k"/>
-<part name="R24" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k"/>
-<part name="R26" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k"/>
-<part name="R23" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k"/>
+<part name="R25" library="dp_devices" deviceset="RESISTOR" device="R603" value="2.2k">
+<attribute name="PARTNO" value="RMCF0603JT2K20"/>
+</part>
+<part name="R24" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k">
+<attribute name="PARTNO" value="RMCF0603JT10K0"/>
+</part>
+<part name="R26" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k">
+<attribute name="PARTNO" value="RMCF0603JT10K0"/>
+</part>
+<part name="R23" library="dp_devices" deviceset="RESISTOR" device="R603" value="10k">
+<attribute name="PARTNO" value="RMCF0603JT10K0"/>
+</part>
 <part name="P+2" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+4" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="C17" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C9" library="dp_devices" deviceset="CAP" device="C603" value="27pF"/>
-<part name="C8" library="dp_devices" deviceset="CAP" device="C603" value="27pF"/>
+<part name="C17" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C9" library="dp_devices" deviceset="CAP" device="C603" value="27pF">
+<attribute name="PARTNO" value="CL10C270JB8NNNC"/>
+</part>
+<part name="C8" library="dp_devices" deviceset="CAP" device="C603" value="27pF">
+<attribute name="PARTNO" value="CL10C270JB8NNNC"/>
+</part>
 <part name="U$12" library="SparkFun" deviceset="1.8V" device=""/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="L3" library="dp_devices" deviceset="FERRITE_BEAD" device="603"/>
-<part name="C28" library="dp_devices" deviceset="CAP_POL" device="SMC_A" value="4.7uF"/>
-<part name="C14" library="dp_devices" deviceset="CAP_POL" device="SMC_A" value="4.7uF"/>
-<part name="C34" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C15" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
+<part name="L3" library="dp_devices" deviceset="FERRITE_BEAD" device="603">
+<attribute name="PARTNO" value="MMZ1608R600A"/>
+</part>
+<part name="C28" library="dp_devices" deviceset="CAP_POL" device="SMC_A" value="4.7uF">
+<attribute name="PARTNO" value="T491A475M010AT"/>
+</part>
+<part name="C14" library="dp_devices" deviceset="CAP_POL" device="SMC_A" value="4.7uF">
+<attribute name="PARTNO" value="T491A475M010AT"/>
+</part>
+<part name="C34" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C15" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="P+7" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="C27" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C31" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C16" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C29" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C30" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C20" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
-<part name="C18" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF"/>
+<part name="C27" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C31" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C16" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C29" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C30" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C20" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C18" library="dp_devices" deviceset="CAP" device="C603" value="0.1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
 <part name="U$13" library="SparkFun" deviceset="1.8V" device=""/>
 <part name="P+8" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="dp_devices" deviceset="CRYSTAL_2" device="12M_" value="12MHz"/>
-<part name="R30" library="dp_devices" deviceset="RESISTOR" device="R603" value="470"/>
-<part name="RX" library="dp_devices" deviceset="LED" device="805"/>
-<part name="R29" library="dp_devices" deviceset="RESISTOR" device="R603" value="470"/>
-<part name="TX" library="dp_devices" deviceset="LED" device="805"/>
+<part name="X1" library="dp_devices" deviceset="CRYSTAL_2" device="12M_" value="12MHz">
+<attribute name="PARTNO" value="ABM7-12.000MHZ-D2Y-T"/>
+</part>
+<part name="R30" library="dp_devices" deviceset="RESISTOR" device="R603" value="470">
+<attribute name="PARTNO" value="RMCF0603JT470R"/>
+</part>
+<part name="RX" library="dp_devices" deviceset="LED" device="805">
+<attribute name="PARTNO" value="LTST-C170KGKT"/>
+</part>
+<part name="R29" library="dp_devices" deviceset="RESISTOR" device="R603" value="470">
+<attribute name="PARTNO" value="RMCF0603JT470R"/>
+</part>
+<part name="TX" library="dp_devices" deviceset="LED" device="805">
+<attribute name="PARTNO" value="LTST-C170KGKT"/>
+</part>
 <part name="P+11" library="SparkFun" deviceset="3.3V" device=""/>
-<part name="FPGAUSB" library="dp_devices" deviceset="CONN_USB" device=""/>
-<part name="C102" library="SmartPrj" deviceset="C-EU" device="C0603K" value="100n"/>
-<part name="LED" library="led" deviceset="LED" device="CHIPLED_0805" value="Yellow"/>
+<part name="FPGAUSB" library="dp_devices" deviceset="CONN_USB" device="">
+<attribute name="PARTNO" value="USB-M26FTR"/>
+</part>
+<part name="C102" library="SmartPrj" deviceset="C-EU" device="C0603K" value="100n">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="LED" library="led" deviceset="LED" device="CHIPLED_0805" value="Yellow">
+<attribute name="PARTNO" value="LTST-C170KGKT"/>
+</part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="R109" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M"/>
+<part name="R109" library="SmartPrj" deviceset="R-EU_" device="R0603" value="1M">
+<attribute name="PARTNO" value="RMCF0603JT1M00"/>
+</part>
 <part name="U$30" library="MyPOW" deviceset="COM" device=""/>
-<part name="C103" library="SmartPrj" deviceset="C-EU" device="C0603K" value="1uF"/>
-<part name="L100" library="wuerth-elektronik" deviceset="WE-CBF" device="_0805" value="MH2029-300Y"/>
-<part name="C104" library="SmartPrj" deviceset="C-EU" device="C0603K" value="1uF"/>
-<part name="C105" library="SmartPrj" deviceset="C-EU" device="C0603K" value="100n"/>
+<part name="C103" library="SmartPrj" deviceset="C-EU" device="C0603K" value="1uF">
+<attribute name="PARTNO" value="C1608X5R1A105K080AC"/>
+</part>
+<part name="L100" library="wuerth-elektronik" deviceset="WE-CBF" device="_0805" value="MH2029-300Y">
+<attribute name="PARTNO" value="MH2029-300YCT-ND"/>
+</part>
+<part name="C104" library="SmartPrj" deviceset="C-EU" device="C0603K" value="1uF">
+<attribute name="PARTNO" value="C1608X5R1A105K080AC"/>
+</part>
+<part name="C105" library="SmartPrj" deviceset="C-EU" device="C0603K" value="100n">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
 <part name="U$40" library="MyPOW" deviceset="COM" device=""/>
-<part name="C101" library="SmartPrj" deviceset="C-EU" device="C0603K" value="100n"/>
-<part name="U101" library="SmartPrj" deviceset="ATMEGA32U4-XU" device="MU"/>
-<part name="C106" library="SmartPrj" deviceset="C-EU" device="C0603K" value="22p"/>
-<part name="C107" library="SmartPrj" deviceset="C-EU" device="C0603K" value="22p"/>
+<part name="C101" library="SmartPrj" deviceset="C-EU" device="C0603K" value="100n">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="U101" library="SmartPrj" deviceset="ATMEGA32U4-XU" device="MU">
+<attribute name="PARTNO" value="ATMEGA32U4RC-MUR"/>
+</part>
+<part name="C106" library="SmartPrj" deviceset="C-EU" device="C0603K" value="22p">
+<attribute name="PARTNO" value="C1608C0G1H220J080AA"/>
+</part>
+<part name="C107" library="SmartPrj" deviceset="C-EU" device="C0603K" value="22p">
+<attribute name="PARTNO" value="C1608C0G1H220J080AA"/>
+</part>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="Y1" library="SmartPrj" deviceset="CRYSTAL-3.2-2.5" device="" value="16MHz KX-7"/>
-<part name="AVRUSB" library="SmartPrj" deviceset="MYCON2_USB-MINI-B" device="" value="USB MICRO"/>
+<part name="Y1" library="SmartPrj" deviceset="CRYSTAL-3.2-2.5" device="" value="16MHz KX-7">
+<attribute name="PARTNO" value="ABM8G-16.000MHZ-B4Y-T"/>
+</part>
+<part name="AVRUSB" library="SmartPrj" deviceset="MYCON2_USB-MINI-B" device="" value="USB MICRO">
+<attribute name="PARTNO" value="10118193-0001LF"/>
+</part>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R"/>
-<part name="R22" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R"/>
-<part name="SRAM" library="GadgetFactory" deviceset="ISSI_SRAM_8BIT" device=""/>
+<part name="R1" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R">
+<attribute name="PARTNO" value="RMCF0805JT22R0"/>
+</part>
+<part name="R22" library="GadgetFactory_6.0" deviceset="R" device="0805" value="22R">
+<attribute name="PARTNO" value="RMCF0805JT22R0"/>
+</part>
+<part name="SRAM" library="GadgetFactory" deviceset="ISSI_SRAM_8BIT" device="">
+<attribute name="PARTNO" value="IS61WV20488BLL-10TLI"/>
+</part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="R32" library="GadgetFactory" deviceset="R" device="0603" value="4.7K"/>
+<part name="R32" library="GadgetFactory" deviceset="R" device="0603" value="4.7K">
+<attribute name="PARTNO" value="RMCF0603JT4K70"/>
+</part>
 <part name="3V3_PWR8" library="GadgetFactory_all" deviceset="3V3" device=""/>
-<part name="HDMI" library="saanlima" deviceset="HDMI-TYPE-A-RECEPTICAL" device="FCI10029449"/>
-<part name="R100" library="saanlima" deviceset="R" device="0402" value="10K"/>
+<part name="HDMI" library="saanlima" deviceset="HDMI-TYPE-A-RECEPTICAL" device="FCI10029449">
+<attribute name="PARTNO" value="10029449-001RLF"/>
+</part>
+<part name="R100" library="saanlima" deviceset="R" device="0402" value="10K">
+<attribute name="PARTNO" value="RMCF0402JT10K0"/>
+</part>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun" deviceset="GND" device=""/>
-<part name="R102" library="saanlima" deviceset="R" device="0402" value="0"/>
-<part name="U100" library="saanlima" deviceset="PCA9306" device=""/>
+<part name="R102" library="saanlima" deviceset="R" device="0402" value="0">
+<attribute name="PARTNO" value="RMCF0402ZT0R00"/>
+</part>
+<part name="U100" library="saanlima" deviceset="PCA9306" device="">
+<attribute name="PARTNO" value="PCA9306USG"/>
+</part>
 <part name="GND26" library="SparkFun" deviceset="GND" device=""/>
-<part name="R107" library="saanlima" deviceset="R" device="0402" value="1K"/>
-<part name="R106" library="saanlima" deviceset="R" device="0402" value="1K"/>
-<part name="R104" library="saanlima" deviceset="R" device="0402" value="1K"/>
-<part name="R103" library="saanlima" deviceset="R" device="0402" value="1K"/>
-<part name="R105" library="saanlima" deviceset="R" device="0402" value="100K"/>
-<part name="C100" library="saanlima" deviceset="C" device="0402" value="1uF"/>
+<part name="R107" library="saanlima" deviceset="R" device="0402" value="1K">
+<attribute name="PARTNO" value="RMCF0402JT1K00"/>
+</part>
+<part name="R106" library="saanlima" deviceset="R" device="0402" value="1K">
+<attribute name="PARTNO" value="RMCF0402JT1K00"/>
+</part>
+<part name="R104" library="saanlima" deviceset="R" device="0402" value="1K">
+<attribute name="PARTNO" value="RMCF0402JT1K00"/>
+</part>
+<part name="R103" library="saanlima" deviceset="R" device="0402" value="1K">
+<attribute name="PARTNO" value="RMCF0402JT1K00"/>
+</part>
+<part name="R105" library="saanlima" deviceset="R" device="0402" value="100K">
+<attribute name="PARTNO" value="RMCF0402JT100K"/>
+</part>
+<part name="C100" library="saanlima" deviceset="C" device="0402" value="1uF">
+<attribute name="PARTNO" value="JMK105BJ105KV-F"/>
+</part>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 <part name="FRAME5" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="T100" library="saanlima" deviceset="MOSFET-NCHANNEL" device="SMD"/>
+<part name="T100" library="saanlima" deviceset="MOSFET-NCHANNEL" device="SMD">
+<attribute name="PARTNO" value="AD1584BRTZ-REEL7"/>
+</part>
 <part name="GND53" library="SparkFun" deviceset="GND" device=""/>
-<part name="R101" library="saanlima" deviceset="R" device="0402" value="10K"/>
-<part name="R108" library="saanlima" deviceset="R" device="0402" value="2.2K"/>
-<part name="SW1" library="OPL Eagle Library" deviceset="SWITCH-2CH-6P*" device="-3010010P1"/>
+<part name="R101" library="saanlima" deviceset="R" device="0402" value="10K">
+<attribute name="PARTNO" value="RMCF0402JT10K0"/>
+</part>
+<part name="R108" library="saanlima" deviceset="R" device="0402" value="2.2K">
+<attribute name="PARTNO" value="RMCF0402JT2K20"/>
+</part>
+<part name="SW1" library="OPL Eagle Library" deviceset="SWITCH-2CH-6P*" device="-3010010P1">
+<attribute name="PARTNO" value="EG1271"/>
+</part>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="3V3_PWR12" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="3V3_PWR13" library="Bogdan_Commons" deviceset="3V3" device=""/>
-<part name="U3" library="Bogdan_Commons" deviceset="DIGITAL-EEPROM-MICROWIRE-6P" device="_SOT23" value="93C46B"/>
-<part name="PWRSEL" library="jumper" deviceset="JP2E" device=""/>
+<part name="U3" library="Bogdan_Commons" deviceset="DIGITAL-EEPROM-MICROWIRE-6P" device="_SOT23" value="93C46B">
+<attribute name="PARTNO" value="93C46BT-I/OT"/>
+</part>
+<part name="PWRSEL" library="jumper" deviceset="JP2E" device="">
+<attribute name="PARTNO" value="68000-103HLF"/>
+</part>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="3V3_PWR15" library="GadgetFactory_6.0" deviceset="3V3" device=""/>
 <part name="3V3_PWR16" library="GadgetFactory_6.0" deviceset="3V3" device=""/>
-<part name="R110" library="GadgetFactory_6.0" deviceset="R" device="0603" value="10K"/>
-<part name="R7" library="GadgetFactory_6.0" deviceset="R" device="0603" value="1K"/>
+<part name="R110" library="GadgetFactory_6.0" deviceset="R" device="0603" value="10K">
+<attribute name="PARTNO" value="RMCF0603JT10K0"/>
+</part>
+<part name="R7" library="GadgetFactory_6.0" deviceset="R" device="0603" value="1K">
+<attribute name="PARTNO" value="RMCF0603JT1K00"/>
+</part>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="3V3_PWR17" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="3V3_PWR18" library="Bogdan_Commons" deviceset="3V3" device=""/>
 <part name="FRAME6" library="frames" deviceset="LETTER_L" device=""/>
 <part name="FRAME7" library="frames" deviceset="TABL_L" device=""/>
 <part name="5V0_PWR1" library="Bogdan_Commons" deviceset="5V0" device=""/>
-<part name="C35" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
-<part name="C36" library="GadgetFactory" deviceset="C" device="0603" value=".1uF"/>
+<part name="C35" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
+<part name="C36" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
+<attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -14025,28 +14272,66 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-109.22" y="-66.04"/>
 <instance part="FRAME1" gate="G$2" x="215.9" y="-66.04"/>
-<instance part="C12" gate="A" x="-241.3" y="167.64" rot="R270"/>
-<instance part="C6" gate="A" x="-236.22" y="167.64" rot="R270"/>
-<instance part="C33" gate="A" x="-231.14" y="167.64" rot="R270"/>
-<instance part="C23" gate="A" x="-226.06" y="167.64" rot="R270"/>
-<instance part="C32" gate="A" x="-220.98" y="167.64" rot="R270"/>
-<instance part="C7" gate="A" x="-215.9" y="167.64" rot="R270"/>
-<instance part="C10" gate="A" x="-210.82" y="167.64" rot="R270"/>
-<instance part="C13" gate="A" x="-205.74" y="167.64" rot="R270"/>
-<instance part="C25" gate="A" x="-200.66" y="167.64" rot="R270"/>
-<instance part="C11" gate="A" x="-195.58" y="167.64" rot="R270"/>
-<instance part="C24" gate="A" x="-187.96" y="167.64" rot="R270"/>
-<instance part="C21" gate="A" x="-172.72" y="167.64" rot="R270"/>
-<instance part="C4" gate="A" x="-165.1" y="167.64" rot="R270"/>
-<instance part="C5" gate="A" x="-157.48" y="167.64" rot="R270"/>
-<instance part="C22" gate="A" x="-149.86" y="167.64" rot="R270"/>
+<instance part="C12" gate="A" x="-241.3" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-241.3" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C6" gate="A" x="-236.22" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-236.22" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C33" gate="A" x="-231.14" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-231.14" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C23" gate="A" x="-226.06" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-226.06" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C32" gate="A" x="-220.98" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-220.98" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C7" gate="A" x="-215.9" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-215.9" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C10" gate="A" x="-210.82" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-210.82" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C13" gate="A" x="-205.74" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-205.74" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C25" gate="A" x="-200.66" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-200.66" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C11" gate="A" x="-195.58" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-195.58" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C24" gate="A" x="-187.96" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-187.96" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C21" gate="A" x="-172.72" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-172.72" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C4" gate="A" x="-165.1" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-165.1" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C5" gate="A" x="-157.48" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-157.48" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C22" gate="A" x="-149.86" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-149.86" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="-220.98" y="157.48"/>
-<instance part="OSC" gate="G$1" x="-337.82" y="76.2"/>
-<instance part="C26" gate="A" x="-142.24" y="167.64" rot="R270"/>
+<instance part="OSC" gate="G$1" x="-337.82" y="76.2">
+<attribute name="PARTNO" x="-337.82" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C26" gate="A" x="-142.24" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-142.24" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="FRAME2" gate="A" x="-375.92" y="-66.04"/>
 <instance part="FRAME4" gate="A" x="-375.92" y="114.3"/>
-<instance part="FLASH" gate="G$1" x="-190.5" y="17.78"/>
-<instance part="S1" gate="B0" x="43.18" y="106.68" rot="R180"/>
+<instance part="FLASH" gate="G$1" x="-190.5" y="17.78">
+<attribute name="PARTNO" x="-190.5" y="17.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="S1" gate="B0" x="43.18" y="106.68" rot="R180">
+<attribute name="PARTNO" x="43.18" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="S1" gate="B1" x="111.76" y="157.48" rot="R90"/>
 <instance part="S1" gate="B2" x="177.8" y="101.6"/>
 <instance part="S1" gate="B3" x="111.76" y="55.88" rot="R270"/>
@@ -14068,73 +14353,110 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="3V3_PWR7" gate="A" x="38.1" y="60.96" rot="R180"/>
 <instance part="R31" gate="A" x="231.14" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="234.442" y="64.77" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="231.14" y="68.58" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="3V3_PWR3" gate="A" x="231.14" y="76.2"/>
 <instance part="GND1" gate="A" x="246.38" y="60.96"/>
-<instance part="SW2" gate="G$1" x="241.3" y="66.04" rot="R270"/>
-<instance part="U$2" gate="G$1" x="-355.6" y="254"/>
-<instance part="U$8" gate="G$1" x="-337.82" y="254"/>
-<instance part="U$5" gate="G$1" x="-320.04" y="254"/>
-<instance part="U$3" gate="G$1" x="-302.26" y="254"/>
-<instance part="U$4" gate="G$1" x="-284.48" y="254"/>
-<instance part="U$6" gate="G$1" x="-266.7" y="254"/>
+<instance part="SW2" gate="G$1" x="241.3" y="66.04" rot="R270">
+<attribute name="PARTNO" x="241.3" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$2" gate="G$1" x="-355.6" y="254">
+<attribute name="BOM" x="-355.6" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$8" gate="G$1" x="-337.82" y="254">
+<attribute name="BOM" x="-337.82" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$5" gate="G$1" x="-320.04" y="254">
+<attribute name="BOM" x="-320.04" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$3" gate="G$1" x="-302.26" y="254">
+<attribute name="BOM" x="-302.26" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$4" gate="G$1" x="-284.48" y="254">
+<attribute name="BOM" x="-284.48" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U$6" gate="G$1" x="-266.7" y="254">
+<attribute name="BOM" x="-266.7" y="254" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND_PWR7" gate="A" x="-368.3" y="271.78"/>
 <instance part="3V3_PWR9" gate="A" x="-360.68" y="269.24" rot="R90"/>
 <instance part="5V0_PWR4" gate="A" x="-358.14" y="264.16" rot="R180"/>
 <instance part="5V0_PWR5" gate="A" x="-53.34" y="88.9" rot="R90"/>
 <instance part="GND_PWR8" gate="A" x="-53.34" y="73.66"/>
 <instance part="3V3_PWR10" gate="A" x="-48.26" y="86.36" rot="R90"/>
-<instance part="U1" gate="ARDUINO_MEGA" x="-33.02" y="119.38"/>
+<instance part="U1" gate="ARDUINO_MEGA" x="-33.02" y="119.38">
+<attribute name="BOM" x="-33.02" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R19" gate="A" x="-12.7" y="129.54" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="130.429" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R18" gate="A" x="-12.7" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="127.889" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="127" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R17" gate="A" x="-12.7" y="124.46" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="125.349" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R16" gate="A" x="-12.7" y="121.92" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="122.809" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="121.92" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R15" gate="A" x="-12.7" y="119.38" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="120.269" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="119.38" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R14" gate="A" x="-12.7" y="116.84" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="117.729" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R13" gate="A" x="-12.7" y="114.3" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="115.189" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="114.3" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R12" gate="A" x="-12.7" y="111.76" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="112.649" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R11" gate="A" x="-12.7" y="109.22" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="110.109" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="109.22" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R10" gate="A" x="-12.7" y="106.68" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="107.569" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="106.68" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R9" gate="A" x="-12.7" y="104.14" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="105.029" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="104.14" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R8" gate="A" x="-12.7" y="101.6" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="102.489" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="101.6" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R20" gate="A" x="-12.7" y="134.62" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="135.509" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="R21" gate="A" x="-12.7" y="137.16" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-10.1092" y="138.049" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-12.7" y="137.16" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$1" gate="G$1" x="-243.84" y="73.66"/>
-<instance part="SRAM" gate="SRAM" x="274.32" y="33.02"/>
+<instance part="U$1" gate="G$1" x="-243.84" y="73.66">
+<attribute name="BOM" x="-243.84" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SRAM" gate="SRAM" x="274.32" y="33.02">
+<attribute name="PARTNO" x="274.32" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="R32" gate="A" x="213.36" y="72.39" smashed="yes" rot="R90">
 <attribute name="VALUE" x="216.662" y="68.58" size="1.778" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="213.36" y="72.39" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="3V3_PWR8" gate="A" x="213.36" y="78.74"/>
 <instance part="SW1" gate="SW" x="-293.5224" y="2.54" smashed="yes">
 <attribute name="NAME" x="-294.7924" y="8.89" size="1.27" layer="95" ratio="10"/>
+<attribute name="PARTNO" x="-293.5224" y="2.54" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND7" gate="1" x="-281.94" y="-2.54"/>
 <instance part="3V3_PWR12" gate="A" x="-281.94" y="7.62"/>
@@ -14143,8 +14465,12 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="3V3_PWR17" gate="A" x="-325.12" y="10.16" rot="MR0"/>
 <instance part="3V3_PWR18" gate="A" x="35.56" y="81.28" rot="R90"/>
 <instance part="5V0_PWR1" gate="A" x="-50.8" y="119.38"/>
-<instance part="C35" gate="A" x="-180.34" y="167.64" rot="R270"/>
-<instance part="C36" gate="A" x="-137.16" y="167.64" rot="R270"/>
+<instance part="C35" gate="A" x="-180.34" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-180.34" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C36" gate="A" x="-137.16" y="167.64" rot="R270">
+<attribute name="PARTNO" x="-137.16" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 <bus name="GND">
@@ -16188,35 +16514,63 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <text x="198.12" y="523.24" size="1.778" layer="98">delays 1V2 start</text>
 </plain>
 <instances>
-<instance part="U2" gate="A" x="210.82" y="502.92"/>
-<instance part="L1" gate="A" x="231.14" y="515.62"/>
-<instance part="L2" gate="A" x="231.14" y="495.3"/>
-<instance part="C2" gate="A" x="238.76" y="487.68" rot="R90"/>
+<instance part="U2" gate="A" x="210.82" y="502.92">
+<attribute name="PARTNO" x="210.82" y="502.92" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L1" gate="A" x="231.14" y="515.62">
+<attribute name="PARTNO" x="231.14" y="515.62" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L2" gate="A" x="231.14" y="495.3">
+<attribute name="PARTNO" x="231.14" y="495.3" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="A" x="238.76" y="487.68" rot="R90">
+<attribute name="PARTNO" x="238.76" y="487.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND_PWR9" gate="A" x="238.76" y="480.06"/>
-<instance part="C3" gate="A" x="187.96" y="497.84" rot="R90"/>
+<instance part="C3" gate="A" x="187.96" y="497.84" rot="R90">
+<attribute name="PARTNO" x="187.96" y="497.84" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND_PWR10" gate="A" x="195.58" y="485.14"/>
-<instance part="C1" gate="A" x="238.76" y="508" rot="R90"/>
+<instance part="C1" gate="A" x="238.76" y="508" rot="R90">
+<attribute name="PARTNO" x="238.76" y="508" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND_PWR11" gate="A" x="238.76" y="500.38"/>
-<instance part="R2" gate="1" x="231.14" y="510.54"/>
-<instance part="R3" gate="1" x="226.06" y="505.46" rot="R90"/>
-<instance part="R5" gate="1" x="231.14" y="490.22"/>
-<instance part="R4" gate="1" x="226.06" y="485.14" rot="R90"/>
+<instance part="R2" gate="1" x="231.14" y="510.54">
+<attribute name="PARTNO" x="231.14" y="510.54" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R3" gate="1" x="226.06" y="505.46" rot="R90">
+<attribute name="PARTNO" x="226.06" y="505.46" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R5" gate="1" x="231.14" y="490.22">
+<attribute name="PARTNO" x="231.14" y="490.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R4" gate="1" x="226.06" y="485.14" rot="R90">
+<attribute name="PARTNO" x="226.06" y="485.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND_PWR12" gate="A" x="226.06" y="500.38"/>
 <instance part="GND_PWR13" gate="A" x="226.06" y="480.06"/>
 <instance part="5V0_PWR9" gate="A" x="187.96" y="508"/>
 <instance part="3V3_PWR11" gate="A" x="238.76" y="520.7"/>
 <instance part="1V2_PWR2" gate="A" x="246.38" y="500.38"/>
 <instance part="3V3_PWR28" gate="A" x="195.58" y="520.7"/>
-<instance part="R6" gate="A" x="213.36" y="449.58" rot="R90"/>
-<instance part="PWR" gate="G$1" x="213.36" y="441.96"/>
+<instance part="R6" gate="A" x="213.36" y="449.58" rot="R90">
+<attribute name="PARTNO" x="213.36" y="449.58" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="PWR" gate="G$1" x="213.36" y="441.96">
+<attribute name="PARTNO" x="213.36" y="441.96" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="V3" gate="GND" x="213.36" y="431.8" smashed="yes">
 <attribute name="VALUE" x="215.265" y="429.895" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="V5" gate="GND" x="177.8" y="436.88" smashed="yes">
 <attribute name="VALUE" x="179.705" y="434.975" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="PWRIN" gate="A" x="193.04" y="444.5" rot="R270"/>
-<instance part="PWRSEL" gate="1" x="162.56" y="472.44" rot="R90"/>
+<instance part="PWRIN" gate="A" x="193.04" y="444.5" rot="R270">
+<attribute name="PARTNO" x="193.04" y="444.5" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="PWRSEL" gate="1" x="162.56" y="472.44" rot="R90">
+<attribute name="PARTNO" x="162.56" y="472.44" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="FRAME6" gate="G$1" x="121.92" y="350.52"/>
 <instance part="FRAME6" gate="G$2" x="269.24" y="350.52"/>
 </instances>
@@ -16340,7 +16694,7 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pinref part="PWRIN" gate="A" pin="1"/>
 </segment>
 </net>
-<net name="5V_ARDUINO" class="3">
+<net name="5V_ARDUINO" class="0">
 <segment>
 <wire x1="165.1" y1="474.98" x2="167.64" y2="474.98" width="0.2032" layer="91"/>
 <label x="165.1" y="474.98" size="1.778" layer="95"/>
@@ -16404,69 +16758,129 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <text x="172.72" y="27.94" size="2.54" layer="97">FT2232H Section</text>
 </plain>
 <instances>
-<instance part="IC1" gate="G$1" x="142.24" y="93.98"/>
+<instance part="IC1" gate="G$1" x="142.24" y="93.98">
+<attribute name="PARTNO" x="142.24" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
 <instance part="FRAME3" gate="G$2" x="147.32" y="0"/>
 <instance part="L4" gate="G$1" x="58.42" y="172.72" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.404" y="175.514" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="170.18" size="1.778" layer="96" rot="R270"/>
+<attribute name="PARTNO" x="58.42" y="172.72" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+1" gate="G$1" x="68.58" y="144.78"/>
 <instance part="U$11" gate="G$1" x="93.98" y="137.16"/>
 <instance part="GND17" gate="1" x="93.98" y="127"/>
 <instance part="GND18" gate="1" x="17.78" y="152.4" rot="R180"/>
-<instance part="R27" gate="G$1" x="66.04" y="106.68" rot="R90"/>
+<instance part="R27" gate="G$1" x="66.04" y="106.68" rot="R90">
+<attribute name="PARTNO" x="66.04" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND19" gate="1" x="66.04" y="99.06"/>
-<instance part="R28" gate="G$1" x="88.9" y="104.14"/>
+<instance part="R28" gate="G$1" x="88.9" y="104.14">
+<attribute name="PARTNO" x="88.9" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+3" gate="G$1" x="81.28" y="104.14" rot="R90"/>
-<instance part="C19" gate="G$1" x="93.98" y="134.62"/>
+<instance part="C19" gate="G$1" x="93.98" y="134.62">
+<attribute name="PARTNO" x="93.98" y="134.62" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND20" gate="1" x="63.5" y="68.58"/>
-<instance part="R25" gate="G$1" x="22.86" y="83.82"/>
-<instance part="R24" gate="G$1" x="48.26" y="99.06" rot="R90"/>
-<instance part="R26" gate="G$1" x="17.78" y="99.06" rot="R90"/>
-<instance part="R23" gate="G$1" x="33.02" y="99.06" rot="R90"/>
+<instance part="R25" gate="G$1" x="22.86" y="83.82">
+<attribute name="PARTNO" x="22.86" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R24" gate="G$1" x="48.26" y="99.06" rot="R90">
+<attribute name="PARTNO" x="48.26" y="99.06" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R26" gate="G$1" x="17.78" y="99.06" rot="R90">
+<attribute name="PARTNO" x="17.78" y="99.06" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="33.02" y="99.06" rot="R90">
+<attribute name="PARTNO" x="33.02" y="99.06" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+2" gate="G$1" x="33.02" y="104.14"/>
 <instance part="P+4" gate="G$1" x="63.5" y="78.74" smashed="yes">
 <attribute name="VALUE" x="61.214" y="81.534" size="1.778" layer="96"/>
 </instance>
-<instance part="C17" gate="G$1" x="68.58" y="73.66"/>
-<instance part="C9" gate="G$1" x="83.82" y="48.26"/>
-<instance part="C8" gate="G$1" x="99.06" y="48.26"/>
+<instance part="C17" gate="G$1" x="68.58" y="73.66">
+<attribute name="PARTNO" x="68.58" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C9" gate="G$1" x="83.82" y="48.26">
+<attribute name="PARTNO" x="83.82" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C8" gate="G$1" x="99.06" y="48.26">
+<attribute name="PARTNO" x="99.06" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$12" gate="G$1" x="137.16" y="152.4"/>
 <instance part="P+5" gate="G$1" x="148.59" y="152.4"/>
 <instance part="L3" gate="G$1" x="58.42" y="165.1" smashed="yes" rot="R270">
 <attribute name="NAME" x="57.404" y="167.894" size="1.778" layer="95"/>
 <attribute name="VALUE" x="52.07" y="162.56" size="1.778" layer="96" rot="R270"/>
+<attribute name="PARTNO" x="58.42" y="165.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C28" gate="G$1" x="73.66" y="160.02"/>
-<instance part="C14" gate="G$1" x="83.82" y="160.02"/>
-<instance part="C34" gate="G$1" x="93.98" y="154.94"/>
-<instance part="C15" gate="G$1" x="104.14" y="154.94"/>
+<instance part="C28" gate="G$1" x="73.66" y="160.02">
+<attribute name="PARTNO" x="73.66" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C14" gate="G$1" x="83.82" y="160.02">
+<attribute name="PARTNO" x="83.82" y="160.02" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C34" gate="G$1" x="93.98" y="154.94">
+<attribute name="PARTNO" x="93.98" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C15" gate="G$1" x="104.14" y="154.94">
+<attribute name="PARTNO" x="104.14" y="154.94" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND21" gate="1" x="88.9" y="149.86"/>
 <instance part="P+6" gate="G$1" x="50.8" y="165.1" rot="R90"/>
 <instance part="P+7" gate="G$1" x="50.8" y="172.72" rot="R90"/>
-<instance part="C27" gate="G$1" x="137.16" y="167.64"/>
-<instance part="C31" gate="G$1" x="147.32" y="167.64"/>
-<instance part="C16" gate="G$1" x="157.48" y="167.64"/>
-<instance part="C29" gate="G$1" x="170.18" y="167.64"/>
-<instance part="C30" gate="G$1" x="180.34" y="167.64"/>
-<instance part="C20" gate="G$1" x="190.5" y="167.64"/>
-<instance part="C18" gate="G$1" x="200.66" y="167.64"/>
+<instance part="C27" gate="G$1" x="137.16" y="167.64">
+<attribute name="PARTNO" x="137.16" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C31" gate="G$1" x="147.32" y="167.64">
+<attribute name="PARTNO" x="147.32" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C16" gate="G$1" x="157.48" y="167.64">
+<attribute name="PARTNO" x="157.48" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C29" gate="G$1" x="170.18" y="167.64">
+<attribute name="PARTNO" x="170.18" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C30" gate="G$1" x="180.34" y="167.64">
+<attribute name="PARTNO" x="180.34" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C20" gate="G$1" x="190.5" y="167.64">
+<attribute name="PARTNO" x="190.5" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C18" gate="G$1" x="200.66" y="167.64">
+<attribute name="PARTNO" x="200.66" y="167.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$13" gate="G$1" x="147.32" y="172.72"/>
 <instance part="P+8" gate="G$1" x="185.42" y="172.72"/>
 <instance part="GND22" gate="1" x="147.32" y="162.56"/>
 <instance part="GND23" gate="1" x="185.42" y="162.56"/>
 <instance part="GND24" gate="1" x="83.82" y="38.1"/>
-<instance part="X1" gate="G$1" x="93.98" y="58.42"/>
-<instance part="R30" gate="G$1" x="224.79" y="121.92" rot="R90"/>
-<instance part="RX" gate="G$1" x="224.79" y="132.08"/>
-<instance part="R29" gate="G$1" x="234.95" y="121.92" rot="R90"/>
-<instance part="TX" gate="G$1" x="234.95" y="132.08"/>
-<instance part="P+11" gate="G$1" x="229.87" y="134.62" smashed="yes">
-<attribute name="VALUE" x="227.584" y="137.414" size="1.778" layer="96"/>
+<instance part="X1" gate="G$1" x="93.98" y="58.42">
+<attribute name="PARTNO" x="93.98" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="FPGAUSB" gate="USB" x="12.7" y="142.24"/>
-<instance part="U3" gate="1" x="45.72" y="73.66" rot="MR0"/>
+<instance part="R30" gate="G$1" x="228.6" y="81.28" rot="R90">
+<attribute name="PARTNO" x="228.6" y="81.28" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="RX" gate="G$1" x="228.6" y="91.44">
+<attribute name="PARTNO" x="228.6" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R29" gate="G$1" x="238.76" y="81.28" rot="R90">
+<attribute name="PARTNO" x="238.76" y="81.28" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="TX" gate="G$1" x="238.76" y="91.44">
+<attribute name="PARTNO" x="238.76" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+11" gate="G$1" x="233.68" y="93.98" smashed="yes">
+<attribute name="VALUE" x="231.394" y="96.774" size="1.778" layer="96"/>
+</instance>
+<instance part="FPGAUSB" gate="USB" x="12.7" y="142.24">
+<attribute name="PARTNO" x="12.7" y="142.24" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U3" gate="1" x="45.72" y="73.66" rot="MR0">
+<attribute name="PARTNO" x="45.72" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -16658,9 +17072,9 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pinref part="P+8" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
-<wire x1="224.79" y1="134.62" x2="229.87" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="229.87" y1="134.62" x2="234.95" y2="134.62" width="0.1524" layer="91"/>
-<junction x="229.87" y="134.62"/>
+<wire x1="228.6" y1="93.98" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91"/>
+<junction x="233.68" y="93.98"/>
 <pinref part="RX" gate="G$1" pin="A"/>
 <pinref part="TX" gate="G$1" pin="A"/>
 <pinref part="P+11" gate="G$1" pin="3.3V"/>
@@ -16807,16 +17221,20 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </net>
 <net name="BC4" class="0">
 <segment>
-<wire x1="185.42" y1="66.04" x2="195.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="187.96" y="66.04" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="BCBUS4/TXLED#/GPIOH4"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="238.76" y1="76.2" x2="238.76" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="238.76" y1="66.04" x2="185.42" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BC3" class="0">
 <segment>
-<wire x1="185.42" y1="68.58" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
 <label x="187.96" y="68.58" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="BCBUS3/RXLED#/GPIOH3"/>
+<pinref part="R30" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="76.2" x2="228.6" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="68.58" x2="185.42" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BC2" class="0">
@@ -16919,20 +17337,16 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </net>
 <net name="AC4" class="0">
 <segment>
-<wire x1="185.42" y1="111.76" x2="234.95" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="234.95" y1="111.76" x2="234.95" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="111.76" x2="195.834" y2="111.76" width="0.1524" layer="91"/>
 <label x="187.96" y="111.76" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="ACBUS4/TXLED#/GPIOH4"/>
-<pinref part="R29" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AC3" class="0">
 <segment>
-<wire x1="185.42" y1="114.3" x2="224.79" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="224.79" y1="114.3" x2="224.79" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="114.3" x2="195.834" y2="114.3" width="0.1524" layer="91"/>
 <label x="187.96" y="114.3" size="1.778" layer="95"/>
 <pinref part="IC1" gate="G$1" pin="ACBUS3/RXLED#/GPIOH3"/>
-<pinref part="R30" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="AC2" class="0">
@@ -17084,23 +17498,44 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <text x="-160.02" y="-96.52" size="2.54" layer="97">This section is derived from the Arduino Leonardo Design and has the same license.</text>
 </plain>
 <instances>
-<instance part="C102" gate="G$1" x="-66.04" y="88.9" rot="R180"/>
-<instance part="LED" gate="G$1" x="30.48" y="-30.48"/>
+<instance part="C102" gate="G$1" x="-66.04" y="88.9" rot="R180">
+<attribute name="PARTNO" x="-66.04" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LED" gate="G$1" x="30.48" y="-30.48">
+<attribute name="PARTNO" x="30.48" y="-30.48" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND6" gate="1" x="30.48" y="-40.64"/>
 <instance part="R109" gate="G$1" x="-71.12" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="-73.66" y="113.4364" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-73.025" y="111.252" size="1.778" layer="96" rot="R180"/>
+<attribute name="PARTNO" x="-71.12" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U$30" gate="G$1" x="-30.48" y="66.04"/>
-<instance part="C103" gate="G$1" x="-53.34" y="81.28"/>
-<instance part="L100" gate="G$1" x="-50.8" y="101.6"/>
-<instance part="C104" gate="G$1" x="-81.28" y="93.98"/>
-<instance part="C105" gate="G$1" x="-40.64" y="137.16"/>
+<instance part="C103" gate="G$1" x="-53.34" y="81.28">
+<attribute name="PARTNO" x="-53.34" y="81.28" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L100" gate="G$1" x="-50.8" y="101.6">
+<attribute name="PARTNO" x="-50.8" y="101.6" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C104" gate="G$1" x="-81.28" y="93.98">
+<attribute name="PARTNO" x="-81.28" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C105" gate="G$1" x="-40.64" y="137.16">
+<attribute name="PARTNO" x="-40.64" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U$40" gate="G$1" x="-40.64" y="127"/>
-<instance part="C101" gate="G$1" x="-50.8" y="137.16"/>
-<instance part="U101" gate="G$1" x="17.78" y="104.14"/>
-<instance part="C106" gate="G$1" x="-96.52" y="116.84" rot="R90"/>
-<instance part="C107" gate="G$1" x="-93.98" y="106.68" rot="R270"/>
+<instance part="C101" gate="G$1" x="-50.8" y="137.16">
+<attribute name="PARTNO" x="-50.8" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U101" gate="G$1" x="17.78" y="104.14">
+<attribute name="PARTNO" x="17.78" y="104.14" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C106" gate="G$1" x="-96.52" y="116.84" rot="R90">
+<attribute name="PARTNO" x="-96.52" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C107" gate="G$1" x="-93.98" y="106.68" rot="R270">
+<attribute name="PARTNO" x="-93.98" y="106.68" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND8" gate="1" x="-38.1" y="43.18"/>
 <instance part="GND15" gate="1" x="-106.68" y="116.84" rot="R270"/>
 <instance part="GND16" gate="1" x="-106.68" y="106.68" rot="R270"/>
@@ -17109,17 +17544,28 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="Y1" gate="G$1" x="-86.36" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="-83.82" y="112.776" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-83.82" y="106.68" size="1.778" layer="96"/>
+<attribute name="PARTNO" x="-86.36" y="111.76" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="AVRUSB" gate="G$1" x="-114.3" y="-5.08" rot="MR0"/>
+<instance part="AVRUSB" gate="G$1" x="-114.3" y="-5.08" rot="MR0">
+<attribute name="PARTNO" x="-114.3" y="-5.08" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND13" gate="1" x="-88.9" y="-58.42"/>
-<instance part="R1" gate="A" x="-60.96" y="0"/>
-<instance part="R22" gate="A" x="-60.96" y="-7.62"/>
+<instance part="R1" gate="A" x="-60.96" y="0">
+<attribute name="PARTNO" x="-60.96" y="0" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R22" gate="A" x="-60.96" y="-7.62">
+<attribute name="PARTNO" x="-60.96" y="-7.62" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="100.33" y="88.9"/>
 <instance part="GND10" gate="1" x="-53.34" y="71.12"/>
 <instance part="3V3_PWR15" gate="A" x="-50.8" y="142.24"/>
 <instance part="3V3_PWR16" gate="A" x="-30.48" y="132.08"/>
-<instance part="R110" gate="A" x="-66.04" y="127" rot="R90"/>
-<instance part="R7" gate="A" x="30.48" y="-20.32" rot="R90"/>
+<instance part="R110" gate="A" x="-66.04" y="127" rot="R90">
+<attribute name="PARTNO" x="-66.04" y="127" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R7" gate="A" x="30.48" y="-20.32" rot="R90">
+<attribute name="PARTNO" x="30.48" y="-20.32" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="FRAME7" gate="G$1" x="-215.9" y="-104.14"/>
 <instance part="FRAME7" gate="G$2" x="83.82" y="-104.14"/>
 </instances>
@@ -17375,11 +17821,16 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pinref part="U101" gate="G$1" pin="D+"/>
 </segment>
 </net>
-<net name="5V_ARDUINO" class="3">
+<net name="5V_ARDUINO" class="0">
 <segment>
 <wire x1="-101.6" y1="0" x2="-81.28" y2="0" width="0.1524" layer="91"/>
 <label x="-81.28" y="0" size="1.778" layer="95" rot="MR0"/>
 <pinref part="AVRUSB" gate="G$1" pin="VBUS"/>
+<pinref part="U101" gate="G$1" pin="VBUS"/>
+<wire x1="-7.62" y1="71.12" x2="-22.86" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="71.12" x2="-22.86" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="58.42" x2="-81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="58.42" x2="-81.28" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ATMEGA_IO12" class="0">
@@ -17611,26 +18062,52 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <text x="12.7" y="12.7" size="2.54" layer="97">This section is from the Pipistrello design with permission from Magnus.</text>
 </plain>
 <instances>
-<instance part="HDMI" gate="G$1" x="205.74" y="127"/>
-<instance part="R100" gate="G$1" x="187.96" y="66.04" rot="R90"/>
+<instance part="HDMI" gate="G$1" x="205.74" y="127">
+<attribute name="PARTNO" x="205.74" y="127" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R100" gate="G$1" x="187.96" y="66.04" rot="R90">
+<attribute name="PARTNO" x="187.96" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND25" gate="1" x="187.96" y="55.88"/>
 <instance part="GND28" gate="1" x="180.34" y="55.88"/>
-<instance part="R102" gate="G$1" x="116.84" y="48.26" rot="R180"/>
-<instance part="U100" gate="G$1" x="88.9" y="78.74"/>
+<instance part="R102" gate="G$1" x="116.84" y="48.26" rot="R180">
+<attribute name="PARTNO" x="116.84" y="48.26" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="U100" gate="G$1" x="88.9" y="78.74">
+<attribute name="PARTNO" x="88.9" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND26" gate="1" x="68.58" y="63.5"/>
-<instance part="R107" gate="G$1" x="58.42" y="91.44" rot="R270"/>
-<instance part="R106" gate="G$1" x="68.58" y="91.44" rot="R270"/>
-<instance part="R104" gate="G$1" x="121.92" y="91.44" rot="R270"/>
-<instance part="R103" gate="G$1" x="111.76" y="91.44" rot="R270"/>
-<instance part="R105" gate="G$1" x="116.84" y="71.12"/>
-<instance part="C100" gate="G$1" x="106.68" y="63.5"/>
+<instance part="R107" gate="G$1" x="58.42" y="91.44" rot="R270">
+<attribute name="PARTNO" x="58.42" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R106" gate="G$1" x="68.58" y="91.44" rot="R270">
+<attribute name="PARTNO" x="68.58" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R104" gate="G$1" x="121.92" y="91.44" rot="R270">
+<attribute name="PARTNO" x="121.92" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R103" gate="G$1" x="111.76" y="91.44" rot="R270">
+<attribute name="PARTNO" x="111.76" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R105" gate="G$1" x="116.84" y="71.12">
+<attribute name="PARTNO" x="116.84" y="71.12" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C100" gate="G$1" x="106.68" y="63.5">
+<attribute name="PARTNO" x="106.68" y="63.5" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND29" gate="1" x="106.68" y="55.88"/>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
 <instance part="FRAME5" gate="G$2" x="172.72" y="0"/>
-<instance part="T100" gate="G$1" x="149.86" y="40.64" rot="MR0"/>
+<instance part="T100" gate="G$1" x="149.86" y="40.64" rot="MR0">
+<attribute name="PARTNO" x="149.86" y="40.64" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND53" gate="1" x="149.86" y="30.48"/>
-<instance part="R101" gate="G$1" x="170.18" y="66.04" rot="R270"/>
-<instance part="R108" gate="G$1" x="149.86" y="60.96" rot="R270"/>
+<instance part="R101" gate="G$1" x="170.18" y="66.04" rot="R270">
+<attribute name="PARTNO" x="170.18" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R108" gate="G$1" x="149.86" y="60.96" rot="R270">
+<attribute name="PARTNO" x="149.86" y="60.96" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
