@@ -5845,20 +5845,20 @@ Source: www.kingbright.com</description>
 <text x="4.445" y="24.892" size="1.016" layer="130" ratio="15">MOSI 11</text>
 <text x="4.445" y="14.732" size="1.016" layer="130" ratio="15">AREF</text>
 <text x="4.445" y="27.432" size="1.016" layer="130" ratio="15">SS  10</text>
-<text x="4.445" y="29.972" size="1.016" layer="130" ratio="15">9</text>
-<text x="4.445" y="32.512" size="1.016" layer="130" ratio="15">8</text>
-<text x="4.445" y="36.322" size="1.016" layer="130" ratio="15">7</text>
+<text x="4.445" y="29.972" size="1.016" layer="130" ratio="15">^9</text>
+<text x="4.445" y="32.512" size="1.016" layer="130" ratio="15">SCL ^8</text>
+<text x="4.445" y="36.322" size="1.016" layer="130" ratio="15">SDA  7</text>
 <text x="4.445" y="38.862" size="1.016" layer="130" ratio="15">6</text>
 <text x="4.445" y="41.402" size="1.016" layer="130" ratio="15">5</text>
-<text x="4.445" y="43.942" size="1.016" layer="130" ratio="15">4</text>
+<text x="4.445" y="43.942" size="1.016" layer="130" ratio="15">^4</text>
 <text x="4.445" y="46.482" size="1.016" layer="130" ratio="15">3</text>
-<text x="4.445" y="49.022" size="1.016" layer="130" ratio="15">2</text>
-<text x="4.445" y="51.562" size="1.016" layer="130" ratio="15">TX</text>
-<text x="4.445" y="54.102" size="1.016" layer="130" ratio="15">RX</text>
+<text x="4.445" y="49.022" size="1.016" layer="130" ratio="15">^2</text>
+<text x="4.445" y="51.562" size="1.016" layer="130" ratio="15">TX 1</text>
+<text x="4.445" y="54.102" size="1.016" layer="130" ratio="15">RX 0</text>
 <text x="46.228" y="89.154" size="0.8128" layer="130" ratio="15" rot="R90">GND</text>
-<text x="4.445" y="59.055" size="1.016" layer="130" ratio="15">14</text>
-<text x="4.445" y="61.595" size="1.016" layer="130" ratio="15">15</text>
-<text x="4.445" y="64.135" size="1.016" layer="130" ratio="15">16</text>
+<text x="4.445" y="59.055" size="1.016" layer="130" ratio="15">^14</text>
+<text x="4.445" y="61.595" size="1.016" layer="130" ratio="15">^15</text>
+<text x="4.445" y="64.135" size="1.016" layer="130" ratio="15">^16</text>
 <text x="4.445" y="66.675" size="1.016" layer="130" ratio="15">17</text>
 <text x="4.445" y="69.215" size="1.016" layer="130" ratio="15">18</text>
 <text x="4.445" y="71.755" size="1.016" layer="130" ratio="15">19</text>
@@ -5896,13 +5896,13 @@ Source: www.kingbright.com</description>
 <text x="37.973" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">48</text>
 <text x="40.513" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">50</text>
 <text x="43.053" y="81.153" size="0.8128" layer="130" ratio="15" rot="R90">52</text>
-<text x="11.938" y="42.545" size="0.8128" layer="130" rot="R270">5V Tolerant I/O</text>
+<text x="11.938" y="45.085" size="0.8128" layer="130" rot="R270">5V Tolerant I/O     (PWM^)</text>
 <text x="48.514" y="89.154" size="0.8128" layer="130" ratio="15" rot="R90">3.3V</text>
 <text x="3.048" y="89.154" size="0.8128" layer="130" ratio="15" rot="R90">5V</text>
 <hole x="2.54" y="81.28" drill="3.2"/>
 <hole x="50.8" y="6.35" drill="3.2"/>
 <wire x1="13.335" y1="20.32" x2="13.335" y2="54.61" width="0.127" layer="130"/>
-<wire x1="13.335" y1="54.61" x2="6.985" y2="54.61" width="0.127" layer="130"/>
+<wire x1="13.335" y1="54.61" x2="9.525" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="20.32" x2="10.795" y2="20.32" width="0.127" layer="130"/>
 <pad name="IOREF" x="50.8" y="21.59" drill="1" diameter="1.4224" rot="R90"/>
 <text x="48.7807" y="22.098" size="1.016" layer="130" ratio="15" rot="R180">IOREF</text>
@@ -15582,11 +15582,6 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <pinref part="SW2" gate="G$1" pin="P"/>
 <pinref part="R31" gate="A" pin="1"/>
 </segment>
-<segment>
-<wire x1="-45.72" y1="93.98" x2="-53.34" y2="93.98" width="0.2032" layer="91"/>
-<label x="-53.34" y="93.98" size="1.778" layer="95"/>
-<pinref part="U1" gate="ARDUINO_MEGA" pin="RES"/>
-</segment>
 </net>
 <net name="MEGA_D16" class="0">
 <segment>
@@ -16487,6 +16482,11 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="17.78" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
 <label x="20.32" y="88.9" size="1.778" layer="95"/>
 <pinref part="S1" gate="B0" pin="IO_L3N_0"/>
+</segment>
+<segment>
+<pinref part="U1" gate="ARDUINO_MEGA" pin="RES"/>
+<wire x1="-45.72" y1="93.98" x2="-53.34" y2="93.98" width="0.1524" layer="91"/>
+<label x="-60.96" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BD2_MPSSE_TDO" class="0">
