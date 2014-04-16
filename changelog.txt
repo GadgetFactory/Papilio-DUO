@@ -1,3 +1,9 @@
+4/16/2014 V1.3
+	-VBUS connected
+	-RX/TX LED's changed to port B
+	-Silkscreen changes
+	-HDMI removed
+
 3/5/2014 V1.2
 	-Shrunk the board to 100cm in order to better fit Chinese standards and save money in manufacturing.
 
