@@ -13216,23 +13216,23 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="28.312" y="7.138" size="0.8" layer="27" ratio="14"/>
 <attribute name="PARTNO" value="PTS525SM10SMTR LFS" x="31.512" y="11.938" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$2" library="Papilio" package="POWER_NO_TEXT" value="POWER_ONLYNOTEXT" x="58.69" y="53.34" smashed="yes" rot="R270">
-<attribute name="BOM" value="EXCLUDE" x="58.69" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="WING_POWER1" library="Papilio" package="POWER_NO_TEXT" value="HEADER_FEMALE_4" x="58.69" y="53.34" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="PPTC041LFBN-RC" x="58.69" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$8" library="Papilio" package="POWER_NO_TEXT" value="POWER_ONLYNOTEXT" x="98.06" y="13.97" smashed="yes" rot="R180">
-<attribute name="BOM" value="EXCLUDE" x="98.06" y="13.97" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="WING_POWER2" library="Papilio" package="POWER_NO_TEXT" value="HEADER_FEMALE_4" x="98.06" y="13.97" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="PPTC041LFBN-RC" x="98.06" y="13.97" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$5" library="Papilio" package="POWER_NO_TEXT" value="POWER_ONLYNOTEXT" x="98.06" y="34.29" smashed="yes" rot="R180">
-<attribute name="BOM" value="EXCLUDE" x="98.06" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="WING_POWER3" library="Papilio" package="POWER_NO_TEXT" value="HEADER_FEMALE_4" x="98.06" y="34.29" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="PPTC041LFBN-RC" x="98.06" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$3" library="Papilio" package="POWER_NO_TEXT" value="POWER_ONLYNOTEXT" x="81.55" y="53.34" smashed="yes" rot="R270">
-<attribute name="BOM" value="EXCLUDE" x="81.55" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="WING_POWER4" library="Papilio" package="POWER_NO_TEXT" value="HEADER_FEMALE_4" x="81.55" y="53.34" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="PPTC041LFBN-RC" x="81.55" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$4" library="Papilio" package="POWER_NO_TEXT" value="POWER_ONLYNOTEXT" x="90.44" y="44.45" smashed="yes">
-<attribute name="BOM" value="EXCLUDE" x="90.44" y="44.45" size="1.778" layer="27" display="off"/>
+<element name="WING_POWER5" library="Papilio" package="POWER_NO_TEXT" value="HEADER_FEMALE_4" x="90.44" y="44.45" smashed="yes">
+<attribute name="PARTNO" value="PPTC041LFBN-RC" x="90.44" y="44.45" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$6" library="Papilio" package="POWER_NO_TEXT" value="POWER_ONLYNOTEXT" x="90.44" y="24.13" smashed="yes">
-<attribute name="BOM" value="EXCLUDE" x="90.44" y="24.13" size="1.778" layer="27" display="off"/>
+<element name="WING_POWER6" library="Papilio" package="POWER_NO_TEXT" value="HEADER_FEMALE_4" x="90.44" y="24.13" smashed="yes">
+<attribute name="PARTNO" value="PPTC041LFBN-RC" x="90.44" y="24.13" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U1" library="GadgetFactory_tmp" package="ARDUINO_MEGA_SHIELD" value="ARDUINO_MEGA_SHIELD" x="7.89" y="53.34" smashed="yes" rot="R270">
 <attribute name="BOM" value="EXCLUDE" x="7.89" y="53.34" size="1.778" layer="27" rot="R270" display="off"/>
@@ -13777,12 +13777,12 @@ design rules under a new name.</description>
 <contactref element="S1" pad="108"/>
 <contactref element="SW2" pad="B'"/>
 <contactref element="SW2" pad="B"/>
-<contactref element="U$2" pad="P1"/>
-<contactref element="U$8" pad="P1"/>
-<contactref element="U$5" pad="P1"/>
-<contactref element="U$3" pad="P1"/>
-<contactref element="U$4" pad="P1"/>
-<contactref element="U$6" pad="P1"/>
+<contactref element="WING_POWER1" pad="P1"/>
+<contactref element="WING_POWER2" pad="P1"/>
+<contactref element="WING_POWER3" pad="P1"/>
+<contactref element="WING_POWER4" pad="P1"/>
+<contactref element="WING_POWER5" pad="P1"/>
+<contactref element="WING_POWER6" pad="P1"/>
 <contactref element="U$1" pad="JTAG_GND"/>
 <wire x1="68.488" y1="36.087" x2="68.488" y2="37.516" width="0.3048" layer="1"/>
 <wire x1="67.961" y1="35.56" x2="68.488" y2="36.087" width="0.3048" layer="1"/>
@@ -14265,12 +14265,12 @@ design rules under a new name.</description>
 <contactref element="C22" pad="1"/>
 <contactref element="C24" pad="1"/>
 <contactref element="R31" pad="2"/>
-<contactref element="U$2" pad="P3"/>
-<contactref element="U$8" pad="P3"/>
-<contactref element="U$5" pad="P3"/>
-<contactref element="U$3" pad="P3"/>
-<contactref element="U$4" pad="P3"/>
-<contactref element="U$6" pad="P3"/>
+<contactref element="WING_POWER1" pad="P3"/>
+<contactref element="WING_POWER2" pad="P3"/>
+<contactref element="WING_POWER3" pad="P3"/>
+<contactref element="WING_POWER4" pad="P3"/>
+<contactref element="WING_POWER5" pad="P3"/>
+<contactref element="WING_POWER6" pad="P3"/>
 <contactref element="U1" pad="3.3V"/>
 <contactref element="U$1" pad="JTAG_REF"/>
 <wire x1="63.988" y1="37.516" x2="64.024" y2="37.552" width="0.254" layer="1"/>
@@ -15672,12 +15672,12 @@ design rules under a new name.</description>
 <wire x1="70.12" y1="42.418" x2="70.12" y2="50.8" width="0.2032" layer="1"/>
 </signal>
 <signal name="5V0">
-<contactref element="U$2" pad="P4"/>
-<contactref element="U$8" pad="P4"/>
-<contactref element="U$5" pad="P4"/>
-<contactref element="U$3" pad="P4"/>
-<contactref element="U$4" pad="P4"/>
-<contactref element="U$6" pad="P4"/>
+<contactref element="WING_POWER1" pad="P4"/>
+<contactref element="WING_POWER2" pad="P4"/>
+<contactref element="WING_POWER3" pad="P4"/>
+<contactref element="WING_POWER4" pad="P4"/>
+<contactref element="WING_POWER5" pad="P4"/>
+<contactref element="WING_POWER6" pad="P4"/>
 <contactref element="U1" pad="5V@0"/>
 <wire x1="98.06" y1="38.1" x2="96.79" y2="39.37" width="0.4064" layer="16"/>
 <wire x1="96.79" y1="39.37" x2="91.71" y2="39.37" width="0.4064" layer="16"/>

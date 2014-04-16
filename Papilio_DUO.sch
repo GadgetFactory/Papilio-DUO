@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="6" fill="1" visible="no" active="no"/>
@@ -13214,6 +13214,47 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="bom">
+<description>&lt;b&gt;BOM-EX Helper&lt;/b&gt;&lt;p&gt;
+Symbols to allow specifying additional part numbers to be added to the bill-of-materials listing for bom-ex.
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2010, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="BOM-PART">
+<wire x1="0" y1="-1.905" x2="0" y2="1.905" width="0.254" layer="95"/>
+<wire x1="20.32" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="95"/>
+<wire x1="20.32" y1="1.905" x2="0" y2="1.905" width="0.254" layer="95"/>
+<wire x1="20.32" y1="-1.905" x2="20.32" y2="1.905" width="0.254" layer="95"/>
+<text x="1.27" y="-0.9525" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.27" y="-4.445" size="1.778" layer="95">&gt;VALUE</text>
+<text x="1.27" y="3.175" size="1.778" layer="95">&gt;DESC</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BOM-PART" prefix="BOM-PART">
+<description>&lt;b&gt;BOM ENTRY&lt;/b&gt;&lt;p&gt;
+Special BOM entry-only specifier field.</description>
+<gates>
+<gate name="G$1" symbol="BOM-PART" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="INCLUDE" constant="no"/>
+<attribute name="DESC" value="" constant="no"/>
+<attribute name="PARTNO" value="" constant="no"/>
+<attribute name="QTY" value="1" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 <attribute name="DATABASE" value="C:/Dropbox/GadgetFactory/GadgetFactory_Engineering/Libraries/GadgetFactory-PARTSDB.txt"/>
@@ -13319,23 +13360,23 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="SW2" library="adafruit" deviceset="EVQQ2" device="">
 <attribute name="PARTNO" value="PTS525SM10SMTR LFS"/>
 </part>
-<part name="U$2" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
-<attribute name="BOM" value="EXCLUDE"/>
+<part name="WING_POWER1" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT" value="HEADER_FEMALE_4">
+<attribute name="PARTNO" value="PPTC041LFBN-RC"/>
 </part>
-<part name="U$8" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
-<attribute name="BOM" value="EXCLUDE"/>
+<part name="WING_POWER2" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT" value="HEADER_FEMALE_4">
+<attribute name="PARTNO" value="PPTC041LFBN-RC"/>
 </part>
-<part name="U$5" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
-<attribute name="BOM" value="EXCLUDE"/>
+<part name="WING_POWER3" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT" value="HEADER_FEMALE_4">
+<attribute name="PARTNO" value="PPTC041LFBN-RC"/>
 </part>
-<part name="U$3" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
-<attribute name="BOM" value="EXCLUDE"/>
+<part name="WING_POWER4" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT" value="HEADER_FEMALE_4">
+<attribute name="PARTNO" value="PPTC041LFBN-RC"/>
 </part>
-<part name="U$4" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
-<attribute name="BOM" value="EXCLUDE"/>
+<part name="WING_POWER5" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT" value="HEADER_FEMALE_4">
+<attribute name="PARTNO" value="PPTC041LFBN-RC"/>
 </part>
-<part name="U$6" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT">
-<attribute name="BOM" value="EXCLUDE"/>
+<part name="WING_POWER6" library="Papilio" deviceset="POWER_ONLY" device="NOTEXT" value="HEADER_FEMALE_4">
+<attribute name="PARTNO" value="PPTC041LFBN-RC"/>
 </part>
 <part name="GND_PWR7" library="Bogdan_Commons" deviceset="GND" device=""/>
 <part name="3V3_PWR9" library="Bogdan_Commons" deviceset="3V3" device=""/>
@@ -13647,6 +13688,27 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <part name="C36" library="GadgetFactory" deviceset="C" device="0603" value=".1uF">
 <attribute name="PARTNO" value="GRM188F51E104ZA01D"/>
 </part>
+<part name="HEADER_0-7" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_8">
+<attribute name="PARTNO" value="PPTC081LFBN-RC"/>
+</part>
+<part name="HEADER_8-AREF" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_8">
+<attribute name="PARTNO" value="PPTC081LFBN-RC"/>
+</part>
+<part name="HEADER_14-21" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_8">
+<attribute name="PARTNO" value="PPTC081LFBN-RC"/>
+</part>
+<part name="HEADER_C" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_19">
+<attribute name="PARTNO" value="PPTC191LFBN-RC"/>
+</part>
+<part name="HEADER_NC-IOREF" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_7">
+<attribute name="PARTNO" value="PPTC071LFBN-RC"/>
+</part>
+<part name="HEADER_ANALOG" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_6">
+<attribute name="PARTNO" value="PPTC061LFBN-RC"/>
+</part>
+<part name="HEADER_D" library="bom" deviceset="BOM-PART" device="" value="HEADER_FEMALE_19">
+<attribute name="PARTNO" value="PPTC191LFBN-RC"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -13775,23 +13837,23 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="SW2" gate="G$1" x="241.3" y="66.04" rot="R270">
 <attribute name="PARTNO" x="241.3" y="66.04" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$2" gate="G$1" x="-355.6" y="254">
-<attribute name="BOM" x="-355.6" y="254" size="1.778" layer="96" display="off"/>
+<instance part="WING_POWER1" gate="G$1" x="-355.6" y="254">
+<attribute name="PARTNO" x="-355.6" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$8" gate="G$1" x="-337.82" y="254">
-<attribute name="BOM" x="-337.82" y="254" size="1.778" layer="96" display="off"/>
+<instance part="WING_POWER2" gate="G$1" x="-337.82" y="254">
+<attribute name="PARTNO" x="-337.82" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$5" gate="G$1" x="-320.04" y="254">
-<attribute name="BOM" x="-320.04" y="254" size="1.778" layer="96" display="off"/>
+<instance part="WING_POWER3" gate="G$1" x="-320.04" y="254">
+<attribute name="PARTNO" x="-320.04" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$3" gate="G$1" x="-302.26" y="254">
-<attribute name="BOM" x="-302.26" y="254" size="1.778" layer="96" display="off"/>
+<instance part="WING_POWER4" gate="G$1" x="-302.26" y="254">
+<attribute name="PARTNO" x="-302.26" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$4" gate="G$1" x="-284.48" y="254">
-<attribute name="BOM" x="-284.48" y="254" size="1.778" layer="96" display="off"/>
+<instance part="WING_POWER5" gate="G$1" x="-284.48" y="254">
+<attribute name="PARTNO" x="-284.48" y="254" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="U$6" gate="G$1" x="-266.7" y="254">
-<attribute name="BOM" x="-266.7" y="254" size="1.778" layer="96" display="off"/>
+<instance part="WING_POWER6" gate="G$1" x="-266.7" y="254">
+<attribute name="PARTNO" x="-266.7" y="254" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND_PWR7" gate="A" x="-368.3" y="271.78"/>
 <instance part="3V3_PWR9" gate="A" x="-360.68" y="269.24" rot="R90"/>
@@ -13886,6 +13948,13 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <instance part="C36" gate="A" x="-137.16" y="167.64" rot="R270">
 <attribute name="PARTNO" x="-137.16" y="167.64" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="HEADER_0-7" gate="G$1" x="-96.52" y="-17.78"/>
+<instance part="HEADER_8-AREF" gate="G$1" x="-68.58" y="-17.78"/>
+<instance part="HEADER_14-21" gate="G$1" x="-40.64" y="-17.78"/>
+<instance part="HEADER_C" gate="G$1" x="-12.7" y="-17.78"/>
+<instance part="HEADER_NC-IOREF" gate="G$1" x="43.18" y="-17.78"/>
+<instance part="HEADER_ANALOG" gate="G$1" x="71.12" y="-17.78"/>
+<instance part="HEADER_D" gate="G$1" x="15.24" y="-17.78"/>
 </instances>
 <busses>
 <bus name="GND">
@@ -14117,12 +14186,12 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="-304.8" y1="274.32" x2="-287.02" y2="274.32" width="0.2032" layer="91"/>
 <wire x1="-287.02" y1="274.32" x2="-269.24" y2="274.32" width="0.2032" layer="91"/>
 <wire x1="-358.14" y1="274.32" x2="-368.3" y2="274.32" width="0.2032" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="GND@P1"/>
-<pinref part="U$8" gate="G$1" pin="GND@P1"/>
-<pinref part="U$5" gate="G$1" pin="GND@P1"/>
-<pinref part="U$3" gate="G$1" pin="GND@P1"/>
-<pinref part="U$4" gate="G$1" pin="GND@P1"/>
-<pinref part="U$6" gate="G$1" pin="GND@P1"/>
+<pinref part="WING_POWER1" gate="G$1" pin="GND@P1"/>
+<pinref part="WING_POWER2" gate="G$1" pin="GND@P1"/>
+<pinref part="WING_POWER3" gate="G$1" pin="GND@P1"/>
+<pinref part="WING_POWER4" gate="G$1" pin="GND@P1"/>
+<pinref part="WING_POWER5" gate="G$1" pin="GND@P1"/>
+<pinref part="WING_POWER6" gate="G$1" pin="GND@P1"/>
 <pinref part="GND_PWR7" gate="A" pin="GND"/>
 </segment>
 <segment>
@@ -14383,12 +14452,12 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="-304.8" y1="269.24" x2="-287.02" y2="269.24" width="0.2032" layer="91"/>
 <wire x1="-287.02" y1="269.24" x2="-269.24" y2="269.24" width="0.2032" layer="91"/>
 <junction x="-358.14" y="269.24"/>
-<pinref part="U$2" gate="G$1" pin="3V3@P3"/>
-<pinref part="U$8" gate="G$1" pin="3V3@P3"/>
-<pinref part="U$5" gate="G$1" pin="3V3@P3"/>
-<pinref part="U$3" gate="G$1" pin="3V3@P3"/>
-<pinref part="U$4" gate="G$1" pin="3V3@P3"/>
-<pinref part="U$6" gate="G$1" pin="3V3@P3"/>
+<pinref part="WING_POWER1" gate="G$1" pin="3V3@P3"/>
+<pinref part="WING_POWER2" gate="G$1" pin="3V3@P3"/>
+<pinref part="WING_POWER3" gate="G$1" pin="3V3@P3"/>
+<pinref part="WING_POWER4" gate="G$1" pin="3V3@P3"/>
+<pinref part="WING_POWER5" gate="G$1" pin="3V3@P3"/>
+<pinref part="WING_POWER6" gate="G$1" pin="3V3@P3"/>
 <pinref part="3V3_PWR9" gate="A" pin="3V3"/>
 </segment>
 <segment>
@@ -15668,12 +15737,12 @@ Source: http://ww1.microchip.com/downloads/en/devicedoc/39632c.pdf</description>
 <wire x1="-304.8" y1="266.7" x2="-287.02" y2="266.7" width="0.2032" layer="91"/>
 <wire x1="-287.02" y1="266.7" x2="-269.24" y2="266.7" width="0.2032" layer="91"/>
 <junction x="-358.14" y="266.7"/>
-<pinref part="U$2" gate="G$1" pin="5V0@P4"/>
-<pinref part="U$8" gate="G$1" pin="5V0@P4"/>
-<pinref part="U$5" gate="G$1" pin="5V0@P4"/>
-<pinref part="U$3" gate="G$1" pin="5V0@P4"/>
-<pinref part="U$4" gate="G$1" pin="5V0@P4"/>
-<pinref part="U$6" gate="G$1" pin="5V0@P4"/>
+<pinref part="WING_POWER1" gate="G$1" pin="5V0@P4"/>
+<pinref part="WING_POWER2" gate="G$1" pin="5V0@P4"/>
+<pinref part="WING_POWER3" gate="G$1" pin="5V0@P4"/>
+<pinref part="WING_POWER4" gate="G$1" pin="5V0@P4"/>
+<pinref part="WING_POWER5" gate="G$1" pin="5V0@P4"/>
+<pinref part="WING_POWER6" gate="G$1" pin="5V0@P4"/>
 <pinref part="5V0_PWR4" gate="A" pin="5V0"/>
 </segment>
 <segment>
