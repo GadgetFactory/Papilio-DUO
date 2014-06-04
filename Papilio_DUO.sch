@@ -1583,7 +1583,7 @@ wide body 7.5 mm/JEDEC MS-013AA</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ISSI_SRAM_8BIT">
+<deviceset name="ISSI_SRAM_8BIT" uservalue="yes">
 <gates>
 <gate name="SRAM" symbol="ISSI_SRAM_8BIT" x="0" y="0"/>
 </gates>
@@ -5696,7 +5696,6 @@ Source: www.kingbright.com</description>
 <library name="GadgetFactory_tmp">
 <packages>
 <package name="ARDUINO_MEGA_SHIELD">
-<circle x="2.54" y="81.28" radius="1.905" width="0.127" layer="45"/>
 <wire x1="1.27" y1="55.88" x2="3.81" y2="55.88" width="0.127" layer="130"/>
 <wire x1="3.81" y1="55.88" x2="3.81" y2="35.56" width="0.127" layer="130"/>
 <wire x1="3.81" y1="35.56" x2="1.27" y2="35.56" width="0.127" layer="130"/>
@@ -5882,8 +5881,6 @@ Source: www.kingbright.com</description>
 <text x="11.938" y="45.085" size="0.8128" layer="130" rot="R270">5V Tolerant I/O     (PWM^)</text>
 <text x="48.514" y="89.154" size="0.8128" layer="130" ratio="15" rot="R90">3.3V</text>
 <text x="3.048" y="89.154" size="0.8128" layer="130" ratio="15" rot="R90">5V</text>
-<hole x="2.54" y="81.28" drill="3.2"/>
-<hole x="50.8" y="6.35" drill="3.2"/>
 <wire x1="13.335" y1="20.32" x2="13.335" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="54.61" x2="9.525" y2="54.61" width="0.127" layer="130"/>
 <wire x1="13.335" y1="20.32" x2="10.795" y2="20.32" width="0.127" layer="130"/>
@@ -13260,6 +13257,10 @@ Special BOM entry-only specifier field.</description>
 <attribute name="DATABASE" value="C:/Dropbox/GadgetFactory/GadgetFactory_Engineering/Libraries/GadgetFactory-PARTSDB.txt"/>
 </attributes>
 <variantdefs>
+<variantdef name="512KB-SRAM"/>
+<variantdef name="1MB-SRAM"/>
+<variantdef name="2MB-SRAM"/>
+<variantdef name="No-SRAM"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.1778" drill="0.381">
@@ -13649,6 +13650,10 @@ Special BOM entry-only specifier field.</description>
 </part>
 <part name="SRAM" library="GadgetFactory" deviceset="ISSI_SRAM_8BIT" device="">
 <attribute name="PARTNO" value="IS61WV20488BLL-10TLI"/>
+<variant name="512KB-SRAM" value="512KB-SRAM"/>
+<variant name="1MB-SRAM" value="1MB-SRAM"/>
+<variant name="2MB-SRAM" value="2MB-SRAM"/>
+<variant name="No-SRAM" populate="no"/>
 </part>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="R32" library="GadgetFactory" deviceset="R" device="0603" value="4.7K">
