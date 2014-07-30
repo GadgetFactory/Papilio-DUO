@@ -1,3 +1,7 @@
+7/30/2014 V1.4
+	-Added getting started URL
+	-Fixed full silkscreen	
+
 6/4/2014 V1.4
 	-Fixed the mounting holes
 	-Removed original Arduino mounting holes
