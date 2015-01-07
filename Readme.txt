@@ -1,12 +1,18 @@
-BPC3012 Papilio DUO Manufacturing Package - Current Version 1.5
+BPC3012 Papilio DUO Manufacturing Package - Current Version 1.6
 
 Special assembly instructions:
-	-Use BLACK for the PCB color and white for the silkscreen color.
+	-Use RED for the PCB color and white for the silkscreen color.
 
 Test Plan Home Page:
 	- http://www.gadgetfactory.net/opmanuals/index.php?n=Main.PapilioDUO
 
 CHANGELOG
+1/7/2015 V1.6
+	-Made the through holes for mounting on the micro-usb via's instead of holes so they can be soldered.
+	-Removed Kickstarter edition
+	-Fixed angles on some of the traces
+	-PCB color is RED now.
+
 9/30/2014 V1.5 - Kickstarter Edition
 	-Added TQFP footprint for the ATmega32U4
 	-Changed values for LED resistors so they won't be so bright. R7, R29, R30
